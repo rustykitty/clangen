@@ -42,10 +42,10 @@
 		"jellyfish joints", "loose body"
 	],
 	"jellyfish joints": [
-		"constant roaming pain", "irritable bowels", "loose body"
+		"constant roaming pain", "irritable bowels"
 	],
 	"loose body": [
-		"constant roaming pain", "irritable bowels", "jellyfish joints"
+		"constant roaming pain", "irritable bowels"
 	],
 	"burning light": [
 		"starwalker", "comet spirit", "jumbled noise", "disrupted senses"
