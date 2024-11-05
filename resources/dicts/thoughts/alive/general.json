@@ -2846,7 +2846,7 @@
             "Feels like crying",
             "Lies to r_c and says that {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} fine",
             "Looks up at the stars and asks them why life is so hard",
-            "Wonders what {PRONOUN/m_c/subject} did to deserve having a heavy soul",
+            "Wonders what {PRONOUN/m_c/subject} did to deserve having a weighted heart",
             "Is jealous of {PRONOUN/r_c/poss} Clanmates enjoying themselves",
 			"Is feeling frustrated with {PRONOUN/m_c/poss} own brain",
 			"Wants to cry but can't",
@@ -2880,7 +2880,7 @@
         ],
         "perm_conditions": {
             "m_c": [
-                "heavy soul"
+                "weighted heart"
             ]
         },
         "random_status_constraint": [

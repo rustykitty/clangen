@@ -189,7 +189,7 @@
             "m_c wakes and wails, {PRONOUN/m_c/poss} dreams haunted by visions of {PRONOUN/m_c/poss} dead loved one.",
             "m_c jolts awake and immediately leaves the den to clear {PRONOUN/m_c/poss} head, hoping some fresh night air will help {PRONOUN/m_c/object} cope with the sadness and memories."
         ],
-        "heavy soul": [
+        "weighted heart": [
             "m_c hasn't stirred from {PRONOUN/m_c/poss} nest in the medicine den in days, sunk deep into grief that never seemed to go away. r_c carefully places herbs in front of m_c, but there wasn't anything more {PRONOUN/r_c/subject} could do then simply be there for m_c.",
             "m_c nearly wails when {PRONOUN/m_c/subject} {VERB/m_c/wake/wakes} up, alone again. {PRONOUN/m_c/poss/CAP} heart aches deeply for who {PRONOUN/m_c/subject} {VERB/m_c/grieve/grieves}, feeling like it would never feel whole again.",
             "m_c stared blankly up at the sky, feeling less motivated to do anything, {PRONOUN/m_c/poss} mind fogged with grief and despair.",
@@ -261,7 +261,7 @@
 		]
 	},	
 	"seasonal lethargy": {
-		"heavy soul": [
+		"weighted heart": [
 			"Something is wrong, m_c looks up at r_c, something is wrong and the heavy blanket of tiredness hasn't left yet. r_c can only shake {PRONOUN/r_c/poss} head, it would appear that {PRONOUN/m_c/poss} soul has become weighted down and heavy.",
 			"m_c watches camp change, {PRONOUN/m_c/subject} {VERB/m_c/watch/watches} as the dawn rises and just wonder why {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} feel any lighter yet.",
 			"Usually with the warmth and the frost m_c finds that the heavy weight of exhaustion has left, but now all {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} like is curling back up again and never leaving the den.",

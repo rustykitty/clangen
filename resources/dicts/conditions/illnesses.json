@@ -1056,7 +1056,7 @@
         "infectiousness": 0,
         "risks": [
 			{
-				"name": "heavy soul",
+				"name": "weighted heart",
 				"chance": 100
 			}
 			],

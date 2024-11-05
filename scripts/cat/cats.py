@@ -99,7 +99,7 @@ class Cat:
     dad_names = {
         "starwalker": "autism",
         "obsessive mind": "OCD",
-        "heavy soul": "chronic depression",
+        "weighted heart": "MDD",
         "comet spirit": "ADHD",
         "antisocial": "ASPD",
         "constant roaming pain": "fibromyalgia",
@@ -117,7 +117,7 @@ class Cat:
         "jumbled noise": "APD",
         "disrupted senses": "SPD",
         "constant rash": "eczema",
-        "chattering tongue": "tourette's",
+        "confused body": "tourette's",
         "falling paws": "orthostatic hypotension",
         "shattered soul": "DID",
         "budding spirit": "OSDD-1b",
@@ -3065,21 +3065,21 @@ class Cat:
                     "curved spine"
                 ],
                 "seizure prone": [
-                    "chattering tongue", "curved spine", "face blindness", "parrot chatter"
+                    "confused body", "curved spine", "face blindness", "parrot chatter"
                 ],
                 "starwalker": [
-                    "comet spirit", "burning light", "jumbled noise", "disrupted senses", "chattering tongue",
+                    "comet spirit", "burning light", "jumbled noise", "disrupted senses", "confused body",
                     "jumbled mind", "counting fog", "spirited heart", "puzzled heart", "face blindness",
                     "parrot chatter", "selective mutism", "thought blind"
                 ],
                 "obsessive mind": [
                     "spirited heart"
                 ],
-                "heavy soul": [
+                "weighted heart": [
                     "shattered soul", "budding spirit"
                 ],
                 "comet spirit": [
-                    "starwalker", "burning light", "jumbled noise", "disrupted senses", "chattering tongue",
+                    "starwalker", "burning light", "jumbled noise", "disrupted senses", "confused body",
                     "jumbled mind", "counting fog", "spirited heart", "parrot chatter"
                 ],
                 "antisocial": [
@@ -3115,14 +3115,14 @@ class Cat:
                 "disrupted senses": [
                     "starwalker", "comet spirit", "burning light", "jumbled noise"
                 ],
-                "chattering tongue": [
+                "confused body": [
                     "seizure prone", "starwalker", "comet spirit", "parrot chatter"
                 ],
                 "shattered soul": [
-                    "heavy soul", "antisocial", "anxiety", "thunderous spirit", "otherworldly mind"
+                    "weighted heart", "antisocial", "anxiety", "thunderous spirit", "otherworldly mind"
                 ],
                 "budding spirit": [
-                    "heavy soul", "antisocial", "anxiety", "thunderous spirit", "otherworldly mind"
+                    "weighted heart", "antisocial", "anxiety", "thunderous spirit", "otherworldly mind"
                 ],
                 "testosterone deficiency": [
                     "infertile"
@@ -3161,7 +3161,7 @@ class Cat:
                     "seizure prone", "starwalker", "thought blind"
                 ],
                 "parrot chatter": [
-                    "seizure prone", "starwalker", "comet spirit", "chattering tongue"
+                    "seizure prone", "starwalker", "comet spirit", "confused body"
                 ],
                 "selective mutism": [
                     "starwalker", "anxiety"
@@ -3378,7 +3378,7 @@ class Cat:
                 moons_until = randint(moons_until - 1, moons_until + 3)
             if name == "falling paws":
                 moons_until = randint(moons_until - 1, moons_until + 3)
-            if name == "heavy soul":
+            if name == "weighted heart":
                 moons_until = randint(moons_until - 1, moons_until + 2)
             if name == "anxiety":
                 moons_until = randint(moons_until - 1, moons_until + 2)

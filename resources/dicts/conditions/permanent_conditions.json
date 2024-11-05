@@ -818,7 +818,7 @@
                 "chance": 50
             },
 			{
-				"name": "heavy soul",
+				"name": "weighted heart",
 				"chance": 120
 			},
 			{
@@ -1093,7 +1093,7 @@
 			"betony"
 		]
     },
-    "heavy soul": {
+    "weighted heart": {
         "severity": "major",
         "congenital": "sometimes",
         "moons_until": 2,
@@ -2288,7 +2288,7 @@
         ],
         "herbs": []
     },
-    "chattering tongue": {
+    "confused body": {
         "severity": "minor",
         "congenital": "always",
         "moons_until": 5,
