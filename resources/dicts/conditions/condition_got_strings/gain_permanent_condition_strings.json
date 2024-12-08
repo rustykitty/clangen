@@ -48,7 +48,7 @@
         "recurring shock": [
             "The fear from what broke m_c's leg still pounds in {PRONOUN/m_c/poss} heart.",
             "m_c can't handle thinking about what broke {PRONOUN/m_c/poss} leg.",
-            "Occasionally, m_c's leg hurts and {PRONOUN/m_c/poss} "
+            "Occasionally, m_c's leg hurts and {PRONOUN/m_c/poss} still remembers what happened to {PRONOUN/m_c/object}."
         ]
     },
     "mangled leg": {
