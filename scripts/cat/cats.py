@@ -3633,7 +3633,7 @@ class Cat:
             if self.is_plural():
                 if len(self.alters) < 1:
                     self.system_core()
-                    self.new_alter(new_condition)
+                    self.new_alter(new_condition.name)
             new_condition = True
         return new_condition
 
