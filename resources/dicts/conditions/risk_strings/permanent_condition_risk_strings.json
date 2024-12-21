@@ -1970,7 +1970,7 @@
 			"Today, m_c woke up feeling nauseous due to {PRONOUN/m_c/poss} flooded paws."
 		]
 	},
-	"bad knees": {
+	"bad knee": {
 		"sore": [
 			"r_c has to tell m_c to slow down and get sore rest when r_c notices m_c limping.",
 			"m_c's knees are sore again."
