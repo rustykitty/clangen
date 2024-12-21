@@ -437,7 +437,7 @@
             "lost a leg",
             "weak leg",
             "twisted leg",
-            "bad knees",
+            "bad knee",
             "recurring shock"
         ],
         "herbs": [
@@ -560,7 +560,7 @@
         "risks": [],
         "also_got": [],
         "cause_permanent": [
-            "bad knees"
+            "bad knee"
         ],
         "herbs": [
             "elder_leaves",
