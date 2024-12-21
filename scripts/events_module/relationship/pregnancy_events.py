@@ -106,7 +106,7 @@ class Pregnancy_Events:
         if clan.clan_settings["pregnancy turmoil"]:
             odds = game.config["pregnancy"]["false_pregnancy_chance"]
             if "infertile" in cat.permanent_condition:
-                odds = int(odds / 1.5)
+                odds = int(odds * 2)
             false_preg = random.randint(1, odds)
 
         # DETERMINE THE SECOND PARENT
@@ -290,10 +290,6 @@ class Pregnancy_Events:
 
         # additional save for no kit setting
         if (cat and (cat.no_kits or cat.neutered)) or (other_cat and (other_cat.no_kits or other_cat.neutered)):
-            return
-
-        # here's where we check for infertility, just in case it slipped trough
-        if (cat and "infertile" in cat.permanent_condition) and not (other_cat and "infertile" in other_cat.permanent_condition):
             return
 
         if clan.clan_settings["same sex birth"]:
@@ -732,8 +728,10 @@ class Pregnancy_Events:
         if "recovering from birth" in cat.injuries:
             return False
 
-        if 'infertile' in cat.permanent_condition:
-            return False
+        if "infertile" in cat.permanent_condition:
+            lucky_litter = randint(1,10)
+            if lucky_litter > 1:
+                return False
 
         if cat.neutered:
             return False
@@ -785,7 +783,7 @@ class Pregnancy_Events:
 
         # Check to see if the pair can have kits.
             
-        if "infertile" in cat.permanent_condition or "infertile" in second_parent.permanent_condition or cat.neutered or second_parent.neutered:
+        if cat.neutered or second_parent.neutered:
             return True, True
         
         if cat.gender == 'intersex' or second_parent.gender == 'intersex':
