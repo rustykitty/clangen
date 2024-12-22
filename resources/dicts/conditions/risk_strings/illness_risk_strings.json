@@ -482,5 +482,27 @@
 			"Thoughts don't work anymore. m_c is too overwhelmed.",
 			"It's hard to think when m_c is so overwhelmed."
 		]
+	},
+	"paranoia": {
+		"nightmares": [
+			"r_c notices that m_c keeps whimpering in {PRONOUN/m_c/poss} sleep. r_c tries to check m_c for injuries, but m_c reveals {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} fine- physically, at least.",
+			"r_c wakes up to m_c screaming. {PRONOUN/r_c/subject/CAP} {VERB/r_c/shake/shakes} m_c awake. m_c curls up and refuses to talk about what happened in {PRONOUN/m_c/poss} sleep, but something really rattled {PRONOUN/m_c/object} in {PRONOUN/m_c/poss} sleep.",
+			"m_c wakes up in a cold sweat. Visions of what could be- No. What definitely IS going to happen plague {PRONOUN/m_c/poss} mind."
+		],
+		"shock": [
+			"r_c is worried about m_c, as {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} to stumble around camp in a daze.",
+			"m_c is always watching {PRONOUN/m_c/poss} back and skittering away from other cats. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} acting like something horrific just happened, and in {PRONOUN/m_c/poss} mind, it did."
+		],
+		"lethargy": [
+			"r_c is asked to check on m_c after a long period of {PRONOUN/m_c/object} lying in {PRONOUN/m_c/poss} nest.",
+			"m_c can't find the energy to get out of {PRONOUN/m_c/poss} nest today. Or the next day. Or the next..."
+		],
+		"verbal shutdown": [
+			"r_c tries to coax to words out of m_c to no avail. {PRONOUN/m_c/poss/CAP} emotions knot in {PRONOUN/m_c/poss} throat, locking {PRONOUN/m_c/object} from making a sound.",
+			"m_c is so terified of having {PRONOUN/m_c/poss} words twisted into something else that {PRONOUN/m_c/subject} didn't mean. So {PRONOUN/m_c/subject} {VERB/m_c/decide/decides} that it's just better if {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} speak.",
+			"m_c feels overwhelmed and exhausted. By the time {PRONOUN/m_c/object} make it back to {PRONOUN/m_c/poss} den, {PRONOUN/m_c/subject} lack the energy to verbalize anything.",
+			"Sometimes, m_c's words feel too big for {PRONOUN/m_c/poss} body. The pressure in {PRONOUN/m_c/poss} chest builds, but {PRONOUN/m_c/poss} tongue remains tied."
+			
+		]
 	}
 }
