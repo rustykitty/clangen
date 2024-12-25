@@ -3422,14 +3422,14 @@ class Cat:
                     new_condition = choice(possible_conditions)
                     while new_condition in cat.permanent_condition:
                         new_condition = choice(possible_conditions)
-                        if randint(1, comorbidity_chance) > 1 and possible_comorbidities:
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
                             new_condition = choice(choice(possible_comorbidities))
             if new_condition == "fractured spirit" and "shattered soul" in cat.permanent_condition:
                 while new_condition == "fractured spirit":
                     new_condition = choice(possible_conditions)
                     while new_condition in cat.permanent_condition:
                         new_condition = choice(possible_conditions)
-                        if randint(1, comorbidity_chance) > 1 and possible_comorbidities:
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
                             new_condition = choice(choice(possible_comorbidities))
 
             if new_condition == "shattered soul" and "fractured spirit" in cat.permanent_condition:
@@ -3437,7 +3437,7 @@ class Cat:
                     new_condition = choice(possible_conditions)
                     while new_condition in cat.permanent_condition:
                         new_condition = choice(possible_conditions)
-                        if randint(1, comorbidity_chance) > 1 and possible_comorbidities:
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
                             new_condition = choice(choice(possible_comorbidities))
                             
             if new_condition == "budding spirit" and "fractured spirit" in cat.permanent_condition:
@@ -3445,7 +3445,7 @@ class Cat:
                     new_condition = choice(possible_conditions)
                     while new_condition in cat.permanent_condition:
                         new_condition = choice(possible_conditions)
-                        if randint(1, comorbidity_chance) > 1 and possible_comorbidities:
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
                             new_condition = choice(choice(possible_comorbidities))
 
 
