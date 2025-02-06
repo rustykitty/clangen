@@ -3083,14 +3083,31 @@
     {
         "id": "otherworldly_mind_to_alive_gen",
         "thoughts": [
-            "Thought {PRONOUN/m_c/subject} could speak to birds today",
-            "Is questioning whether or not r_c is real",
             "Feels confused",
             "Doesn't trust r_c",
             "Sees a bird following {PRONOUN/m_c/object} around",
             "Is repeating what everyone around {PRONOUN/m_c/object} says",
             "Is repeating whatever r_c says"
         ],
+        "perm_conditions": {
+            "m_c": [
+                "otherworldly mind"
+            ]
+        },
+        "random_status_constraint": [
+            "any"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "otherworldly_mind_to_alive_psychosis",
+        "thoughts": [
+            "Thought {PRONOUN/m_c/subject} could speak to birds today",
+            "Is questioning whether or not r_c is real"
+        ],
+        "trigger": "psychosis",
         "perm_conditions": {
             "m_c": [
                 "otherworldly mind"
@@ -3115,6 +3132,25 @@
             "Is begging r_c not to abandon {PRONOUN/m_c/object}",
             "Is feeling really, really good today!"
         ],
+        "perm_conditions": {
+            "m_c": [
+                "thunderous spirit"
+            ]
+        },
+        "random_status_constraint": [
+            "any"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "thunderous_spirit_to_alive_intrusive_thoughts",
+        "thoughts": [
+            "Tries to distract {PRONOUN/m_c/self} from bad thoughts.",
+            "Is convinced r_c is going to abandon {PRONOUN/m_c/object}"
+        ],
+        "trigger": "intrusive_thoughts",
         "perm_conditions": {
             "m_c": [
                 "thunderous spirit"
@@ -3913,7 +3949,6 @@
 			"Dry heaves in the corner of the den",
 			"Races out of the camp due to a scent making things worse",
 			"Buries {PRONOUN/m_c/self} in {PRONOUN/m_c/poss} nest",
-			"Feels miserable at the thought of eating",
 			"Slowly sips water trying to sooth the nausea"
         ],
         "has_injuries": {
@@ -3987,5 +4022,18 @@
         "random_living_status": [
             "living"
         ]
+    },
+    {
+        "id": "gen_nausea_ED_adjacent",
+        "thoughts": [
+            "Wonders if it would be better not to eat at all",
+			"Feels miserable at the thought of eating"
+        ],
+        "trigger": "eating_disorders",
+        "has_injuries": {
+            "m_c": [
+                "nausea"
+            ]
+        }
     }
 ]

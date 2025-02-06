@@ -1,6 +1,8 @@
 import traceback
 from random import choice
 
+from scripts.game_structure.game_essentials import game
+
 import ujson
 
 
@@ -51,6 +53,18 @@ class Thoughts:
     def cats_fulfill_thought_constraints(main_cat, random_cat, thought, game_mode, biome, season, camp) -> bool:
         """Check if the two cats fulfills the thought constraints."""
 
+        # This is for checking triggering content. Checks once for general triggers and once for specific triggers.
+        if "trigger" in thought:
+            print("thinking this far")
+            if not game.settings["allow_triggers"]:
+                print("failed first")
+                return False
+            else:
+                toggle = thought["trigger"]
+                if not game.settings[toggle]:
+                    print("failed second check")
+                    return False
+            
         # This is for checking biome
         if "biome" in thought:
             if biome not in thought["biome"]:
@@ -266,6 +280,7 @@ class Thoughts:
         for inter in inter_list:
             if Thoughts.cats_fulfill_thought_constraints(main_cat, other_cat, inter, game_mode, biome, season, camp):
                 created_list.append(inter)
+        print(created_list)
         return created_list
 
     @staticmethod

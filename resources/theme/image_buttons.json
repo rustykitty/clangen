@@ -3480,6 +3480,23 @@
             }
         }
     },
+    "#trigger_settings_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/trigger.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/trigger_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/trigger_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/trigger_unavailable.png"
+            }
+        }
+    },
     "#lang_settings_button": {
         "prototype": "#image_button",
         "images": {

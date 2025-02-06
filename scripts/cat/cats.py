@@ -2221,6 +2221,7 @@ class Cat:
             "female", "male", "intersex"
         ]
         old_age = self.age
+        self.get_ill("nausea", event_triggered = True)
         self.moons += 1
         if self.moons == 1 and self.status == "newborn":
             self.status = "kitten"
