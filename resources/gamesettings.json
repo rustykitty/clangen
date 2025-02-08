@@ -89,7 +89,7 @@
             false
         ],
         "iatrogenic_disorders": [
-            "Allow cats to have medical conditions induced by medicical interference.",
+            "Allow cats to have conditions induced by medicical interference.",
             "This toggle requires misdiagnosis to be enabled.",
             false
         ],

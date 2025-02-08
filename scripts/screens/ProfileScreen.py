@@ -2459,7 +2459,8 @@ class ProfileScreen(Screens):
     def get_alter_details(self, alter):
         text_list = []
         text_list.append(f"{alter['gender']}")
-        text_list.append(f"<b>{alter['personality']}</b><br>")
+        if "personality" in alter:
+            text_list.append(f"<b>{alter['personality']}</b><br>")
         text_list.append(f"{alter['role']}")
         if alter["other"] != "cat":
             text_list.append(alter["other"])
