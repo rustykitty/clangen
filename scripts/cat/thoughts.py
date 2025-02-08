@@ -61,6 +61,7 @@ class Thoughts:
                 toggle = thought["trigger"]
                 if not game.settings[toggle]:
                     return False
+                #print("Warning. Thoughts with " + toggle + " are currently enabled.")
             
         # This is for checking biome
         if "biome" in thought:

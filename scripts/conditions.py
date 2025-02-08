@@ -244,7 +244,8 @@ class PermanentCondition:
                  risks=None,
                  illness_infectiousness=None,
                  herbs=None,
-                 event_triggered=False):
+                 event_triggered=False,
+                 misdiagnosis=False):
         self.name = name
         self.severity = severity
         self.congenital = congenital
@@ -255,6 +256,7 @@ class PermanentCondition:
         self.illness_infectiousness = illness_infectiousness
         self.herbs = herbs if herbs else []
         self.new = event_triggered
+        self.misdiagnosis = misdiagnosis
 
         self.current_mortality = mortality
 

@@ -912,6 +912,9 @@ class Condition_Events:
                     if med_cat == cat:
                         random_index = 1
                 event = possible_string_list[random_index]
+                if game.settings["allow_triggers"]:
+                    if game.settings["misdiagnosis"] and cat.permanent_condition[condition]["misdiagnosis"] is not False:
+                        event = event.replace(condition, cat.permanent_condition[condition]["misdiagnosis"])
                 event = Condition_Events.change_condition_name(event)
                 event = event_text_adjust(Cat, event, main_cat=cat, random_cat=med_cat)  # adjust the text
                 event_list.append(event)

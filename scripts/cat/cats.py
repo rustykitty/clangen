@@ -868,11 +868,11 @@ class Cat:
             )
         
         # for testing conditions for dadm
-        '''
-        if not self.example:
-            new_condition = choice(["fractured spirit", "budding spirit", "shattered soul"])
-            self.get_permanent_condition(new_condition, born_with=True)
-        '''
+        
+        #if not self.example:
+            #new_condition = choice(["fractured spirit", "budding spirit", "shattered soul"])
+            #self.get_permanent_condition("budding spirit", born_with=True)
+        
         
         # Private Sprite
         self._sprite = None
@@ -2858,6 +2858,33 @@ class Cat:
         """handles the moon skip for permanent conditions"""
         if not self.is_disabled():
             return "skip"
+        #correcting misdiagnoses
+        if self.permanent_condition[condition]["misdiagnosis"] is not False:
+            exp_bonus = 0
+            meds = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"],sort=True)
+            if len(meds) > 0:
+                for med in meds:
+                    if med._experience > 75:
+                        exp_bonus += 3
+                    elif med._experience > 50:
+                        exp_bonus += 1
+                    elif med._experience > 25:
+                        exp_bonus -= 1
+                    else:
+                        exp_bonus -= 3
+            else:
+                exp_bonus -=5
+            correct_chance = randint(0,20) + exp_bonus
+            if correct_chance > 18:
+                text =  str(self.name) + " has come to realize that " +self.pronouns[0]["poss"] + " " + self.permanent_condition[condition]["misdiagnosis"] + " is actually " + condition + "."
+                if not game.settings["warriorified names"]:
+                    if condition in Cat.dad_names:
+                        text = text.replace(condition, Cat.dad_names.get(condition))
+                    if self.permanent_condition[condition]["misdiagnosis"] in Cat.dad_names:
+                        text = text.replace(self.permanent_condition[condition]["misdiagnosis"], Cat.dad_names.get(self.permanent_condition[condition]["misdiagnosis"]))
+                game.cur_events_list.append(Single_Event(text, ["misc"], [self.ID]))
+                self.permanent_condition[condition]["misdiagnosis"] = False
+                
 
         # chance of splitting if plural
         if condition in ["shattered soul", "budding spirit", "fractured spirit"]:
@@ -3494,7 +3521,46 @@ class Cat:
                 f"WARNING: {name} is not in the permanent conditions collection.",
             )
             return
-
+        misdiagnosis = False
+        try:
+            with open("resources/dicts/conditions/misdiagnoses.json", 'r', encoding="utf-8") as read_file:
+                misdiagnoses = ujson.loads(read_file.read())
+        except Exception as e:
+            print(
+                f"WARNING: There was an error reading the misdiagnoses file.\n",
+                e,
+            )
+        if game.settings["allow_triggers"]:
+            #check for trigger toggle 
+            if game.settings["misdiagnosis"]:
+                #check for misdiagnosis
+                exp_bonus = 0
+                meds = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"],sort=True)
+                if len(meds) > 0:
+                    for med in meds:
+                        if med._experience > 75:
+                            exp_bonus += 3
+                        elif med._experience > 50:
+                            exp_bonus += 1
+                        elif med._experience > 25:
+                            exp_bonus -= 1
+                        else:
+                            exp_bonus -= 3
+                else:
+                    exp_bonus -=5
+                misdiagnosis_chance = randint(0,10) + exp_bonus
+                if misdiagnosis_chance < 5:
+                    #print("Misdiagnosis alert!")
+                    if name in misdiagnoses:
+                        misdiagnosis = choice(misdiagnoses[name])
+                        print(name + " misdiagnosed as: " + misdiagnosis)
+                        if misdiagnosis in self.permanent_condition:
+                            misdiagnosis = False
+                            #print ("False alarm.")
+                    #else:
+                        #print ("no possible misdiagnoses...it's your med cat's lucky break!")
+                                
+                
         intersex_exclusive = ["excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
 
         if name in intersex_exclusive and self.gender != "intersex":
@@ -3616,6 +3682,7 @@ class Cat:
             risks=condition["risks"],
             illness_infectiousness=condition["illness_infectiousness"],
             event_triggered=event_triggered,
+            misdiagnosis=misdiagnosis
         )
 
         if new_perm_condition.name not in self.permanent_condition:
@@ -3629,7 +3696,9 @@ class Cat:
                 "risks": new_perm_condition.risks,
                 "complication": None,
                 "event_triggered": new_perm_condition.new,
+                "misdiagnosis": new_perm_condition.misdiagnosis
             }
+
             if self.is_plural():
                 if len(self.alters) < 1:
                     self.system_core()
