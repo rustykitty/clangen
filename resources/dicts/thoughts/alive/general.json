@@ -3148,7 +3148,10 @@
         "id": "thunderous_spirit_to_alive_intrusive_thoughts",
         "thoughts": [
             "Tries to distract {PRONOUN/m_c/self} from bad thoughts.",
-            "Is convinced r_c is going to abandon {PRONOUN/m_c/object}"
+            "Is convinced r_c is going to abandon {PRONOUN/m_c/object}",
+            "Reminds {PRONOUN/m_c/self} that {PRONOUN/m_c/poss} thoughts don't define {PRONOUN/m_c/object}...even the violent ones.",
+            "Snaps out of a violent daydream with horror at {PRONOUN/m_c/poss} own mind",
+            "Daydreams about hurting r_c for a moment"
         ],
         "trigger": "intrusive_thoughts",
         "perm_conditions": {
@@ -4035,5 +4038,64 @@
                 "nausea"
             ]
         }
+    },
+    {
+        "id": "gen_alive_not_working_insteadinthemedden_withmedcat_misdiagnosis",
+        "not_working": true,
+        "thoughts": [
+            "Is convinced that r_c is wrong about {PRONOUN/m_c/poss} condition.",
+            "Wants to ask for a second opinion",
+            "Insists that r_c double check {PRONOUN/r_c/poss} diagnosis"
+        ],
+        "trigger": "misdiagnosis",
+        "random_status_constraint": [
+            "medicine cat"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "thunderous_spirit_to_alive_psychosis",
+        "thoughts": [
+            "Insists {PRONOUN/m_c/poss} teeth are falling out",
+            "Cries about an event that never happened",
+            "Yelled at r_c for calling {PRONOUN/m_c/object} delusional",
+            "Tries to ground {PRONOUN/m_c/self} after a psychotic epsisode"
+        ],
+        "trigger": "psychosis",
+        "perm_conditions": {
+            "m_c": [
+                "thunderous spirit"
+            ]
+        },
+        "random_status_constraint": [
+            "any"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    
+    {
+        "id": "thunderous_spirit_to_alive_dissociation",
+        "thoughts": [
+            "Feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/ is} not real.",
+            "Feels disconnected from {PRONOUN/m_c/poss} own body.",
+            "Blinked and found {PRONOUN/m_c/self} in a different place hours later",
+            "Talks to r_c to help ground {PRONOUN/m_c/self}"
+        ],
+        "trigger": "dissociation",
+        "perm_conditions": {
+            "m_c": [
+                "thunderous spirit"
+            ]
+        },
+        "random_status_constraint": [
+            "any"
+        ],
+        "random_living_status": [
+            "living"
+        ]
     }
 ]
