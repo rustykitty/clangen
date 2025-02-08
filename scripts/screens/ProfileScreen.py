@@ -2399,7 +2399,7 @@ class ProfileScreen(Screens):
 
         x_pos = 30
         for con in all_illness_injuries[self.conditions_page]:
-            if self.the_cat.permanent_condition[con[0]]["misdiagnosis"] is not False:
+            if self.the_cat.permanent_condition[con[0]]["misdiagnosis"] and self.the_cat.permanent_condition[con[0]]["misdiagnosis"] is not False: 
                 condition_name = self.change_condition_name(con[0], self.the_cat.permanent_condition[con[0]]["misdiagnosis"])
             else:
                 condition_name = self.change_condition_name(con[0])

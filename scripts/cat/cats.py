@@ -3890,6 +3890,9 @@ class Cat:
                 self.illnesses = rel_data.get("illnesses", {})
                 self.injuries = rel_data.get("injuries", {})
                 self.permanent_condition = rel_data.get("permanent conditions", {})
+                for con in self.permanent_condition:
+                    if "misdiagnosis" not in con:
+                        self.permanent_condition[con]["misdiagnosis"] = False
                 if self.is_plural():
                     self.alters = rel_data["alters"]
                     self.update_alters()
