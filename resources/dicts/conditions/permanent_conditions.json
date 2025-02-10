@@ -680,6 +680,18 @@
                 "chance": 50
             },
             {
+                "name": "amnesia",
+                "chance": 50
+            },
+            {
+                "name": "depersonalization",
+                "chance": 50
+            },
+            {
+                "name": "derealization",
+                "chance": 50
+            },
+            {
                 "name": "kittenspace",
                 "chance": 70
             },
@@ -753,6 +765,18 @@
 			{
                 "name": "sleeplessness",
                 "chance": 20
+            },
+            {
+                "name": "amnesia",
+                "chance": 50
+            },
+            {
+                "name": "depersonalization",
+                "chance": 50
+            },
+            {
+                "name": "derealization",
+                "chance": 50
             },
 			{
 				"name": "kittenspace",
@@ -1661,6 +1685,18 @@
                 "chance": 10
             },
             {
+                "name": "amnesia",
+                "chance": 50
+            },
+            {
+                "name": "depersonalization",
+                "chance": 50
+            },
+            {
+                "name": "derealization",
+                "chance": 50
+            },
+            {
                 "name": "kittenspace",
                 "chance": 80
             },
@@ -2413,9 +2449,17 @@
 				"chance": 75
 			},
             {
-				"name": "amnesia",
-				"chance": 20
-			}
+                "name": "amnesia",
+                "chance": 20
+            },
+            {
+                "name": "depersonalization",
+                "chance": 30
+            },
+            {
+                "name": "derealization",
+                "chance": 30
+            }
         ],
         "herbs": []
     },
@@ -2462,7 +2506,15 @@
             {
 				"name": "amnesia",
 				"chance": 75
-			}
+			},
+            {
+                "name": "depersonalization",
+                "chance": 75
+            },
+            {
+                "name": "derealization",
+                "chance": 75
+            }
         ],
         "herbs": []
     },
@@ -2509,7 +2561,15 @@
             {
 				"name": "amnesia",
 				"chance": 20
-			}
+			},
+            {
+                "name": "depersonalization",
+                "chance": 30
+            },
+            {
+                "name": "derealization",
+                "chance": 30
+            }
         ],
         "herbs": []
     },

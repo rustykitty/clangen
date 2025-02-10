@@ -503,6 +503,41 @@
 			"m_c feels overwhelmed and exhausted. By the time {PRONOUN/m_c/object} make it back to {PRONOUN/m_c/poss} den, {PRONOUN/m_c/subject} lack the energy to verbalize anything.",
 			"Sometimes, m_c's words feel too big for {PRONOUN/m_c/poss} body. The pressure in {PRONOUN/m_c/poss} chest builds, but {PRONOUN/m_c/poss} tongue remains tied."
 			
+		],
+		"derealization": [
+			"All attempts to help m_c's paranoia have made {PRONOUN/m_c/object} more upset and confused.",
+			"m_c's paranoia has escalated and {PRONOUN/m_c/subject} now {VERB/m_c/believe/believes} nothing is real at all."
+		]
+	},
+	"amnesia": {
+		"brain fog": [
+			"Thoughts don't work anymore. m_c is too overwhelmed.",
+			"m_c struggles to put thoughts together while missing {PRONOUN/m_c/poss} memories."
+		],
+		"verbal shutdown":[
+			"The loss of {PRONOUN/m_c/poss} memory has made m_c shutdown completely.",
+			"First m_c lost {PRONOUN/m_c/poss} memory, now {PRONOUN/m_c/poss} words have disappeared as well."
+		]
+	},
+	"depersonalization": {
+		"brain fog": [
+			"Thoughts don't work anymore. m_c is too overwhelmed.",
+			"m_c struggles to put thoughts together while missing {PRONOUN/m_c/poss} memories."
+		],
+		"derealization":[
+			"In the fog of dissociation, m_c feels like the world around {PRONOUN/m_c/object} is fake.",
+			"m_c feels endlessly trapped in a dream. Is any of this real?"
+		]
+	},
+	"derealization": {
+		"brain fog": [
+			"Thoughts don't work anymore. m_c is too overwhelmed.",
+			"m_c struggles to put thoughts together while missing {PRONOUN/m_c/poss} memories."
+		],
+		"depersonalization":
+		[
+			"m_c's paws feel like they belong to another cat.",
+			"In the fog of dissociation, m_c feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own."
 		]
 	}
 }

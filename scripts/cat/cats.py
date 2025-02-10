@@ -2535,6 +2535,8 @@ class Cat:
         # print(self.ID)
         template["ID"] = str(len(self.alters) + 1)
         template["role"] = choice(["co-host", "caregiver", "little", "protector", "trauma holder", "persecutor"])
+        alter_personality = choice(["troublesome","rebellious","lonesome","fierce","bloodthirsty","cold","childish","playful","charismatic","bold","daring","nervous","righteous","insecure","strict","compassionate","thoughtful","ambitious","confident","adventurous","calm","careful","faithful","loving","loyal","responsible","shameless","sneaky","strange","vengeful","wise","arrogant","competitive","grumpy","cunning","oblivious","gloomy","sincere","flamboyant"])
+        
         
         if condition in ["budding spirit", "shattered soul"]:
             extra = randint(1, 5)
@@ -2572,12 +2574,10 @@ class Cat:
                     ])
                 else:
                     alter_name = choice(names_dict["normal_prefixes"])
-                    alter_personality = choice(["troublesome","rebellious","lonesome","fierce","bloodthirsty","cold","childish","playful","charismatic","bold","daring","nervous","righteous","insecure","strict","compassionate","thoughtful","ambitious","confident","adventurous","calm","careful","faithful","loving","loyal","responsible","shameless","sneaky","strange","vengeful","wise","arrogant","competitive","grumpy","cunning","oblivious","gloomy","sincere","flamboyant"])
-        
+                  
             else:
                 alter_name = choice(names_dict["normal_prefixes"])
-                alter_personality = choice(["troublesome","rebellious","lonesome","fierce","bloodthirsty","cold","childish","playful","charismatic","bold","daring","nervous","righteous","insecure","strict","compassionate","thoughtful","ambitious","confident","adventurous","calm","careful","faithful","loving","loyal","responsible","shameless","sneaky","strange","vengeful","wise","arrogant","competitive","grumpy","cunning","oblivious","gloomy","sincere","flamboyant"])
-        
+                
 
             if template["role"] == "little":
                 if template["other"] in ["fictive", "fuzztive"]:
@@ -2604,8 +2604,6 @@ class Cat:
                         rng = randint(1,2)
                         if rng == 1:
                             alter_name += "paw"
-                            alter_personality = choice(["troublesome","rebellious","lonesome","fierce","bloodthirsty","cold","childish","playful","charismatic","bold","daring","nervous","righteous","insecure","strict","compassionate","thoughtful","ambitious","confident","adventurous","calm","careful","faithful","loving","loyal","responsible","shameless","sneaky","strange","vengeful","wise","arrogant","competitive","grumpy","cunning","oblivious","gloomy","sincere","flamboyant"])
-            
                         else:
                             alter_name += "kit"
                             alter_personality = choice(["unruly","shy","impulsive","bullying","attention-seeker","charming","fearless","noisy","skittish","quiet","self-conscious","daydreamer","sweet","polite","know-it-all","bossy"])
@@ -2615,8 +2613,6 @@ class Cat:
                     rng = randint(1,2)
                     if rng == 1:
                         alter_name += "paw"
-                        alter_personality = choice(["troublesome","rebellious","lonesome","fierce","bloodthirsty","cold","childish","playful","charismatic","bold","daring","nervous","righteous","insecure","strict","compassionate","thoughtful","ambitious","confident","adventurous","calm","careful","faithful","loving","loyal","responsible","shameless","sneaky","strange","vengeful","wise","arrogant","competitive","grumpy","cunning","oblivious","gloomy","sincere","flamboyant"])
-            
                     else:
                         alter_name += "kit"
                         alter_personality = choice(["unruly","shy","impulsive","bullying","attention-seeker","charming","fearless","noisy","skittish","quiet","self-conscious","daydreamer","sweet","polite","know-it-all","bossy"])
@@ -2626,17 +2622,14 @@ class Cat:
         
             elif template["other"] == "cat" or template["other"] == "otherclan" or template["other"] == "factive":
                 alter_name += choice(names_dict["normal_suffixes"])
-                alter_personality = choice(["troublesome","rebellious","lonesome","fierce","bloodthirsty","cold","childish","playful","charismatic","bold","daring","nervous","righteous","insecure","strict","compassionate","thoughtful","ambitious","confident","adventurous","calm","careful","faithful","loving","loyal","responsible","shameless","sneaky","strange","vengeful","wise","arrogant","competitive","grumpy","cunning","oblivious","gloomy","sincere","flamboyant"])
-            
+                
             if template["other"] == "rogue" or template["other"] == "loner" or template["other"] == "kittypet":
                 alter_name = choice(names_dict["loner_names"])
-                alter_personality = choice(["troublesome","rebellious","lonesome","fierce","bloodthirsty","cold","childish","playful","charismatic","bold","daring","nervous","righteous","insecure","strict","compassionate","thoughtful","ambitious","confident","adventurous","calm","careful","faithful","loving","loyal","responsible","shameless","sneaky","strange","vengeful","wise","arrogant","competitive","grumpy","cunning","oblivious","gloomy","sincere","flamboyant"])
-            
+                
                 
             if template["other"] == "fuzztive" and randint(1,2) == 1: #feline addition
                 alter_name += choice(names_dict["normal_suffixes"])
-                alter_personality = choice(["troublesome","rebellious","lonesome","fierce","bloodthirsty","cold","childish","playful","charismatic","bold","daring","nervous","righteous","insecure","strict","compassionate","thoughtful","ambitious","confident","adventurous","calm","careful","faithful","loving","loyal","responsible","shameless","sneaky","strange","vengeful","wise","arrogant","competitive","grumpy","cunning","oblivious","gloomy","sincere","flamboyant"])
-        
+                
 
 
         else: #fractured spirit alter
@@ -2858,6 +2851,7 @@ class Cat:
         """handles the moon skip for permanent conditions"""
         if not self.is_disabled():
             return "skip"
+        
         #correcting misdiagnoses
         if self.permanent_condition[condition]["misdiagnosis"] is not False:
             exp_bonus = 0
@@ -3081,6 +3075,27 @@ class Cat:
             return
         if name == "kittencough" and self.status != "kitten":
             return
+        
+        #triggering illnesses
+        eating_disorders = [ "anorexia", "ARFID", "bulimia", "binge-eating disorder", "food hoarding"]
+        self_harm = ["harmful stims" , "pica"]
+        dissociation = ["derealization", "depersonalization" , "amnesia"]
+        psychosis = ["delusions" , "psychosis"]
+        all_triggers = eating_disorders + self_harm + dissociation + psychosis
+        
+        if not game.settings["allow_triggers"] and name in all_triggers:
+            return
+        else:
+            if not game.settings["eating_disorders"] and name in eating_disorders:
+                return
+            if not game.settings["self_harm"] and name in self_harm:
+                return
+            if not game.settings["dissociation"] and name in dissociation:
+                return
+            if not game.settings["psychosis"] and name in psychosis:
+                return
+            if name in all_triggers:
+                print("triggering condition: " + name)
 
         illness = ILLNESSES[name]
         mortality = illness["mortality"][self.age]
