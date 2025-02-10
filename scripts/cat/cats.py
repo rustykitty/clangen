@@ -2547,9 +2547,9 @@ class Cat:
                                     "genderfluid", "genderfae", "genderfaun", "genderflor", "bigender", "pangender", "???"]
                 gender = choice(genderqueer_list)
             elif rng <= 6:
-                gender = "tom"
+                gender = "male"
             else:
-                gender = "molly"
+                gender = "female"
             template["gender"] = gender
             alter_name = ""
         
@@ -2653,9 +2653,9 @@ class Cat:
                                     "genderfluid", "genderfae", "genderfaun", "genderflor", "bigender", "pangender", "???"]
                     gender = choice(genderqueer_list)
                 elif rng <= 6:
-                    gender = "tom"
+                    gender = "male"
                 else:
-                    gender = "molly"
+                    gender = "female"
             
             if gender:
                 template["gender"] = gender
@@ -2877,7 +2877,7 @@ class Cat:
             correct_chance = randint(0,20) + exp_bonus
             if correct_chance > 18:
                 text1 =  str(self.name) + " has come to realize that " +self.pronouns[0]["poss"] + " " + self.permanent_condition[condition]["misdiagnosis"] + " is actually " + condition + "."
-                text2 = str(self.name) + " always felt that " + self.permanent_condition[condition]["misdiagnosis"] + " didn't fit " + self.pronouns[0]["poss"] + " experience, but " + condition + "fits perfectly!"
+                text2 = str(self.name) + " always felt that " + self.permanent_condition[condition]["misdiagnosis"] + " didn't fit " + self.pronouns[0]["poss"] + " experience, but " + condition + " fits perfectly!"
                 text3 = str(self.name) + " was optimistic for a new diagnosis, but now fears that " + condition + " is wrong too."
                 text = choice([text1, text2, text3])
                 if not game.settings["warriorified names"]:
