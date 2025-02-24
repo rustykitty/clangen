@@ -2852,35 +2852,36 @@ class Cat:
         if not self.is_disabled():
             return "skip"
         
-        #correcting misdiagnoses
-        if self.permanent_condition[condition]["misdiagnosis"] is not False:
-            exp_bonus = 0
-            meds = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"],sort=True)
-            if len(meds) > 0:
-                for med in meds:
-                    if med._experience > 75:
-                        exp_bonus += 3
-                    elif med._experience > 50:
-                        exp_bonus += 1
-                    elif med._experience > 25:
-                        exp_bonus -= 1
-                    else:
-                        exp_bonus -= 3
-            else:
-                exp_bonus -=5
-            correct_chance = randint(0,20) + exp_bonus
-            if correct_chance > 18:
-                text1 =  str(self.name) + " has come to realize that " +self.pronouns[0]["poss"] + " " + self.permanent_condition[condition]["misdiagnosis"] + " is actually " + condition + "."
-                text2 = str(self.name) + " always felt that " + self.permanent_condition[condition]["misdiagnosis"] + " didn't fit " + self.pronouns[0]["poss"] + " experience, but " + condition + " fits perfectly!"
-                text3 = str(self.name) + " was optimistic for a new diagnosis, but now fears that " + condition + " is wrong too."
-                text = choice([text1, text2, text3])
-                if not game.settings["warriorified names"]:
-                    if condition in Cat.dad_names:
-                        text = text.replace(condition, Cat.dad_names.get(condition))
-                    if self.permanent_condition[condition]["misdiagnosis"] in Cat.dad_names:
-                        text = text.replace(self.permanent_condition[condition]["misdiagnosis"], Cat.dad_names.get(self.permanent_condition[condition]["misdiagnosis"]))
-                game.cur_events_list.append(Single_Event(text, ["misc"], [self.ID]))
-                self.permanent_condition[condition]["misdiagnosis"] = False
+        if self.permanent_condition[condition]["moons_with"] > 0:
+            #correcting misdiagnoses
+            if self.permanent_condition[condition]["misdiagnosis"] is not False:
+                exp_bonus = 0
+                meds = get_alive_status_cats(Cat, ["medicine cat", "medicine cat apprentice"],sort=True)
+                if len(meds) > 0:
+                    for med in meds:
+                        if med._experience > 75:
+                            exp_bonus += 3
+                        elif med._experience > 50:
+                            exp_bonus += 1
+                        elif med._experience > 25:
+                            exp_bonus -= 1
+                        else:
+                            exp_bonus -= 3
+                else:
+                    exp_bonus -=5
+                correct_chance = randint(0,20) + exp_bonus
+                if correct_chance > 18:
+                    text1 =  str(self.name) + " has come to realize that " +self.pronouns[0]["poss"] + " " + self.permanent_condition[condition]["misdiagnosis"] + " is actually " + condition + "."
+                    text2 = str(self.name) + " always felt that " + self.permanent_condition[condition]["misdiagnosis"] + " didn't fit " + self.pronouns[0]["poss"] + " experience, but " + condition + " fits perfectly!"
+                    text3 = str(self.name) + " was optimistic for a new diagnosis, but now fears that " + condition + " is wrong too."
+                    text = choice([text1, text2, text3])
+                    if not game.settings["warriorified names"]:
+                        if condition in Cat.dad_names:
+                            text = text.replace(condition, Cat.dad_names.get(condition))
+                        if self.permanent_condition[condition]["misdiagnosis"] in Cat.dad_names:
+                            text = text.replace(self.permanent_condition[condition]["misdiagnosis"], Cat.dad_names.get(self.permanent_condition[condition]["misdiagnosis"]))
+                    game.cur_events_list.append(Single_Event(text, ["misc"], [self.ID]))
+                    self.permanent_condition[condition]["misdiagnosis"] = False
                 
 
         # chance of splitting if plural
@@ -3590,14 +3591,9 @@ class Cat:
         if name == "partial hearing loss" and "deaf" in self.permanent_condition:
             return
 
-        if name == "fractured spirit" and "budding spirit" in self.permanent_condition:
-            return
-        if name == "fractured spirit" and "shattered soul" in self.permanent_condition:
-            return
+        plural_conditions = ["shattered soul", "budding spirit", "fractured spirit"]
         
-        if name == "shattered soul" and "fractured spirit" in self.permanent_condition:
-            return
-        if name == "budding spirit" and "fractured spirit" in self.permanent_condition:
+        if self.is_plural() and name in plural_conditions:
             return
 
 
