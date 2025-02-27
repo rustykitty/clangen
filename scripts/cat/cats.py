@@ -2852,7 +2852,7 @@ class Cat:
         if not self.is_disabled():
             return "skip"
         
-        if self.permanent_condition[condition]["moons_with"] > 0:
+        if self.permanent_condition[condition]["moons_until"] == -2:
             #correcting misdiagnoses
             if self.permanent_condition[condition]["misdiagnosis"] is not False:
                 exp_bonus = 0
