@@ -1134,7 +1134,11 @@ class Condition_Events:
                 # check if the new risk is a previous stage of a current illness
                 skip = False
                 if risk["name"] in progression:
-                    if progression[risk["name"]] in dictionary:
+                    if isinstance(progression[risk["name"]],list):
+                        for risk in progression[risk["name"]]:
+                            if risk in dictionary:
+                                skip = True
+                    elif progression[risk["name"]] in dictionary:
                         skip = True
                 # Making sure world tired can only be given if you have dangerous settings on
                 if not game.settings["allow_triggers"]:
