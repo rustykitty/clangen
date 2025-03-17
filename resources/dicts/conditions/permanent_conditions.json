@@ -922,6 +922,10 @@
 				"name": "stimming",
 				"chance": 5
 			},
+			{
+				"name": "harmful stims",
+				"chance": 25
+			},
             {
                 "name": "verbal shutdown",
                 "chance": 40
@@ -1180,6 +1184,10 @@
 			{
 				"name": "brain fog",
 				"chance": 20
+			},
+			{
+				"name": "harmful stims",
+				"chance": 50
 			}
         ],
         "herbs": [ 
@@ -1259,6 +1267,10 @@
 			{
 				"name": "stimming",
 				"chance": 25
+			},
+			{
+				"name": "harmful stims",
+				"chance": 50
 			},
 			{
 				"name": "word loss",
@@ -1601,6 +1613,10 @@
 			{
 				"name": "stimming",
 				"chance": 20
+			},
+			{
+				"name": "harmful stims",
+				"chance": 15
 			},
 			{
 				"name": "nosebleed",
@@ -2367,6 +2383,10 @@
             {
 				"name": "parrot chatter",
 				"chance": 75
+			},
+			{
+				"name": "harmful stims",
+				"chance": 100
 			}
         ]
     },

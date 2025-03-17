@@ -2225,6 +2225,9 @@ class Cat:
         if self.moons == 1 and self.status == "newborn":
             self.status = "kitten"
         self.in_camp = 1
+        
+        #FOR TESTING TRIGGER CONTENT TOGGLE
+        #self.get_ill("harmful stims")
 
         if self.genderalign != self.gender and self.genderalign in cisgenders:
             self.genderalign = self.gender
@@ -3078,8 +3081,8 @@ class Cat:
             return
         
         #triggering illnesses
-        eating_disorders = [ "anorexia", "ARFID", "bulimia", "binge-eating disorder", "food hoarding"]
-        self_harm = ["harmful stims" , "pica"]
+        eating_disorders = [ "anorexia", "ARFID", "bulimia", "binge-eating disorder", "food hoarding", "pica"]
+        self_harm = ["harmful stims"]
         dissociation = ["derealization", "depersonalization" , "amnesia"]
         psychosis = ["delusions" , "psychosis"]
         all_triggers = eating_disorders + self_harm + dissociation + psychosis

@@ -4043,7 +4043,7 @@
         "id": "gen_alive_not_working_insteadinthemedden_withmedcat_misdiagnosis",
         "not_working": true,
         "thoughts": [
-            "Is convinced that r_c is wrong about {PRONOUN/m_c/poss} condition.",
+            "Is convinced that r_c is wrong about {PRONOUN/m_c/poss} condition",
             "Wants to ask for a second opinion",
             "Insists that r_c double check {PRONOUN/r_c/poss} diagnosis"
         ],
@@ -4080,8 +4080,8 @@
     {
         "id": "thunderous_spirit_to_alive_dissociation",
         "thoughts": [
-            "Feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/ is} not real.",
-            "Feels disconnected from {PRONOUN/m_c/poss} own body.",
+            "Feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/ is} not real",
+            "Feels disconnected from {PRONOUN/m_c/poss} own body",
             "Blinked and found {PRONOUN/m_c/self} in a different place hours later",
             "Talks to r_c to help ground {PRONOUN/m_c/self}"
         ],
@@ -4097,5 +4097,23 @@
         "random_living_status": [
             "living"
         ]
+    },
+    {
+        "id": "gen_harmful_stims_sh",
+        "thoughts": [
+            "Fights the urge to bite {PRONOUN/m_c/self}",
+            "Got too excited and hit {PRONOUN/m_c/self} harder than expected",
+            "Mindlessly scratches at {PRONOUN/m_c/poss} own skin until it starts to bleed",
+            "Feels frustrated with {PRONOUN/m_c/poss} own body",
+            "Knows {PRONOUN/m_c/subject} shouldn't bite {PRONOUN/m_c/self} but does it anyways",
+            "Bites down hard on {PRONOUN/m_c/poss} own skin to help {PRONOUN/m_c/object} focus"
+        ],
+        "trigger": "self_harm",
+        "has_injuries": {
+            "m_c": [
+                "harmful stims"
+            ]
+        }
     }
+    
 ]

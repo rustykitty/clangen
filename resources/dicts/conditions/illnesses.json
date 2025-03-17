@@ -1219,10 +1219,11 @@
 				"name": "body biter",
 				"chance": 50
 			},
-            {
-                "name": "bruises",
-                "chance": 20
-            }
+			{
+				"name": "harmful stims",
+				"chance": 25
+			}
+        
 		],
         "herbs": [
             "catmint"
@@ -2302,5 +2303,111 @@
             }
         ],
         "herbs": []
+    },
+    "harmful stims": {
+        "severity": "minor",
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "medicine_mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "duration": 1,
+        "medicine_duration": 1,
+        "infectiousness": 0,
+        "risks": [
+			{
+				"name": "parroting",
+				"chance": 25
+			},
+			{
+				"name": "body biter",
+				"chance": 50
+			},
+            {
+                "name": "bruises",
+                "chance": 10
+            },
+			{
+				"name": "claw-wound",
+				"chance": 25
+			},
+			{
+				"name": "cat bite",
+				"chance": 25
+			},
+			{
+				"name": "joint pain",
+				"chance": 50
+			},
+			{
+				"name": "broken bone",
+				"chance": 100
+			},
+			{
+				"name": "sprain",
+				"chance": 25
+			},
+			{
+				"name": "sore",
+				"chance": 10
+			}
+
+		],
+        "herbs": [
+            "catmint"
+        ]
+    },
+    "psychosis": {
+        "severity": "major",
+        "mortality": {
+            "newborn": 20,
+            "kitten": 50,
+            "adolescent": 100,
+            "young adult": 200,
+            "adult": 200,
+            "senior adult": 150,
+            "senior": 100
+        },
+        "medicine_mortality": {
+            "newborn": 200,
+            "kitten": 500,
+            "adolescent": 700,
+            "young adult": 800,
+            "adult": 100,
+            "senior adult": 100,
+            "senior": 70
+        },
+        "duration": 1,
+        "medicine_duration": 1,
+        "infectiousness": 0,
+        "risks": [
+            {
+                "name": "bruises",
+                "chance": 15
+            },
+			{
+                "name": "sore",
+                "chance": 15
+            }
+        ],
+        "herbs": [
+            "juniper",
+            "poppy",
+            "thyme",
+            "ragwort"
+        ]
     }
 }

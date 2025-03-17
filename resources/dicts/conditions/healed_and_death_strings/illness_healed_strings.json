@@ -301,5 +301,10 @@
 		"m_c was finally able to ground {PRONOUN/m_c/self} and is no longer experiencing derealization.",
 		"m_c no longer feels trapped in an endless dream.",
 		"m_c feels back in touch with reality."
+	],
+	"harmful stims": [
+		"m_c has figured out a safer way to self-regulate.",
+		"Biting {PRONOUN/m_c/poss} prey doesn't feel quite the same as biting {PRONOUN/m_c/self}, but at least it doesn't leave behind injuries.",
+		"m_c has found a way to comfortably stim without hurting {PRONOUN/m_c/self}."
 	]
 }

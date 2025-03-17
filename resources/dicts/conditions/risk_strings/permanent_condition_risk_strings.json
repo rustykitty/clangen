@@ -485,6 +485,12 @@
 				"m_c stared blankly up at the sky, feeling less motivated to do anything, {PRONOUN/m_c/poss} mind fogged with grief and despair.",
 				"m_c stalked out of camp, clawing at the ground as {PRONOUN/m_c/subject} went. It was so unfair, all of it, why did StarClan take them away? Why curse {PRONOUN/m_c/object} with this darkness inside?"
 		],
+		"harmful stims": [
+			"m_c confesses that {PRONOUN/m_c/subject} {VERB/m_c/keep/keeps} scratching at {PRONOUN/m_c/poss} own fur when overwhelmed.",
+			"r_c catches m_c biting {PRONOUN/m_c/self} repeatedly whenever emotions run high.",
+			"m_c's stims are different from those of other cats: they leave damage behind.",
+			"m_c admits to r_c that the only way {PRONOUN/m_c/subject} can calm down is by hurting {PRONOUN/m_c/self}."
+		  ],
 		"fatigue": [
 				"Quietly, m_c talks to r_c about how tired {PRONOUN/m_c/subject} {VERB/m_c/are/is}. No matter how much {PRONOUN/m_c/subject} {VERB/m_c/sleep/sleeps}, it doesn't seem to get any better.",
 				"m_c has just been feeling exhausted recently, no matter how much sleep {PRONOUN/m_c/subject} {VERB/m_c/are/is} or {VERB/m_c/are/is}n't getting.",
@@ -665,6 +671,12 @@
 			"m_c's been stimming more and more recently, bouncing and pacing around camp with the best of them.",
 			"While m_c knows some of {PRONOUN/m_c/poss} Clanmates don't like it when {PRONOUN/m_c/subject} {VERB/m_c/pace/paces} around camp, {PRONOUN/m_c/subject} {VERB/m_c/need/needs} the extra stimulation."
 		],
+		"harmful stims": [
+		  "m_c confesses that {PRONOUN/m_c/subject} {VERB/m_c/keep/keeps} scratching at {PRONOUN/m_c/poss} own fur when overwhelmed.",
+		  "r_c catches m_c biting {PRONOUN/m_c/self} repeatedly whenever emotions run high.",
+		  "m_c's stims are different from those of other cats: they leave damage behind.",
+		  "m_c admits to r_c that the only way {PRONOUN/m_c/subject} can calm down is by hurting {PRONOUN/m_c/self}."
+		],
 		"word loss": [
 			"r_c has noticed that m_c has been speaking too fast for {PRONOUN/m_c/poss} words to keep up.",
 			"Talking so fast all the time has led m_c's words to get lost on the way.",
@@ -723,6 +735,12 @@
 				"It seems like m_c can barely stay still as {PRONOUN/m_c/subject} {VERB/m_c/wriggle/wriggles} {PRONOUN/m_c/poss} whole body in excitement for the whole day.",
 				"m_c keeps purring to {PRONOUN/m_c/self} as an act of self soothing.",
 				"Some of m_c's Clanmates find themselves confused because of m_c running around the camp in small circles, seemingly chasing {PRONOUN/m_c/poss} tail."
+		],
+		"harmful stims": [
+		  "m_c confesses that {PRONOUN/m_c/subject} {VERB/m_c/keep/keeps} scratching at {PRONOUN/m_c/poss} own fur when overwhelmed.",
+		  "r_c catches m_c biting {PRONOUN/m_c/self} repeatedly whenever emotions run high.",
+		  "m_c's stims are different from those of other cats: they leave damage behind.",
+		  "m_c admits to r_c that the only way {PRONOUN/m_c/subject} can calm down is by hurting {PRONOUN/m_c/self}."
 		],
 		"verbal shutdown": [
 				"This moon has been overwhelming for everyone. {PRONOUN/r_c/subject/CAP} {VERB/r_c/encourage/encourages} the rest of the Clan to be understanding of that when m_c goes silent.",
@@ -1220,6 +1238,12 @@
 		"stimming": [
 			"r_c has noticed that m_c is biting at {PRONOUN/m_c/self} more than usual, it looks like m_c's doing it as a form of stimming.",
 			"m_c has begun to stim around camp, finding sticks to chew on in an attempt to not bite at {PRONOUN/m_c/self}."
+		],
+		"harmful stims": [
+		  "m_c confesses that {PRONOUN/m_c/subject} {VERB/m_c/keep/keeps} scratching at {PRONOUN/m_c/poss} own fur when overwhelmed.",
+		  "r_c catches m_c biting {PRONOUN/m_c/self} repeatedly whenever emotions run high.",
+		  "m_c's stims are different from those of other cats: they leave damage behind.",
+		  "m_c admits to r_c that the only way {PRONOUN/m_c/subject} can calm down is by hurting {PRONOUN/m_c/self}."
 		],
 		"earache": [
 			"r_c catches m_c scratching at {PRONOUN/m_c/poss} ears until they're sore.",
