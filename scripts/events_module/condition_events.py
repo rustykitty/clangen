@@ -826,8 +826,9 @@ class Condition_Events:
         triggered = False
         event_types = ["health"]
 
-        if game.clan.game_mode == "classic":
-            return triggered
+        #CLASSIC MODE GETS DISABILITIES TOO OR SO HELP ME
+        #if game.clan.game_mode == "classic":
+            #return triggered
 
         event_list = []
 
@@ -934,14 +935,15 @@ class Condition_Events:
                 )
 
             # give risks
-            Condition_Events.give_risks(
-                cat,
-                event_list,
-                condition,
-                condition_progression,
-                conditions,
-                cat.permanent_condition,
-            )
+            if game.clan.game_mode != "classic":
+                Condition_Events.give_risks(
+                    cat,
+                    event_list,
+                    condition,
+                    condition_progression,
+                    conditions,
+                    cat.permanent_condition,
+                )
 
         Condition_Events.determine_retirement(cat, triggered)
 
