@@ -306,5 +306,21 @@
 		"m_c has figured out a safer way to self-regulate.",
 		"Biting {PRONOUN/m_c/poss} prey doesn't feel quite the same as biting {PRONOUN/m_c/self}, but at least it doesn't leave behind injuries.",
 		"m_c has found a way to comfortably stim without hurting {PRONOUN/m_c/self}."
+	],
+	"hostile hallucinations": [
+		"m_c is no longer hallucinating.",
+		"m_c's hallucinations have calmed down and {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} safe to leave {PRONOUN/m_c/poss} den again."
+	],
+	"delusions": [
+		"m_c is no longer trapped in a delusion.",
+		"With the support of {PRONOUN/m_c/poss} clanmates, m_c has calmed down and is no longer stuck in a delusion."
+	],
+	"psychotic episode": [
+		"m_c's psychotic symptoms have eased, much to {PRONOUN/m_c/poss} relief.",
+		"m_c purrs with relief upon realzing that {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} safe in {PRONOUN/m_c/poss} clan again."
+	],
+	"ongoing psychosis": [
+		"m_c is in tune with reality again and no longer undergoing psychosis.",
+		"m_c has managed to overcome {PRONOUN/m_c/poss} psychotic symptoms and reconnect with reality."
 	]
 }

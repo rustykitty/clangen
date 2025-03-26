@@ -1113,7 +1113,12 @@
 			{
 				"name": "parroting",
 				"chance": 45
+			},
+			{
+				"name": "psychotic episode",
+				"chance": 100
 			}
+
         ],
         "herbs":[
 			"chamomile",
@@ -1566,7 +1571,11 @@
 			{
 				"name": "brain fog",
 				"chance": 10
-			}
+			},
+            {
+                "name": "hostile hallucinations",
+                "chance": 100
+            }
         ],
         "herbs": [
             "honey",
@@ -1747,6 +1756,26 @@
             {
                 "name": "spirited heart",
                 "chance": 100
+            },
+            {
+				"name": "hallucinations",
+				"chance": 20
+			},
+            {
+				"name": "paranoia",
+				"chance": 20
+			},
+            {
+				"name": "psychotic episode",
+				"chance": 70
+			},
+            {
+                "name": "hostile hallucinations",
+                "chance": 110
+            },
+            {
+                "name": "delusions",
+                "chance": 60
             }
 
         ],
@@ -1803,7 +1832,31 @@
             {
 				"name": "parroting",
 				"chance": 10
-			}
+			},
+            {
+				"name": "parroting",
+				"chance": 10
+			},
+            {
+				"name": "hallucinations",
+				"chance": 10
+			},
+            {
+				"name": "paranoia",
+				"chance": 10
+			},
+            {
+				"name": "psychotic episode",
+				"chance": 50
+			},
+            {
+                "name": "hostile hallucinations",
+                "chance": 80
+            },
+            {
+                "name": "delusions",
+                "chance": 60
+            }
         ],
         "herbs":[]
     },	

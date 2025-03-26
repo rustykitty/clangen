@@ -122,5 +122,25 @@
     "r_c catches m_c biting {PRONOUN/m_c/self} repeatedly whenever emotions run high.",
     "m_c's stims are different from those of other cats: they leave damage behind.",
     "m_c admits to r_c that the only way {PRONOUN/m_c/subject} can calm down is by hurting {PRONOUN/m_c/self}."
+  ],
+  "hostile hallucinations": [
+    "m_c feels like some cat is watching {PRONOUN/m_c/object} wherever they go. {PRONOUN/m_c/subject/CAP} {VERB/m_c/struggle/struggles} to leave camp without shaking in fear.",
+    "m_c keeps hearing voices threatening to hurt {PRONOUN/m_c/object} and {PRONOUN/m_c/poss} loved ones.",
+    "m_c sees angry faces in the shadows and monsters in the forest. {PRONOUN/m_c/subject/cap} {VERB/m_c/refuse/refuses} to leave the camp alone."
+  ],
+  "delusions": [
+    "m_c is absolutely certain that an outsider is following {PRONOUN/m_c/object} wherever they go and insists {PRONOUN/m_c/subject} {VERB/m_c/need/needs} protection.",
+    "m_c scoffs when r_c offers herbs to calm {PRONOUN/m_c/object} down. Can't {PRONOUN/r_c/subject} tell that m_c has been chosen by StarClan to save all the Clans?",
+    "m_c comes crying into the medicine den, insisting that {PRONOUN/m_c/poss} teeth are falling out, even after repeated assurances that they're not.",
+    "m_c is certain that {PRONOUN/m_c/poss} Clanmates despise {PRONOUN/m_c/object}. {PRONOUN/m_c/poss/CAP} fur prickles when a Clanmate mentions that {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} different."
+  ],
+  "psychotic episode": [
+    "m_c refuses to see r_c, citing a series of events that never happened. {PRONOUNS/m_c/poss/CAP} erratic behavior may be a sign of psychosis.",
+    "m_c rambles about visions of StarClan and the end of the world, despite {PRONOUN/m_c/poss} Clanmates' reassurance.",
+    "m_c insists to {PRONOUN/m_c/poss} Clanmates that {PRONOUN/m_c/subject} can read minds - and that {PRONOUN/m_c/subject} {VERB/m_c/know/knows} some of them are plotting against {PRONOUN/m_c/object}."   
+  ],
+  "ongoing psychosis": [
+    "Despite interventions, m_c's psychotic symptoms have only deepened.",
+    "Attempts to calm m_c have been unsuccessful - {PRONOUN/m_c/subject} is suffering from ongoing psychosis."
   ]
 }

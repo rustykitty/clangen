@@ -205,5 +205,19 @@
   ],
   "parroting": [
     "this should not appear! m_c died from parroting?"
+  ],
+  "delusions": [
+    "this should not appear! m_c died from delusions?"
+  ],
+  "hostile hallucinations": [
+    "this should not appear! m_c died from hostile hallucinations?"
+  ],
+  "psychotic episode": [
+    "The medicine cat knows psychosis can lead to an increase in mortality, but finding m_c dead was unexpected.",
+    "The stresses of psychosis were too much for m_c."
+  ],
+  "ongoing psychosis": [
+    "The medicine cat knows psychosis can lead to an increase in mortality, but finding m_c dead was unexpected.",
+    "The stresses of psychosis were too much for m_c."
   ]
 }

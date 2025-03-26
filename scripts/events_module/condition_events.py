@@ -578,6 +578,12 @@ class Condition_Events:
             "verbal shutdown": "mute",
             "tics": "tic attack",
             "nausea": "stomachache",
+            "paranoia": "delusions",
+            "hallucinations" : "hostile hallucinations",
+            "hostile hallucinations": "psychotic episode",
+            "delusions": "psychotic episode",
+            "psychotic episode": "ongoing psychosis",
+            "ongoing psychosis": ["otherwordly mind", "obsessive mind", "thunderous spirit"],
         }
         # ---------------------------------------------------------------------------- #
         #                         handle currently sick cats                           #

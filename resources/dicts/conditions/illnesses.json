@@ -872,7 +872,11 @@
             {
                 "name": "tic attack",
                 "chance": 60
-            }
+            },
+            {
+				"name": "hallucinations",
+				"chance": 60
+			}
 		],
         "herbs": [
             "catmint",
@@ -923,7 +927,15 @@
             {
                 "name": "derealization",
                 "chance": 20
-            }
+            },
+            {
+				"name": "hallucinations",
+				"chance": 70
+			},
+            {
+				"name": "delusions",
+				"chance": 20
+			}
 		],
         "herbs": [
             "catmint",
@@ -1348,7 +1360,12 @@
         "duration": 3,
         "medicine_duration": 2,
         "infectiousness": 0,
-        "risks": [],
+        "risks": [
+            {
+				"name": "hostile hallucinations",
+				"chance": 20
+			}
+        ],
         "herbs": [
             "juniper",
             "thyme",
@@ -2370,7 +2387,7 @@
             "catmint"
         ]
     },
-    "psychosis": {
+    "psychotic episode": {
         "severity": "major",
         "mortality": {
             "newborn": 20,
@@ -2390,17 +2407,185 @@
             "senior adult": 100,
             "senior": 70
         },
-        "duration": 1,
+        "duration": 3,
+        "medicine_duration": 2,
+        "infectiousness": 0,
+        "risks": [
+            {
+                "name": "otherwordly mind",
+                "chance": 200
+            },
+            {
+                "name": "obsessive mind",
+                "chance": 200
+            },
+            {
+                "name": "thunderous spirit",
+                "chance": 250
+            },
+            {
+                "name": "ongoing psychosis",
+                "chance": 25
+            }
+        ],
+        "herbs": [
+            "juniper",
+            "poppy",
+            "thyme",
+            "ragwort"
+        ]
+    },
+    "delusions": {
+        "severity": "minor",
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "medicine_mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "duration": 3,
         "medicine_duration": 1,
         "infectiousness": 0,
         "risks": [
             {
-                "name": "bruises",
-                "chance": 15
+                "name": "psychotic episode",
+                "chance": 50
+            },
+            {
+                "name": "panic attack",
+                "chance": 50
             },
 			{
-                "name": "sore",
+                "name": "hallucinations",
                 "chance": 15
+            },
+            {
+                "name": "otherwordly mind",
+                "chance": 150
+            },
+            {
+                "name": "thunderous spirit",
+                "chance": 100
+            },
+            {
+                "name": "nightmares",
+                "chance": 15
+            }
+        ],
+        "herbs": [
+            "juniper",
+            "poppy",
+            "thyme",
+            "ragwort"
+        ]
+    },
+    "hostile hallucinations": {
+        "severity": "major",
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "medicine_mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "duration": 3,
+        "medicine_duration": 1,
+        "infectiousness": 0,
+        "risks": [
+            {
+                "name": "psychotic episode",
+                "chance": 50
+            },
+			{
+                "name": "paranoia",
+                "chance": 15
+            },
+            {
+                "name": "panic attack",
+                "chance": 50
+            },
+            {
+                "name": "otherwordly mind",
+                "chance": 100
+            },
+            {
+                "name": "nightmares",
+                "chance": 15
+            }
+        ],
+        "herbs": [
+            "juniper",
+            "poppy",
+            "thyme",
+            "ragwort"
+        ]
+    },
+    "ongoing psychosis": {
+        "severity": "major",
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 50,
+            "young adult": 100,
+            "adult": 100,
+            "senior adult": 150,
+            "senior": 100
+        },
+        "medicine_mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 300,
+            "young adult": 400,
+            "adult": 200,
+            "senior adult": 200,
+            "senior": 170
+        },
+        "duration": 6,
+        "medicine_duration": 3,
+        "infectiousness": 0,
+        "risks": [
+            {
+                "name": "otherwordly mind",
+                "chance": 70
+            },
+            {
+                "name": "obsessive mind",
+                "chance": 70
+            },
+            {
+                "name": "thunderous spirit",
+                "chance": 80
+            },
+            {
+                "name": "depersonalization",
+                "chance": 50
+            },
+            {
+                "name": "derealization",
+                "chance": 50
             }
         ],
         "herbs": [

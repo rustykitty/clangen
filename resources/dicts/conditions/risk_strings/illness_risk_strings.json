@@ -539,5 +539,85 @@
 			"m_c's paws feel like they belong to another cat.",
 			"In the fog of dissociation, m_c feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own."
 		]
+	},
+	"hallucinations": {
+		"hostile hallucinations": [
+			"m_c feels like {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} finally conquered {PRONOUN/m_c/poss} hallucinations when things take a turn for the worse.",
+			"m_c's hallucinations have progressed from minor to severe.",
+			"m_c's hallucinations have progressed from an inconvenience to an active danger."
+		]
+	},
+	"psychotic episode": {
+		"ongoing psychosis": [
+			"Despite interventions, m_c's psychotic symptoms have only deepened.",
+    		"Attempts to calm m_c have been unsuccessful - {PRONOUN/m_c/subject} is suffering from ongoing psychosis."
+		],
+		"otherworldly mind": [
+			"m_c's psychotic episode is a sign of a greater problem. r_c suggests {PRONOUN/m_c/subject} {VERB/m_c/have/has} an otherworldly mind.",
+			"m_c's psychotic episode is not just a temporary symptom, but a sign of a longterm condition."
+		],
+		"obsessive mind": [
+			"m_c's psychotic episode is a sign of a greater problem. r_c suggests {PRONOUN/m_c/subject} {VERB/m_c/have/has} an obsessive mind.",
+			"m_c's psychotic episode is not just a temporary symptom, but a sign of a longterm condition."
+		],
+		"thunderous spirit": [
+			"m_c's psychotic episode is a sign of a greater problem. r_c suggests {PRONOUN/m_c/subject} {VERB/m_c/have/has} an thunderous spirit.",
+			"m_c's psychotic episode is not just a temporary symptom, but a sign of a longterm condition."
+		]
+	},
+	"hostile hallucinations": {
+		"psychotic episode": [
+			"m_c's hallucinations have extended into every aspect of {PRONOUN/m_c/poss} life - {PRONOUN/m_c/subject} {VERB/m_c/have/has} entered a psychotic episode.",
+			"m_c's hallucinations have progressed to psychosis."
+		],
+		"paranoia": [
+			"m_c's hallucinations have made {PRONOUN/m_c/object} feel incredibly unsafe - even leaving {PRONOUN/m_c/poss} nest is nerve-racking.",
+			"m_c is constantly looking over {PRONOUN/m_c/poss} shoulder, worried the shadows will get {PRONOUN/m_c/object}."
+		],
+		"panic attack": [
+			"m_c bursts into tears after a particularly upsetting hallucination.",
+			"m_c finds it hard to breathe. Why won't these hallucinations stop?"
+		],
+		"otherworldly mind": [
+			"m_c's hallucinations are a sign of a greater problem. r_c suggests {PRONOUN/m_c/subject} {VERB/m_c/have/has} an otherworldly mind.",
+			"m_c's hallucinations are not just a temporary symptom, but a sign of a longterm condition."
+		],
+		"nightmares": [
+			"m_c heads to the medicine den, hoping that r_c will give {PRONOUN/m_c/object} some poppy seeds to help dampen the nightmares that have been plaguing {PRONOUN/m_c/object}.",
+			"m_c's hallucinations have followed {PRONOUN/m_c/object} into slumber.",
+			"m_c is scared to fall asleep - hallucinations have infiltrated {PRONOUN/m_c/poss} dreams as well.",
+			"Another nightmare drags m_c down, leaving {PRONOUN/m_c/object} tired and hollow looking the next day to the worry of {PRONOUN/m_c/poss} Clanmates."
+		]
+	},
+	"ongoing psychosis": {
+		"otherworldly mind":[
+			"r_c realizes that m_c's psychotic symptoms aren't a sign of psychosis, but an otherworldly mind instead.",
+			"m_c's hallucinations and unsual throught patterns may be a sign of an otherworldly mind."
+		],
+		"obsessive mind":[
+			"r_c realizes that m_c's psychotic symptoms aren't a sign of psychosis, but an obsessive mind instead.",
+			"m_c's psychotic symptoms wax and wane, but never disappear. It may be a sign of an obsessive mind."
+		],
+		"thunderous spirit":[
+			"r_c realizes that m_c's psychotic symptoms aren't a sign of psychosis, but an thunderous spirit instead.",
+			"m_c's psychotic symptoms wax and wane, but never disappear. It may be a sign of a thunderous spirit.",
+			"Psychotic symptoms aren't a guarantee for cats with a thunderous spirit, but in m_c's case, they seem to be here to stay."
+		],
+		"derealization":[
+			"In the depths of psychosis, m_c feels like the world around {PRONOUN/m_c/object} is fake.",
+			"m_c feels endlessly trapped in a dream. Is any of this real?"
+		],
+		"depersonalization":
+		[
+			"m_c's paws feel like they belong to another cat.",
+			"In the depths of psychosis, m_c feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own."
+		]
+	},
+	"delusions": {
+		"psychotic episode": [
+			"m_c's delusions have only deepened. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} now in a psychotic episode.",
+			"Trying to reality check m_c has only made {PRONOUN/m_c/object} more distrustful of {PRONOUN/m_c/poss} Clanmates."
+		]
 	}
+	
 }

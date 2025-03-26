@@ -2227,7 +2227,7 @@ class Cat:
         self.in_camp = 1
         
         #FOR TESTING TRIGGER CONTENT TOGGLE
-        #self.get_ill("harmful stims")
+        #self.get_ill("psychotic episode")
 
         if self.genderalign != self.gender and self.genderalign in cisgenders:
             self.genderalign = self.gender
@@ -3084,7 +3084,7 @@ class Cat:
         eating_disorders = [ "anorexia", "ARFID", "bulimia", "binge-eating disorder", "food hoarding", "pica"]
         self_harm = ["harmful stims"]
         dissociation = ["derealization", "depersonalization" , "amnesia"]
-        psychosis = ["delusions" , "psychosis"]
+        psychosis = ["delusions" , "psychotic episode", "hostile hallucinations","paranoia", "ongoing psychosis"]
         all_triggers = eating_disorders + self_harm + dissociation + psychosis
         
         if not game.settings["allow_triggers"] and name in all_triggers:
@@ -3916,6 +3916,13 @@ class Cat:
 
             if "paralyzed" in self.permanent_condition and not self.pelt.paralyzed:
                 self.pelt.paralyzed = True
+            
+            ##UPDATE NAME CHANGES
+            if "heavy soul" in self.permanent_condition:
+                congenital = self.permanent_condition["heavy soul"][born_with]
+                start = self.permanent_condition["heavy soul"][moon_start]
+                del self.permanent_condition["heavy soul"]
+                self.get_permanent_condition("weighted heart", born_with=congenital, starting_moon=-1)
 
             if "stimming" in self.illnesses and not self.pelt.blep:
                 self.pelt.blep = True
