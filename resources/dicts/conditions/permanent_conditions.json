@@ -725,15 +725,15 @@
 			},
             {
                 "name": "budding spirit",
-                "chance": 80
+                "chance": 150
             },
             {
                 "name": "shattered soul",
-                "chance": 80
+                "chance": 150
             },
             {
                 "name": "fractured spirit",
-                "chance": 80
+                "chance": 150
             }
         ],
         "herbs": [
@@ -804,15 +804,15 @@
 			},
             {
                 "name": "budding spirit",
-                "chance": 80
+                "chance": 140
             },
             {
                 "name": "shattered soul",
-                "chance": 80
+                "chance": 140
             },
             {
                 "name": "fractured spirit",
-                "chance": 80
+                "chance": 140
             }
         ],
         "herbs": [
@@ -988,7 +988,7 @@
             },
             {
                 "name": "shattered soul",
-                "chance": 75
+                "chance": 200
             },
             {
                 "name": "jumbled mind",
@@ -1116,7 +1116,7 @@
 			},
 			{
 				"name": "psychotic episode",
-				"chance": 100
+				"chance": 200
 			}
 
         ],
@@ -1180,11 +1180,11 @@
             },
             {
                 "name": "budding spirit",
-                "chance": 70
+                "chance": 200
             },
             {
                 "name": "shattered soul",
-                "chance": 70
+                "chance": 200
             },
 			{
 				"name": "brain fog",
@@ -1247,11 +1247,11 @@
 			},
             {
                 "name": "budding spirit",
-                "chance": 75
+                "chance": 200
             },
             {
                 "name": "shattered soul",
-                "chance": 75
+                "chance": 200
             },
             {
                 "name": "jumbled mind",
@@ -1739,15 +1739,15 @@
             },
             {
                 "name": "budding spirit",
-                "chance": 70
+                "chance": 160
             },
             {
                 "name": "shattered soul",
-                "chance": 70
+                "chance": 160
             },
             {
                 "name": "fractured spirit",
-                "chance": 70
+                "chance": 160
             },
             {
                 "name": "puzzled heart",
@@ -1769,10 +1769,6 @@
 				"name": "psychotic episode",
 				"chance": 70
 			},
-            {
-                "name": "hostile hallucinations",
-                "chance": 110
-            },
             {
                 "name": "delusions",
                 "chance": 60
@@ -1815,15 +1811,15 @@
             },
             {
                 "name": "budding spirit",
-                "chance": 70
+                "chance": 180
             },
             {
                 "name": "shattered soul",
-                "chance": 70
+                "chance": 180
             },
             {
                 "name": "fractured spirit",
-                "chance": 70
+                "chance": 180
             },
             {
 				"name": "parrot chatter",

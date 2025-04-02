@@ -971,6 +971,10 @@
 			"m_c's been parroting words and phrases that {PRONOUN/m_c/subject} {VERB/m_c/like/likes} around camp more often recently.",
 			"It appears that m_c has found a mantra to parrot around camp.",
 			"After a Clanmate spoke something particularly profound, m_c has been repeating the statement over and over like a mantra."
+		],
+		"psychotic episode": [
+			"m_c's obsessions have escalated to psychotic symptoms.",
+			"m_c is having a psychotic episode."
 		]
     },
     "anxiety": {
@@ -1204,6 +1208,10 @@
 			"m_c comes into the medicine den looking out of it, telling r_c that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} very tired and keeps losing track of things.",
 			"m_c has some brain fog.",
 			"{PRONOUN/m_c/poss/CAP} Clanmates have noticed that m_c seems distracted, unable to hold onto {PRONOUN/m_c/poss} thoughts."
+		],
+		"hostile hallucinations": [
+			"m_c's nightmares are starting to slip into real life.",
+			"Falling asleep was already difficult and m_c's growing hallucinations are not helping."
 		]
     },
 	"body biter": {
@@ -1345,6 +1353,24 @@
 			"m_c keeps double checking {PRONOUN/m_c/poss} paws, worried that they might belong to another cat.",
 			"m_c keeps spacing out, feeling as if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} floating above {PRONOUN/m_c/poss} own body.",
 			"Other cats keep asking why m_c is acting so different from {PRONOUN/m_c/poss} usual self. m_c doesn't understand who {PRONOUN/m_c/poss} 'usual self' is supposed to be."
+		],
+		"psychotic episode": [
+			"m_c is completely convinced that every cat in the Clan has it out for {PRONOUN/m_c/pbkect}, despite any evidence to the contrary.",
+			"m_c is struggling to differentiate hallucinations and delusions from reality.",
+			"Just when m_c feels confident in managing {PRONOUN/m_c/poss} thunderous spirit symptoms, they escalate rapidly. m_c is experiencing a psychotic episode.",
+			"m_c insists to r_c that {PRONOUN/m_c/subject} {VERB/m_c/have/has} been chosen by StarClan to herald the end of the world - a terrifying prospect, but completely untrue."
+		],
+		"delusions": [
+			"m_c is absolutely certain that an outsider is following {PRONOUN/m_c/object} wherever they go and insists {PRONOUN/m_c/subject} {VERB/m_c/need/needs} protection.",
+    		"m_c scoffs when r_c offers herbs to calm {PRONOUN/m_c/object} down. Can't {PRONOUN/r_c/subject} tell that m_c has been chosen by StarClan to save all the Clans?",
+    		"m_c comes crying into the medicine den, insisting that {PRONOUN/m_c/poss} teeth are falling out, even after repeated assurances that they're not.",
+    		"m_c is certain that {PRONOUN/m_c/poss} Clanmates despise {PRONOUN/m_c/object}. {PRONOUN/m_c/poss/CAP} fur prickles when a Clanmate mentions that {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} different."
+		],
+		"hallucinations": [
+			"m_c feels ants crawling on {PRONOUN/m_c/poss} skin, even after r_c has checked {PRONOUN/m_c/poss} for bugs a dozen times.",
+			"m_c keeps seeing a cat following {PRONOUN/m_c/object} out of the corner of {PRONOUN/m_c/poss} eye, even though there's no noise nor scent.",
+			"m_c admits to a Clanmate that {PRONOUN/m_c/subject} {VERB/m_c/are/is} not sure if {PRONOUN/m_c/subject} can actually trust {PRONOUN/m_c/poss} ears and what {PRONOUN/m_c/subject} {VERB/m_c/are/is} hearing anymore.",
+			"A Clanmate spots m_c talking to {PRONOUN/m_c/self}, only to realize that {PRONOUN/m_C/subject} {VERB/m_c/are/is} actually talking to things that aren't there at all."
 		]
 	},
     "otherworldly mind": {
@@ -1394,6 +1420,15 @@
 			"r_c has to sigh when m_c keeps looping {PRONOUN/m_c/poss} words and parroting {PRONOUN/m_c/poss} Clanmates.",
 			"m_c isn't mocking other cats when {PRONOUN/m_c/subject} {VERB/m_c/repeat/repeats} what {PRONOUN/m_c/subject} {VERB/m_c/hear/hears}.",
 			"Recently m_c has been doing a fair bit of parroting."
+		],
+		"psychotic episode": [
+			"m_c is completely convinced that every cat in the Clan has it out for {PRONOUN/m_c/pbkect}, despite any evidence to the contrary.",
+			"m_c is struggling to differentiate hallucinations and delusions from reality.",
+			"m_c insists to r_c that {PRONOUN/m_c/subject} {VERB/m_c/have/has} been chosen by StarClan to herald the end of the world - a terrifying prospect, but completely untrue."
+		],
+		"hallucinations": [
+			"It's becoming increasingly harder for m_c to understand where reality starts and ends. Figures and shapes dance around {PRONOUN/m_c/object} just outside of {PRONOUN/m_c/poss} vision.",
+			"m_c admits to a Clanmate that {PRONOUN/m_c/subject} {VERB/m_c/are/is} not sure if {PRONOUN/m_c/subject} can actually trust {PRONOUN/m_c/poss} ears and what {PRONOUN/m_c/subject} {VERB/m_c/are/is} hearing anymore."
 		]
     },
     "irritable bowels": {

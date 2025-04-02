@@ -517,6 +517,9 @@ class Condition_Events:
                                 "permanent_condition_chance"
                             ]
                         ):
+                            for con in perm_condition:
+                                if con in ["shattered soul", "fractured spirit", "budding spirit"] and cat.is_plural():
+                                    perm_condition.remove(con)
                             perm_condition = random.choice(possible_conditions)
                             if perm_condition == "lazy eye":
                                 cat.pelt.lazy_eye = cat.pelt.eye_colour

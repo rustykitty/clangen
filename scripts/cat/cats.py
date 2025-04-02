@@ -2228,6 +2228,7 @@ class Cat:
         
         #FOR TESTING TRIGGER CONTENT TOGGLE
         #self.get_ill("psychotic episode")
+        #self.get_permanent_condition(choice(["shattered soul","fractured spirit", "budding spirit"]))
 
         if self.genderalign != self.gender and self.genderalign in cisgenders:
             self.genderalign = self.gender
