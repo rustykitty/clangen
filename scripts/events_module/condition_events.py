@@ -301,7 +301,7 @@ class Condition_Events:
                     possible_string_list = [f"m_c has gotten {chosen_illness}."]
 
                 event_string = event_text_adjust(Cat, random.choice(possible_string_list), main_cat=cat)
-                event_string = Condition_Events.change_condition_name(event_string)
+                event_string = Condition_Events.(event_string)
 
         # if an event happened, then add event to cur_event_list and save death if it happened.
         if event_string:
@@ -965,14 +965,20 @@ class Condition_Events:
     def change_condition_name(text):
         dad_names = {
             "a starwalker": "autistic",
+            "starwalker": "autism",
             "an obsessive mind": "OCD",
-            "a weighted heart": "depression",
+            "obsessive mind": "OCD",
+            "a weighted heart": "MDD",
             "a comet spirit": "ADHD",
+            "weighted heart": "MDD",
+            "comet spirit": "ADHD",
             "constant roaming pain": "fibromyalgia",
             "ongoing sleeplessness": "chronic insomnia",
             "{VERB/m_c/'re/'s} a body biter": " {VERB/m_c/have/has} a body-focused repetitive disorder",
             "a thunderous spirit": "BPD",
+            "thunderous spirit": "BPD",
             "an otherworldly mind": "schizophrenia",
+            "otherworldly mind": "schizophrenia",
             "snow vision": "visual snow",
             "kitten regressor": "age regressor",
             "puppy regressor": "pet regressor",
@@ -987,12 +993,16 @@ class Condition_Events:
             "a confused body": "tourette's",
             "has falling paws": "orthostatic hypotension",
             "with falling paws": "orthostatic hypotension",
-            "shattered soul": "system",
-            "budding spirit": "system",
+            "falling paws": "orthostatic hypotension",
+            "shattered soul": "DID system",
+            "budding spirit": "OSDD-1b system",
+            "fractured spirit": "OSDD-1a system",
             "a curved spine": "scoliosis",
             "a jumbled mind": "dyslexia",
             "counting fog": "dyscalculia",
             "a spirited heart": "hyperempathetic",
+            "puzzled heart": "low empathy",
+            "spirited heart": "hyperempathy",
             "is a puzzled heart": "has low empathy",
             "be a puzzled heart": "have low empathy",
             "parrot chatter": "echolalia",
@@ -1007,8 +1017,13 @@ class Condition_Events:
             "sleeplessness": "insomnia",
             "ear buzzing": "tinnitus",
             "kittenspace": "littlespace",
-            "puppyspace": "petspace"
+            "puppyspace": "petspace",
+            "parrot chatter": "echolalia",
+            "parroting": "echolalia",
+            "thought blind": "aphantasia",
+            "faux pregnant": "phantom pregnancy",
         }
+        
         if not game.settings["warriorified names"]:
             for con in dad_names:
                 if con in text:

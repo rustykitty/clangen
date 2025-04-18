@@ -523,6 +523,8 @@ class RelationshipScreen(Screens):
                     )
 
             # Gender
+            enby_masc = ["trans male" , "demiboy", "genderfaun", "trans masc"]
+            enby_fem = ["trans female" , "demigirl", "genderfae", "trans femme"]
             if self.inspect_cat.genderalign == "female":
                 gender_icon = image_cache.load_image(
                     "resources/images/female_big.png"
@@ -535,19 +537,19 @@ class RelationshipScreen(Screens):
                 gender_icon = image_cache.load_image(
                     "resources/images/intersex_big.png"
                 ).convert_alpha()
-            elif self.inspect_cat.gender == "intersex" and self.inspect_cat.genderalign == "trans female":
+            elif self.inspect_cat.gender == "intersex" and self.inspect_cat.genderalign in enby_fem:
                 gender_icon = image_cache.load_image(
                     "resources/images/transfem_intersex_big.png"
                 ).convert_alpha()
-            elif self.inspect_cat.gender == "intersex" and self.inspect_cat.genderalign == "trans male":
+            elif self.inspect_cat.gender == "intersex" and self.inspect_cat.genderalign in enby_masc:
                 gender_icon = image_cache.load_image(
                     "resources/images/transmasc_intersex_big.png"
                 ).convert_alpha()
-            elif self.inspect_cat.genderalign == "trans female":
+            elif self.inspect_cat.gender == "male" and self.inspect_cat.genderalign in enby_fem:
                 gender_icon = image_cache.load_image(
                     "resources/images/transfem_big.png"
                 ).convert_alpha()
-            elif self.inspect_cat.genderalign == "trans male":
+            elif self.inspect_cat.gender == "female" and self.inspect_cat.genderalign in enby_masc:
                 gender_icon = image_cache.load_image(
                     "resources/images/transmasc_big.png"
                 ).convert_alpha()
