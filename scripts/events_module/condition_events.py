@@ -301,7 +301,7 @@ class Condition_Events:
                     possible_string_list = [f"m_c has gotten {chosen_illness}."]
 
                 event_string = event_text_adjust(Cat, random.choice(possible_string_list), main_cat=cat)
-                event_string = Condition_Events.(event_string)
+                event_string = Condition_Events.change_condition_name(event_string)
 
         # if an event happened, then add event to cur_event_list and save death if it happened.
         if event_string:
