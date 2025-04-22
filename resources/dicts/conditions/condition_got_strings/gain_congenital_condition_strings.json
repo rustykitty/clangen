@@ -110,7 +110,8 @@
     "r_c is brought to the nursery by a worried parent, m_c wasn't running around and playing like the other kits, just curled in a ball staring blankly at the wall. After some gentle talking with m_c, r_c sits back and softly explains {PRONOUN/r_c/subject} {VERB/r_c/think/thinks} it's a weighted heart.",
     "m_c hides from {PRONOUN/m_c/poss} denmates, much to the concern of {PRONOUN/m_c/poss} parent as they curl around their kit, they couldn't do much but purr in an attempt to comfort their child.",
     "A denmate wonders why m_c won't play with anyone, and they try to become friends and play with {PRONOUN/m_c/object}. m_c agrees to play with them, but don't seem too energetic about it.",
-    "m_c has seemed more sluggish then the other kits {PRONOUN/m_c/poss} age, less energetic. Less focused on the reality and more lost in {PRONOUN/m_c/poss} thoughts."
+    "m_c has seemed more sluggish then the other kits {PRONOUN/m_c/poss} age, less energetic. Less focused on the reality and more lost in {PRONOUN/m_c/poss} thoughts.",
+    "Sometimes m_c struggles to even get out of {PRONOUN/m_c/poss} nest in the mornings, weighed down by a heavy air in {PRONOUN/m_c/poss} heart."
   ],
   "constant roaming pain": [
     "After moons of m_c complaining of pains through {PRONOUN/m_c/poss} kithood, r_c sits back and softly explains that this pain will follow {PRONOUN/m_c/object} through {PRONOUN/m_c/poss} whole life and {PRONOUN/r_c/subject} can only offer temporary relief.",
@@ -313,5 +314,18 @@
     "As m_c grows, {PRONOUN/m_c/poss} knee starts to ache. r_c sighs and tells {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a bad knee.",
     "m_c's knee always locks up and makes {PRONOUN/m_c/object} trip - {PRONOUN/m_c/subject} {VERB/m_c/have/has} a bad knee.",
     "m_c's parent had always assumed m_c's knee being painful was because {PRONOUN/m_c/subject} {VERB/m_c/were/was} having growing pains. It turns out, m_c actually has a bad knee."
+  ],
+  "bipolar i": [
+    "m_c doesn't understand why {PRONOUN/m_c/poss} mood seems to change so drastically between moons.",
+    "One week m_C is bursting with energy, the next {PROUNOUN/m_c/subject} can barely rouse {PRONOUN/m_c/self} from {PRONOUN/m_c/poss} nest."
+  ],
+  "bipolar ii": [
+    "m_c doesn't understand why {PRONOUN/m_c/poss} mood seems to change so drastically between moons.",
+    "Sometimes m_c struggles to even get out of {PRONOUN/m_c/poss} nest in the mornings, weighed down by a heavy air in {PRONOUN/m_c/poss} heart."
+  ],
+  "essential tremor":[
+    "No matter what m_c tries, {PRONOUN/m_c/poss} paws can never stay perfectly still.",
+    "m_c keeps repeatedly dropping {PRONOUN/m_c/poss} prey until {PRONOUN/m_c/subject} give up in frustration.",
+    "After a trip to the medicine den, m_c learns that most cats' paws don't shake at all, much less constantly."
   ]
 }

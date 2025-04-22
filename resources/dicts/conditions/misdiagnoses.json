@@ -87,7 +87,8 @@
 		"obsessive mind",
 		"recurring shock",
 		"antisocial",
-		"puzzled heart"
+		"puzzled heart",
+		"bipolar ii"
 	],
 	"comet spirit":[
 		"starwalker",
@@ -99,7 +100,8 @@
 		"confused body",
 		"jumbled mind",
 		"counting fog",
-		"spirited heart"
+		"spirited heart",
+		"bipolar i"
 	],
 	"antisocial": [
 		"echoing shock",
@@ -154,7 +156,8 @@
 		"otherworldly mind",
 		"comet spirit",
 		"starwalker",
-		"puzzled heart"
+		"puzzled heart",
+		"bipolar i"
 	],
 	"otherworldly mind":
 	[

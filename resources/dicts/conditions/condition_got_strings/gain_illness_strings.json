@@ -142,5 +142,9 @@
   "ongoing psychosis": [
     "Despite interventions, m_c's psychotic symptoms have only deepened.",
     "Attempts to calm m_c have been unsuccessful - {PRONOUN/m_c/subject} is suffering from ongoing psychosis."
+  ],
+  "tremors":[
+    "m_c's paws keep shaking uncontrollably.",
+    "m_c is unable to keep {PRONOUN/m_c/poss} paws steady, no matter how hard {PRONOUN/m_c/subject} try."
   ]
 }

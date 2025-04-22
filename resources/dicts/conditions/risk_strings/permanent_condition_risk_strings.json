@@ -2140,5 +2140,97 @@
 			"m_c finds it difficult to try to focus on the faces of {PRONOUN/m_c/poss} Clanmates today. By the end of the day, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} left with a pounding headache.",
 			"m_c finds it difficult to try to focus on the faces of {PRONOUN/m_c/poss} Clanmates today. By the end of the day, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} left with a pounding headache."
 		]
+	},
+	"bipolar i": {
+		"zoomies": [
+			"m_c has more energy than usual, rapdily zooming around the camp.",
+			"m_c feels filled with the need to move, to jump around and just move."
+		],
+		"absence":[
+			"m_c stops mid action, just staring blankly for a period as the sunlight shifts over {PRONOUN/m_c/poss} nose.",
+			"While walking around, m_c zones out and stares into the distance for periods of time."
+		],
+		"impulsivity":[
+			"It's all m_c can do to even halfway remain on task, {PRONOUN/m_c/subject} {VERB/m_c/are/is} doing things without thinking.",
+			"m_c took a piece of prey from the pile and spent the rest of the day looking like {PRONOUN/m_c/subject} might cry.",
+			"m_c has said somethings that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} mean to r_c."
+		],
+		"harmful stims":[
+			"m_c admits to r_c that the only way {PRONOUN/m_c/subject} can calm down is by hurting {PRONOUN/m_c/self}.",
+			"r_c catches m_c biting {PRONOUN/m_c/self} repeatedly whenever emotions run high."
+		],
+		"sleeplessness":[
+			"While it's good for m_c to keep busy at night, {PRONOUN/m_c/poss} denmates worry as they see {PRONOUN/m_c/poss} fur getting messier and messier from lack of energy to care.",
+			"m_c finds {PRONNOUN/m_c/self} unable to sleep at night, haunted by throughts racing through {PRONOUN/m_c/poss} mind."
+		],
+		"delusions": [
+			"m_c comes crying into the medicine den, insisting that {PRONOUN/m_c/poss} teeth are falling out, even after repeated assurances that they're not.",
+			"m_c is absolutely certain that an outsider is following {PRONOUN/m_c/object} wherever they go and insists {PRONOUN/m_c/subject} {VERB/m_c/need/needs} protection."
+		],
+		"grief stricken":[
+			"By StarClan, m_c wishes that {PRONOUN/m_c/subject} could hold onto the small things, instead of feeling this heavy blanket weight of sadness and longing for things gone.",
+			"There's no reason for this, nothing has happened recently. Yet m_c wakes with a wail, the weight of grief holding {PRONOUN/m_c/object} down and aching as sharply as if someone had newly passed.",
+			"m_c stalks angrily from camp, the grief welling up in {PRONOUN/m_c/poss} throat feeling like it will choke {PRONOUN/m_c/object}. m_c can't help but find it unfair that this sadness won't go away."
+		],
+		"seasonal lethargy":[
+			"As the seasons change, so does m_c's mood. {PRONOUN/m_c/subject/CAP} {VERB/m_c/get/gets} more and more tired looking and r_c invites {PRONOUN/m_c/object} into the medicine den, quietly sitting beside m_c and assuring {PRONOUN/m_c/object} that it's okay if {PRONOUN/m_c/subject} {VERB/m_c/are/is} tired and {VERB/m_c/do/does}n't feel able to work.",
+			"m_c is frustrated and upset as the seasons change, clawing at {PRONOUN/m_c/poss} nesting material and hating that a fog is descending on {PRONOUN/m_c/object} that nothing {PRONOUN/m_c/subject} {VERB/m_c/do/does} seems to fix."
+		],
+		"lethargy":[
+			"m_c feels barely able to do {PRONOUN/m_c/poss} in-camp jobs this moon.",
+			"Recently, m_c has been feeling so worn down. It's all that {PRONOUN/m_c/subject} can do to explain to r_c the awful overwhelming feeling that prickles just beneath {PRONOUN/m_c/poss} fur."
+		]
+	},
+	"bipolar ii":{
+		"absence":[
+			"m_c stops mid action, just staring blankly for a period as the sunlight shifts over {PRONOUN/m_c/poss} nose.",
+			"While walking around, m_c zones out and stares into the distance for periods of time."
+		],
+		"impulsivity":[
+			"It's all m_c can do to even halfway remain on task, {PRONOUN/m_c/subject} {VERB/m_c/are/is} doing things without thinking.",
+			"m_c took a piece of prey from the pile and spent the rest of the day looking like {PRONOUN/m_c/subject} might cry.",
+			"m_c has said somethings that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} mean to r_c."
+		],
+		"harmful stims":[
+			"m_c admits to r_c that the only way {PRONOUN/m_c/subject} can calm down is by hurting {PRONOUN/m_c/self}.",
+			"r_c catches m_c biting {PRONOUN/m_c/self} repeatedly whenever emotions run high."
+		],
+		"sleeplessness":[
+			"While it's good for m_c to keep busy at night, {PRONOUN/m_c/poss} denmates worry as they see {PRONOUN/m_c/poss} fur getting messier and messier from lack of energy to care.",
+			"m_c finds {PRONNOUN/m_c/self} unable to sleep at night, haunted by throughts racing through {PRONOUN/m_c/poss} mind."
+		],
+		"delusions": [
+			"m_c comes crying into the medicine den, insisting that {PRONOUN/m_c/poss} teeth are falling out, even after repeated assurances that they're not.",
+			"m_c is absolutely certain that an outsider is following {PRONOUN/m_c/object} wherever they go and insists {PRONOUN/m_c/subject} {VERB/m_c/need/needs} protection."
+		],
+		"grief stricken":[
+			"By StarClan, m_c wishes that {PRONOUN/m_c/subject} could hold onto the small things, instead of feeling this heavy blanket weight of sadness and longing for things gone.",
+			"There's no reason for this, nothing has happened recently. Yet m_c wakes with a wail, the weight of grief holding {PRONOUN/m_c/object} down and aching as sharply as if someone had newly passed.",
+			"m_c stalks angrily from camp, the grief welling up in {PRONOUN/m_c/poss} throat feeling like it will choke {PRONOUN/m_c/object}. m_c can't help but find it unfair that this sadness won't go away."
+		],
+		"seasonal lethargy":[
+			"As the seasons change, so does m_c's mood. {PRONOUN/m_c/subject/CAP} {VERB/m_c/get/gets} more and more tired looking and r_c invites {PRONOUN/m_c/object} into the medicine den, quietly sitting beside m_c and assuring {PRONOUN/m_c/object} that it's okay if {PRONOUN/m_c/subject} {VERB/m_c/are/is} tired and {VERB/m_c/do/does}n't feel able to work.",
+			"m_c is frustrated and upset as the seasons change, clawing at {PRONOUN/m_c/poss} nesting material and hating that a fog is descending on {PRONOUN/m_c/object} that nothing {PRONOUN/m_c/subject} {VERB/m_c/do/does} seems to fix."
+		],
+		"lethargy":[
+			"m_c feels barely able to do {PRONOUN/m_c/poss} in-camp jobs this moon.",
+			"Recently, m_c has been feeling so worn down. It's all that {PRONOUN/m_c/subject} can do to explain to r_c the awful overwhelming feeling that prickles just beneath {PRONOUN/m_c/poss} fur."
+		],
+		"anxiety attack":[
+			"m_c keeps going in circles, worriedly pacing and unable to settle down to sleep properly.",
+			"It's not uncommon for m_c to come into the medicine den with worries and troubles swirling around {PRONOUN/m_c/poss} head. r_c has a specific pile of herbs set aside just for when {PRONOUN/m_c/subject} {VERB/m_c/need/needs} them. Or simply for when {PRONOUN/m_c/poss} {VERB/m_c/need/needs} to talk."
+		],
+		"brain fog": [
+			"{PRONOUN/m_c/poss/CAP} Clanmates have noticed that m_c seems distracted, unable to hold onto {PRONOUN/m_c/poss} thoughts."
+		],
+		"fatigue": [
+			"Looking up at the den's ceiling, m_c wonders if {PRONOUN/m_c/subject} will ever feel less tired."
+		]
+	},
+	"essential tremor": {
+		"tremors":[
+			"m_c's paws keep shaking uncontrollably.",
+			"m_c is unable to keep {PRONOUN/m_c/poss} paws steady, no matter how hard {PRONOUN/m_c/subject} try."
+		]	
 	}
 }

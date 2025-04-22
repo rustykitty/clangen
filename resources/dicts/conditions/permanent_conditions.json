@@ -3153,5 +3153,148 @@
             "daisy",
             "moss"
         ]
+    },
+    "bipolar i": {
+       "severity": "major",
+        "congenital": "sometimes",
+        "moons_until": 6,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+				"name": "zoomies",
+				"chance": 25
+			},
+			{
+				"name": "absence",
+				"chance": 25
+			},
+            {
+                "name": "impulsivity",
+                "chance": 15
+            },
+			{
+				"name": "harmful stims",
+				"chance": 50
+			},
+            {
+				"name": "sleeplessness",
+				"chance": 30
+			},
+            {
+                "name": "delusions",
+                "chance": 60
+            },
+            {
+                "name": "grief stricken",
+                "chance": 80
+            },
+            {
+                "name": "seasonal lethargy",
+                "chance": 80
+            },
+			{
+				"name": "lethargy",
+				"chance": 40
+			}
+        ],
+        "herbs": [
+        ]
+    },
+    "bipolar ii": {
+       "severity": "major",
+        "congenital": "sometimes",
+        "moons_until": 6,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "grief stricken",
+                "chance": 40
+            },
+            {
+                "name": "seasonal lethargy",
+                "chance": 30
+            },
+			{
+				"name": "lethargy",
+				"chance": 15
+			},
+			{
+				"name": "anxiety attack",
+				"chance": 40
+			},
+			{
+				"name": "absence",
+				"chance": 25
+			},
+			{
+				"name": "fatigue",
+				"chance": 25
+			},
+            {
+				"name": "brain fog",
+				"chance": 20
+			},
+			{
+				"name": "harmful stims",
+				"chance": 50
+			},
+            {
+                "name": "delusions",
+                "chance": 90
+            },
+            {
+                "name": "impulsivity",
+                "chance": 30
+            }
+        ],
+        "herbs": [
+        ]
+    },
+    "essential tremor": {
+       "severity": "major",
+        "congenital": "sometimes",
+        "moons_until": 6,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "tremors",
+                "chance": 15
+            }
+        ],
+        "herbs": [
+            "poppy",
+            "daisy",
+            "moss"
+        ]
     }
 }

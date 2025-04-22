@@ -322,5 +322,9 @@
 	"ongoing psychosis": [
 		"m_c is in tune with reality again and no longer undergoing psychosis.",
 		"m_c has managed to overcome {PRONOUN/m_c/poss} psychotic symptoms and reconnect with reality."
+	],
+	"tremors":[
+		"m_c's tremors have calmed down.",
+		"m_c's paws are no longer shaking as much."
 	]
 }
