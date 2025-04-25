@@ -17,7 +17,7 @@
 		"spirited heart"
 	],
 	"weighted heart": [
-		"shattered soul", "budding spirit", "fractured spirit"
+		"shattered soul", "budding spirit", "fractured spirit", "foggy mind"
 	],
 	"comet spirit": [
 		"starwalker", "burning light", "jumbled noise", "disrupted senses", "confused body", "jumbled mind",
@@ -112,5 +112,14 @@
 	],
 	"thought blind": [
 		"starwalker", "face blindness"
+	],
+	"echoing shock": [
+		"foggy mind"
+	],
+	"foggy mind": [
+		"weighted heart"
+	],
+	"recurring shock": [
+		"foggy mind"
 	]
 }

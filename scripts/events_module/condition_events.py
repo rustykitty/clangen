@@ -494,7 +494,8 @@ class Condition_Events:
             "flooded paws",
             "bipolar i",
             "bipolar ii",
-            "essential tremor"
+            "essential tremor",
+            "foggy mind"
         ]
 
         got_condition = False
