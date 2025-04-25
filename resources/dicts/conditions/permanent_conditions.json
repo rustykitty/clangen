@@ -734,6 +734,10 @@
             {
                 "name": "fractured spirit",
                 "chance": 150
+            },
+            {
+                "name": "foggy mind",
+                "chance": 150
             }
         ],
         "herbs": [
@@ -812,6 +816,10 @@
             },
             {
                 "name": "fractured spirit",
+                "chance": 140
+            },
+            {
+                "name": "foggy mind",
                 "chance": 140
             }
         ],

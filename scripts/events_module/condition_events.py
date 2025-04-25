@@ -1013,6 +1013,7 @@ class Condition_Events:
             "frequent fainting": "vasovagal syncope",
             "flooded paws": "POTS",
             "bad knee": "meniscus tear",
+            "foggy mind": "DPDR",
 
             "sunblindness": "light sensitivity",
 
