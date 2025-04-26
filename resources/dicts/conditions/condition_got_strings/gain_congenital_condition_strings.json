@@ -329,7 +329,7 @@
     "After a trip to the medicine den, m_c learns that most cats' paws don't shake at all, much less constantly."
   ],
   "foggy mind": [
-    "After recalling a shared happy memory with r_c, m_c realizes that {PRONOUN/m_c/subject} feel completely disconnected from the memory. It doesn't even seem to be {PRONOUN/m_c/poss} own.",
+    "After recalling a shared happy memory with a friend, m_c realizes that {PRONOUN/m_c/subject} feel completely disconnected from the memory. It doesn't even seem to be {PRONOUN/m_c/poss} own.",
     "m_c tries to explain the best {PRONOUN/m_c/subject} can- everything feels so distorted from reality. {PRONOUN/m_c/poss/CAP} paws are too big and too small from day-to-day, {PRONOUN/m_c/subject} can sometimes even feel {PRONOUN/m_c/poss} own self float away from {PRONOUN/m_c/poss} body."
   ]
 }

@@ -2282,7 +2282,8 @@
 			"Sometimes, m_c feels younger than the age {PRONOUN/m_c/poss} body is. {PRONOUN/m_c/subject/CAP} {VERB/m_c/talk/talks} to r_c about it, worried something is wrong with {PRONOUN/m_c/object}, but r_c assures {PRONOUN/m_c/object} that what {PRONOUN/m_c/subject} {VERB/m_c/are/is} feeling is perfectly normal - {PRONOUN/m_c/poss} brain is just in kittenspace",
 			"m_c, despite being old for a kit, acts younger then {PRONOUN/m_c/subject} {VERB/m_c/are/is} sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} in kittenspace."
 		],
-		"puppyspace": ["m_c has slipped into a more puppy-like headspace. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} worried about this, but r_c assures {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/are/is} just in puppyspace, and that's okay." ,
+		"puppyspace": [
+			"m_c has slipped into a more puppy-like headspace. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} worried about this, but r_c assures {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/are/is} just in puppyspace, and that's okay." ,
 			"m_c, despite being too old to play pretend, acts more dog like sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} in puppyspace."]
 	}
 }
