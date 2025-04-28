@@ -1355,7 +1355,7 @@
 			"Other cats keep asking why m_c is acting so different from {PRONOUN/m_c/poss} usual self. m_c doesn't understand who {PRONOUN/m_c/poss} 'usual self' is supposed to be."
 		],
 		"psychotic episode": [
-			"m_c is completely convinced that every cat in the Clan has it out for {PRONOUN/m_c/pbkect}, despite any evidence to the contrary.",
+			"m_c is completely convinced that every cat in the Clan has it out for {PRONOUN/m_c/object}, despite any evidence to the contrary.",
 			"m_c is struggling to differentiate hallucinations and delusions from reality.",
 			"Just when m_c feels confident in managing {PRONOUN/m_c/poss} thunderous spirit symptoms, they escalate rapidly. m_c is experiencing a psychotic episode.",
 			"m_c insists to r_c that {PRONOUN/m_c/subject} {VERB/m_c/have/has} been chosen by StarClan to herald the end of the world - a terrifying prospect, but completely untrue."
@@ -1370,7 +1370,7 @@
 			"m_c feels ants crawling on {PRONOUN/m_c/poss} skin, even after r_c has checked {PRONOUN/m_c/poss} for bugs a dozen times.",
 			"m_c keeps seeing a cat following {PRONOUN/m_c/object} out of the corner of {PRONOUN/m_c/poss} eye, even though there's no noise nor scent.",
 			"m_c admits to a Clanmate that {PRONOUN/m_c/subject} {VERB/m_c/are/is} not sure if {PRONOUN/m_c/subject} can actually trust {PRONOUN/m_c/poss} ears and what {PRONOUN/m_c/subject} {VERB/m_c/are/is} hearing anymore.",
-			"A Clanmate spots m_c talking to {PRONOUN/m_c/self}, only to realize that {PRONOUN/m_C/subject} {VERB/m_c/are/is} actually talking to things that aren't there at all."
+			"A Clanmate spots m_c talking to {PRONOUN/m_c/self}, only to realize that {PRONOUN/m_c/subject} {VERB/m_c/are/is} actually talking to things that aren't there at all."
 		]
 	},
     "otherworldly mind": {
@@ -1422,7 +1422,7 @@
 			"Recently m_c has been doing a fair bit of parroting."
 		],
 		"psychotic episode": [
-			"m_c is completely convinced that every cat in the Clan has it out for {PRONOUN/m_c/pbkect}, despite any evidence to the contrary.",
+			"m_c is completely convinced that every cat in the Clan has it out for {PRONOUN/m_c/object}, despite any evidence to the contrary.",
 			"m_c is struggling to differentiate hallucinations and delusions from reality.",
 			"m_c insists to r_c that {PRONOUN/m_c/subject} {VERB/m_c/have/has} been chosen by StarClan to herald the end of the world - a terrifying prospect, but completely untrue."
 		],
@@ -2268,7 +2268,7 @@
     		"m_c is certain that {PRONOUN/m_c/poss} Clanmates despise {PRONOUN/m_c/object}. {PRONOUN/m_c/poss/CAP} fur prickles when a Clanmate mentions that {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} different."
 		],
 		"psychotic episode": [
-			"m_c is completely convinced that every cat in the Clan has it out for {PRONOUN/m_c/pbkect}, despite any evidence to the contrary.",
+			"m_c is completely convinced that every cat in the Clan has it out for {PRONOUN/m_c/object}, despite any evidence to the contrary.",
 			"m_c is struggling to differentiate hallucinations and delusions from reality.",
 			"Just when m_c feels confident in managing {PRONOUN/m_c/poss} thunderous spirit symptoms, they escalate rapidly. m_c is experiencing a psychotic episode.",
 			"m_c insists to r_c that {PRONOUN/m_c/subject} {VERB/m_c/have/has} been chosen by StarClan to herald the end of the world - a terrifying prospect, but completely untrue."

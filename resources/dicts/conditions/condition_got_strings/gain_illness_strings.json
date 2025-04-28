@@ -135,7 +135,7 @@
     "m_c is certain that {PRONOUN/m_c/poss} Clanmates despise {PRONOUN/m_c/object}. {PRONOUN/m_c/poss/CAP} fur prickles when a Clanmate mentions that {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} different."
   ],
   "psychotic episode": [
-    "m_c refuses to see r_c, citing a series of events that never happened. {PRONOUNS/m_c/poss/CAP} erratic behavior may be a sign of psychosis.",
+    "m_c refuses to see r_c, citing a series of events that never happened. {PRONOUN/m_c/poss/CAP} erratic behavior may be a sign of psychosis.",
     "m_c rambles about visions of StarClan and the end of the world, despite {PRONOUN/m_c/poss} Clanmates' reassurance.",
     "m_c insists to {PRONOUN/m_c/poss} Clanmates that {PRONOUN/m_c/subject} can read minds - and that {PRONOUN/m_c/subject} {VERB/m_c/know/knows} some of them are plotting against {PRONOUN/m_c/object}."   
   ],
