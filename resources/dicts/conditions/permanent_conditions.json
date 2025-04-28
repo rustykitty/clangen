@@ -734,6 +734,10 @@
             {
                 "name": "fractured spirit",
                 "chance": 150
+            },
+            {
+                "name": "foggy mind",
+                "chance": 150
             }
         ],
         "herbs": [
@@ -812,6 +816,10 @@
             },
             {
                 "name": "fractured spirit",
+                "chance": 140
+            },
+            {
+                "name": "foggy mind",
                 "chance": 140
             }
         ],
@@ -3296,5 +3304,64 @@
             "daisy",
             "moss"
         ]
+    },
+    "foggy mind": {
+        "severity": "major",
+        "congenital": "never",
+        "moons_until": 2,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness":[
+        ],
+        "risks": [
+            {
+                "name": "anxiety attack",
+                "chance": 40
+            },
+            {
+                "name": "brain fog",
+                "chance": 10
+            },
+            {
+                "name": "derealization",
+                "chance": 10
+            },
+            {
+                "name": "depersonalization",
+                "chance": 10
+            },
+            {
+                "name": "harmful stims",
+                "chance": 40
+            },
+            {
+                "name": "delusions",
+                "chance": 25
+            },
+            {
+                "name": "psychotic episode",
+                "chance": 50
+            },
+            {
+                "name": "amnesia",
+                "chance": 10
+            },
+            {
+                "name": "kittenspace",
+                "chance": 40
+            },
+            {
+                "name": "puppyspace",
+                "chance": 40
+            }
+        ],
+        "herbs":[]
+        }
     }
-}

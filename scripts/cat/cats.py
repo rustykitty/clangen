@@ -3392,6 +3392,15 @@ class Cat:
                 ],
                 "thought blind": [
                     "starwalker", "face blindness"
+                ],
+                "foggy mind": [
+                    "weighted heart"
+                ],
+                "echoing shock": [
+                    "foggy mind"
+                ],
+                "recurring shock": [
+                    "foggy mind"
                 ]
             }
 

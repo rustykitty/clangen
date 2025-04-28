@@ -494,7 +494,8 @@ class Condition_Events:
             "flooded paws",
             "bipolar i",
             "bipolar ii",
-            "essential tremor"
+            "essential tremor",
+            "foggy mind"
         ]
 
         got_condition = False
@@ -1012,6 +1013,7 @@ class Condition_Events:
             "frequent fainting": "vasovagal syncope",
             "flooded paws": "POTS",
             "bad knee": "meniscus tear",
+            "foggy mind": "DPDR",
 
             "sunblindness": "light sensitivity",
 
