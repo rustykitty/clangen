@@ -97,6 +97,8 @@ class SkillPath(Enum):
         "prophet",
     )
     GHOST = ("morbid curiosity", "ghost sense", "ghost sight", "ghost speaker")
+    DAY = ("naps at night", "early bird", "sun watcher", "day warrior")
+    NIGHT = ("naps during the day", "night owl", "moon watcher", "night warrior")
 
     @staticmethod
     def get_random(exclude: list = ()):
@@ -113,6 +115,8 @@ class SkillPath(Enum):
                 SkillPath.STAR,
                 SkillPath.HEALER,
                 SkillPath.DARK,
+                SkillPath.DAY,
+                SkillPath.NIGHT
             ]
             if i not in exclude
         ]
@@ -173,6 +177,8 @@ class Skill:
         SkillPath.PROPHET: "prophesying",
         SkillPath.GHOST: "ghosts",
         SkillPath.DARK: "Dark Forest",
+        SkillPath.DAY: "diurnal",
+        SkillPath.NIGHT: "nocturnal"
     }
 
     def __init__(self, path: SkillPath, points: int = 0, interest_only: bool = False):
@@ -322,6 +328,8 @@ class CatSkills:
         SkillPath.PROPHET: SkillTypeFlag.SUPERNATURAL,
         SkillPath.GHOST: SkillTypeFlag.SUPERNATURAL,
         SkillPath.DARK: SkillTypeFlag.SUPERNATURAL,
+        SkillPath.DAY: SkillTypeFlag.OBSERVANT,
+        SkillPath.NIGHT: SkillTypeFlag.OBSERVANT,
     }
 
     # pylint: enable=unsupported-binary-operation
@@ -373,32 +381,47 @@ class CatSkills:
         elif status == "apprentice":
             new_skill.primary = Skill.get_random_skill(point_tier=1, interest_only=True)
             if random.randint(1, 3) == 1:
+                tempexclude=new_skill.primary.path
+                if new_skill.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                    tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
                 new_skill.secondary = Skill.get_random_skill(
-                    point_tier=1, interest_only=True, exclude=new_skill.primary.path
+                    point_tier=1, interest_only=True, exclude=tempexclude
                 )
         elif moons < 50:
             new_skill.primary = Skill.get_random_skill(point_tier=random.randint(1, 2))
             if random.randint(1, 2) == 1:
+                tempexclude=new_skill.primary.path
+                if new_skill.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                    tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
                 new_skill.secondary = Skill.get_random_skill(
-                    point_tier=random.randint(1, 2), exclude=new_skill.primary.path
+                    point_tier=random.randint(1, 2), exclude=tempexclude
                 )
         elif moons < 100:
             new_skill.primary = Skill.get_random_skill(point_tier=random.randint(1, 3))
             if random.randint(1, 2) == 1:
+                tempexclude=new_skill.primary.path
+                if new_skill.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                    tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
                 new_skill.secondary = Skill.get_random_skill(
-                    point_tier=random.randint(1, 2), exclude=new_skill.primary.path
+                    point_tier=random.randint(1, 2), exclude=tempexclude
                 )
         elif moons < 150:
             new_skill.primary = Skill.get_random_skill(point_tier=random.randint(2, 3))
             if random.randint(1, 2) == 1:
+                tempexclude=new_skill.primary.path
+                if new_skill.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                    tempexclude = [new_skill.primary.path, SkillPath.NIGHT, SkillPath.DAY]
                 new_skill.secondary = Skill.get_random_skill(
-                    point_tier=random.randint(1, 2), exclude=new_skill.primary.path
+                    point_tier=random.randint(1, 2), exclude=tempexclude
                 )
         else:
             new_skill.primary = Skill.get_random_skill(point_tier=1)
             if random.randint(1, 2) == 1:
+                tempexclude=new_skill.primary.path
+                if new_skill.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                    tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
                 new_skill.secondary = Skill.get_random_skill(
-                    point_tier=1, exclude=new_skill.primary.path
+                    point_tier=1, exclude=tempexclude
                 )
 
         return new_skill
@@ -518,8 +541,11 @@ class CatSkills:
                 # Check to see if the cat gains a secondary
                 if not self.secondary and not int(random.random() * 22):
                     # if there's no secondary skill, try to give one!
+                    tempexclude=self.primary.path
+                    if self.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                        tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
                     self.secondary = Skill.get_random_skill(
-                        points=0, interest_only=True, exclude=self.primary.path
+                        points=0, interest_only=True, exclude=tempexclude
                     )
 
                 # if the the_cat has skills, check if they get any points this moon
@@ -537,8 +563,11 @@ class CatSkills:
                 # Check to see if the cat gains a secondary
                 if not self.secondary and not int(random.random() * 22):
                     # if there's no secondary skill, try to give one!
+                    tempexclude=self.primary.path
+                    if self.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                        tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
                     self.secondary = Skill.get_random_skill(
-                        points=0, interest_only=True, exclude=self.primary.path
+                        points=0, interest_only=True, exclude=tempexclude
                     )
 
                 # Check if they get any points this moon
@@ -586,8 +615,11 @@ class CatSkills:
                 # If a cat doesn't can a secondary, have a small change for them to get one.
                 # but, only a first-tier skill.
                 if not self.secondary and not int(random.random() * 300):
+                    tempexclude=self.primary.path
+                    if self.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                        tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
                     self.secondary = Skill.get_random_skill(
-                        exclude=self.primary.path, point_tier=1
+                        exclude=tempexclude, point_tier=1
                     )
 
                 # There is a change for primary to condinue to improve throughout life

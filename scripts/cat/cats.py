@@ -2848,6 +2848,10 @@ class Cat:
                 self.add_split((splitrng - 1), template["name"])
         if template["origin"] == "core":
             self.add_split(0, template["name"])
+        
+        if template["name"] in names_dict["inappropriate_names"]:
+            template["name"] = choice(names_dict["normal_prefixes"]) 
+            
         self.alters.append(template)
         
 
