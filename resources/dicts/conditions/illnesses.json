@@ -2626,5 +2626,56 @@
         ],
         "herbs": [
         ]
+    },
+    "deer tick fever": {
+        "severity": "major",
+        "mortality": {
+            "newborn": 40,
+            "kitten": 50,
+            "adolescent": 75,
+            "young adult": 80,
+            "adult": 80,
+            "senior adult": 65,
+            "senior": 50
+        },
+        "medicine_mortality": {
+            "newborn": 80,
+            "kitten": 90,
+            "adolescent": 105,
+            "young adult": 120,
+            "adult": 120,
+            "senior adult": 105,
+            "senior": 90
+        },
+        "duration": 4,
+        "medicine_duration": 1,
+        "infectiousness": 0,
+        "risks": [
+            {
+                "name": "deer tick disease",
+                "chance": 40
+            },
+            {
+                "name": "brain fog",
+                "chance": 20
+            },
+            {
+				"name": "fatigue",
+				"chance": 15
+			},
+            {
+                "name": "headache",
+                "chance": 20
+            }
+        ],
+        "herbs": [
+            "marigold",
+            "burdock",
+            "wild_garlic",
+            "poppy",
+            "moss",
+            "honey",
+            "thyme"
+        ]
     }
 }

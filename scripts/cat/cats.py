@@ -144,7 +144,10 @@ class Cat:
         "ear buzzing": "tinnitus",
         "kittenspace": "littlespace",
         "puppyspace": "petspace",
-        "parroting": "echolalia"
+        "parroting": "echolalia",
+        "deer tick fever": "Lyme disease",
+        "deer tick disease": "post-treatment Lyme disease",
+        "foggy mind": "DPDR"
     }
 
     default_pronouns = [
@@ -3085,6 +3088,10 @@ class Cat:
         if name == "kittencough" and self.status != "kitten":
             return
         
+        if game.config["event_generation"]["max_illnesses"] > 0:
+            if len(self.illnesses) == game.config["event_generation"]["max_illnesses"]:
+                return
+        
         #triggering illnesses
         eating_disorders = [ "anorexia", "ARFID", "bulimia", "binge-eating disorder", "food hoarding", "pica"]
         self_harm = ["harmful stims"]
@@ -3557,6 +3564,10 @@ class Cat:
                 f"WARNING: {name} is not in the permanent conditions collection.",
             )
             return
+        
+        if game.config["event_generation"]["max_perm_conditions"] > 2:
+            if len(self.permanent_condition) == game.config["event_generation"]["max_perm_conditions"]:
+                return
         misdiagnosis = False
         try:
             with open("resources/dicts/conditions/misdiagnoses.json", 'r', encoding="utf-8") as read_file:

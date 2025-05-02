@@ -3363,5 +3363,60 @@
             }
         ],
         "herbs":[]
+        },
+        "deer tick disease": {
+           "severity": "major",
+            "congenital": "never",
+            "moons_until": 0,
+            "mortality": {
+                "newborn": 70,
+                "kitten": 80,
+                "adolescent": 95,
+                "young adult": 110,
+                "adult": 110,
+                "senior adult": 95,
+                "senior": 80
+            },
+            "illness_infectiousness": [
+            ],
+            "risks": [
+                {
+                    "name": "joint pain",
+                    "chance": 15
+                },
+                {
+                    "name": "brain fog",
+                    "chance": 20
+                },
+                {
+                    "name": "fatigue",
+                    "chance": 15
+                },
+                {
+                    "name": "headache",
+                    "chance": 30
+                },
+                {
+                    "name": "severe headache",
+                    "chance": 40
+                },
+                {
+                    "name": "fainting",
+                    "chance": 40
+                },
+                {
+                    "name": "nausea",
+                    "chance": 40
+                },
+                {
+                    "name": "constant joint pain",
+                    "chance": 60
+                }
+            ],
+            "herbs": [
+                "poppy",
+                "daisy",
+                "marigold"
+            ]
         }
     }

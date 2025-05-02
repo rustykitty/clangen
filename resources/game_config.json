@@ -281,9 +281,15 @@
 	"event_generation": {
 		"df_trainee_injury_event_denominator": 20,
 		"df_trainee_injury_event_compare": 3,
+		"max_illnesses": -1,
+		"max_perm_conditions": -1,
 		"debug_ensure_event_id": null,
 		"comment": [
-			"if randint(1, df_trainee_injury_event_denominator) <= df_trainee_injury_event_compare - base is 15% chance"
+			"if randint(1, df_trainee_injury_event_denominator) <= df_trainee_injury_event_compare - base is 15% chance",
+			"Max perm conditions is -1 (disabled) be default. This feature is primarily for testing purposes and not recommended for gameplay.",
+			"It cannot be set to lower than 3. I mean you can but  it will disable the limit entirely ",
+			"Max illnesses is the maximum total of illnesses and injuries a cat can have at once. Does not include perm conditions",
+			"Set to -1 to disable"
 		]
 	},
 	"death_related": {

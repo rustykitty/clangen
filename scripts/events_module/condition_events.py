@@ -495,7 +495,8 @@ class Condition_Events:
             "bipolar i",
             "bipolar ii",
             "essential tremor",
-            "foggy mind"
+            "foggy mind",
+            "deer tick disease"
         ]
 
         got_condition = False
@@ -591,6 +592,7 @@ class Condition_Events:
             "delusions": "psychotic episode",
             "psychotic episode": "ongoing psychosis",
             "ongoing psychosis": ["otherwordly mind", "obsessive mind", "thunderous spirit"],
+            "deer tick fever": "deer tick disease"
         }
         # ---------------------------------------------------------------------------- #
         #                         handle currently sick cats                           #

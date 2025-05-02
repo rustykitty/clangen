@@ -618,6 +618,24 @@
 			"m_c's delusions have only deepened. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} now in a psychotic episode.",
 			"Trying to reality check m_c has only made {PRONOUN/m_c/object} more distrustful of {PRONOUN/m_c/poss} Clanmates."
 		]
+	},
+	"deer tick fever": {
+		"deer tick disease": [
+			"Despite r_c's diligent treatment, m_c's deer tick fever hasn't quite abated. {PRONOUN/m_c/subject/CAP} actually {VERB/m_c/seem/seems} to be developing new symptoms.",
+      		"Who knew a harmless little tick could cause this? m_c regrets how dismissive of tick bites {PRONOUN/m_c/subject} {VERB/m_c/were/was} before."
+		],
+		"brain fog": [
+			"m_c just can't think straight. {PRONOUN/m_c/subject/CAP} {VERB/m_c/seem/seems} to be experiencing brain fog.",
+			"m_c fumbles a task, {PRONOUN/m_c/poss} mind too hazy to focus."
+		],
+		"fatigue": [
+			"It's a struggle for m_c to drag {PRONOUN/m_c/self} out of {PRONOUN/m_c/poss} nest today.",
+			"No matter how much m_c sleeps, {PRONOUN/m_c/subject} can't shake the weariness seeped into {PRONOUN/m_c/poss} bones."
+		],
+		"headache": [
+			"m_c asks r_c for pain relieving herbs, unable to shake the throbbing pain in {PRONOUN/m_c/poss} skull.",
+			"m_c wakes up with a dull, throbbing pain in {PRONOUN/m_c/poss} head."
+		]
 	}
 	
 }

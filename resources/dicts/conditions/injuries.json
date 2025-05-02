@@ -276,7 +276,11 @@
             {
                 "name": "an infected wound",
                 "chance": 40
-            }
+            },
+            {
+				"name": "deer tick fever",
+				"chance": 50
+			}
         ],
         "also_got": [],
         "cause_permanent": [],
@@ -1860,6 +1864,10 @@
             },
 			{
 				"name": "spasms",
+				"chance": 40
+			},
+            {
+				"name": "deer tick fever",
 				"chance": 40
 			}
         ],

@@ -43,6 +43,11 @@
         "an infected wound": [
             "r_c sighs and tries to gently extract the head of the tick that was left behind when the insect was plucked off of m_c. With that contaminant, the little tick bite has become infected.",
             "The tick on m_c was left for far too long. The area is now swollen and warm - definite signs of infection."
+        ],
+        "deer tick fever": [
+            "r_c anxiously informs m_c of an unusual rash {PRONOUN/r_c/subject} found hidden within {PRONOUN/m_c/poss} fur. Some ticks can transmit diseases, r_c explains, and m_c seems to be showing symptoms.",
+            "The tick on m_c was left for far too long - {PRONOUN/m_c/subject} {VERB/m_c/have/has} started to develop an unusual rash.",
+            "It's a struggle for m_c to drag {PRONOUN/m_c/self} out of {PRONOUN/m_c/poss} nest. {PRONOUN/m_c/poss/CAP} tick bite may have been left untreated for too long."
         ]
     },
     "broken jaw": {
@@ -270,6 +275,11 @@
 			"Worryingly, m_c's limbs are beginning to spasm and jerk around {PRONOUN/m_c/object}. While {PRONOUN/m_c/subject} {VERB/m_c/attempt/attempts} to recover in the medicine den, r_c reexamines the removed ticks {PRONOUN/r_c/subject} {VERB/r_c/have/has} to inform the Clan of the risk these ticks may pose.",
 			"Alongside the tick bites, m_c has noticed that {PRONOUN/m_c/poss} limbs seem to have gained their own opinions on things.",
 			"m_c jerks around in {PRONOUN/m_c/poss} nest, awkwardly flailing a paw around without any real ability to stop it."
-		]
+		],
+        "deer tick fever": [
+            "r_c anxiously informs m_c of an unusual rash {PRONOUN/r_c/subject} found hidden within {PRONOUN/m_c/poss} fur. Some ticks can transmit diseases, r_c explains, and m_c seems to be showing symptoms.",
+            "The tick on m_c was left for far too long - {PRONOUN/m_c/subject} {VERB/m_c/have/has} started to develop an unusual rash.",
+            "It's a struggle for m_c to drag {PRONOUN/m_c/self} out of {PRONOUN/m_c/poss} nest. One of {PRONOUN/m_c/poss} tick bites may have been left untreated for too long."
+        ]
     }
 }
