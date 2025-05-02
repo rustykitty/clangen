@@ -77,7 +77,9 @@
     "While the other kittens are rolling around, m_c is more interested in talking with the Clan's medicine cat and soaking up information about the herbs.",
     "m_c struggles to change {PRONOUN/m_c/poss} routine, preferring to do things one way and alone. {PRONOUN/m_c/subject/CAP} may be a starwalker.",
     "While the other kittens in the Clan are out making many friends, m_c prefers to stick with one or two particular cats and shies away from others.",
-    "When it comes to trying out new games and nesting material, m_c keeps making faces and looking very upset - {PRONOUN/m_c/subject} {VERB/m_c/like/likes} what {PRONOUN/m_c/subject} already {VERB/m_c/have/has}."
+    "When it comes to trying out new games and nesting material, m_c keeps making faces and looking very upset - {PRONOUN/m_c/subject} {VERB/m_c/like/likes} what {PRONOUN/m_c/subject} already {VERB/m_c/have/has}.",
+    "During a minor argument with a Clanmate, m_c becomes overwhelmed to the point of shutting down completely. {PRONOUN/m_c/subject/CAP} {VERB/m_c/don't/doesn't} understand how processing emotions seems to come so naturally for other cats.",
+    "When m_c becomes stressed, {PRONOUN/m_c/subject} {VERB/m_c/find/finds} it easier to lash {PRONOUN/m_c/poss} tail and stomp {PRONOUN/m_c/poss} paws than articulate {PRONOUN/m_c/poss} feelings. The medicine cat suggests m_c may be a starwalker."
   ],
   "anxiety": [
     "r_c is growing very used to m_c coming into the medicine den with a twitching tail and pressed down ears. They sit together, r_c purring as {PRONOUN/r_c/subject} steadily {VERB/r_c/answer/answers} all of {PRONOUN/m_c/poss} many worried questions.",
@@ -87,7 +89,7 @@
     "m_c took some prey from the fresh-kill pile, and then cried because {PRONOUN/m_c/subject} thought it might mean the rest of the Clan wouldn't have enough."
   ],
   "obsessive mind": [
-    "m_c sleeps separately from {PRONOUN/m_c/poss} parent and denmates, liking {PRONOUN/m_c/poss} own nest that {PRONOUN/m_c/subject} can decorate and keep it just how {PRONOUN/m_c/subject} {VERB/m_c/like/likes} it. r_c explains to {PRONOUN/m_c/poss} concerned parent that {PRONOUN/m_c/subject} could have an obsessive mind, and it's nothing serious.",
+    "m_c sleeps separately from {PRONOUN/m_c/poss} parent and denmates, liking {PRONOUN/m_c/poss} own nest that {PRONOUN/m_c/subject} can decorate and keep it just how {PRONOUN/m_c/subject} {VERB/m_c/like/likes} it. r_c explains to {PRONOUN/m_c/poss} concerned parent that {PRONOUN/m_c/subject} could have an obsessive mind.",
     "m_c hisses when some of {PRONOUN/m_c/poss} denmates playfight near {PRONOUN/m_c/poss} nest, quick to realign what they knocked out of place. {PRONOUN/m_c/poss/CAP} parent scolds {PRONOUN/m_c/object} for this, but m_c complains that it makes {PRONOUN/m_c/object} anxious when {PRONOUN/m_c/poss} things are out of place.",
     "m_c snuck out of camp, trotted towards a puddle, and rolled in it, seeming happy once {PRONOUN/m_c/subject} shook off the remaining water. When asked why, m_c just says water makes {PRONOUN/m_c/object} feel cleaner.",
     "Counting and recounting, m_c keeps doing things a certain number of times and when asked why, {PRONOUN/m_c/subject} just {VERB/m_c/say/says} that it's a reasonable number of times.",
@@ -135,7 +137,8 @@
   ],
   "snow vision": [
     "r_c notices that m_c struggles to see in the dark, more so than the other kits. {PRONOUN/m_c/subject} {VERB/r_c/speak/speaks} to m_c and discover that m_c has snow vision.",
-    "m_c is permanently seeing a snowy effect in {PRONOUN/m_c/poss} vision, and when {PRONOUN/m_c/subject} {VERB/m_c/speaks/speak} to a medicine cat about it, {PRONOUN/m_c/subject} {VERB/m_c/discover/discovers} that {PRONOUN/m_c/subject} {VERB/m_c/have/has} snow vision."
+    "m_c is permanently seeing a snowy effect in {PRONOUN/m_c/poss} vision, and when {PRONOUN/m_c/subject} {VERB/m_c/speaks/speak} to a medicine cat about it, {PRONOUN/m_c/subject} {VERB/m_c/discover/discovers} that {PRONOUN/m_c/subject} {VERB/m_c/have/has} snow vision.",
+    "m_c casually jokes about the static in {PRONOUN/m_c/poss} vision, only to find out that it is not a universal experience. It turns out m_c has snow vision."
   ],
   "irritable bowels": [
     "r_c is very carefully preparing yet another mixture of belly soothing herbs for m_c. {PRONOUN/r_c/subject}{VERB/m_c/'re/'s} worried about the consistancy of {PRONOUN/m_c/poss} issues.",
@@ -280,7 +283,8 @@
   ],
   "puzzled heart": [
     "When other cats vent to m_c, {PRONOUN/m_c/subject} tend to give solutions rather than comfort. The medicine cat proposes that m_c is a puzzled heart.",
-    "m_c admits that {PRONOUN/m_c/subject} {VERB/m_c/have/has} never been able to read emotions, much less empathize with them."
+    "m_c admits that {PRONOUN/m_c/subject} {VERB/m_c/have/has} never been able to read emotions, much less empathize with them.",
+    "Every morning, m_c practices forming different facial expressions and body language. Why must emotions be so complicated?"
   ],
   "parrot chatter": [
     "When r_c mews hello to m_c, m_c mews it back a dozen times. It seems {PRONOUN/m_c/subject}{VERB/m_c/have/has} parrot chatter.",
