@@ -3713,6 +3713,11 @@ class Cat:
 
         if name == "paralyzed":
             self.pelt.paralyzed = True
+            
+        
+        if condition["risks"] is not None:
+            for risk in condition["risks"]:
+                risk["chance"] = randint(int(risk["chance"]/2),int(risk["chance"]*2))
 
         new_perm_condition = PermanentCondition(
             name=name,
