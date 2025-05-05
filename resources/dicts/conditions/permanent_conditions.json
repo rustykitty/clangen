@@ -724,6 +724,14 @@
 				"chance": 15
 			},
             {
+                "name": "emotionally numb",
+                "chance": 15
+            },
+            {
+                "name": "double tongue",
+                "chance": 150
+            },
+            {
                 "name": "budding spirit",
                 "chance": 150
             },
@@ -771,6 +779,14 @@
                 "chance": 20
             },
             {
+                "name": "fatigue",
+                "chance": 15               
+            },
+            {
+                "name": "emotionally numb",
+                "chance": 15
+            },
+            {
                 "name": "amnesia",
                 "chance": 50
             },
@@ -806,6 +822,10 @@
 				"name": "sleep paralysis",
 				"chance": 45
 			},
+            {
+                "name": "double tongue",
+                "chance": 75
+            },
             {
                 "name": "budding spirit",
                 "chance": 140
@@ -1049,6 +1069,10 @@
             {
                 "name": "shutdown",
                 "chance": 50
+            },
+            {
+                "name": "emotionally numb",
+                "chance": 10
             }
         ],
         "herbs": [
@@ -1183,6 +1207,10 @@
 				"chance": 25
 			},
             {
+                "name": "emotionally numb",
+                "chance": 25
+            },
+            {
                 "name": "body biter",
                 "chance": 70
             },
@@ -1207,6 +1235,40 @@
             "thyme",
             "juniper",
             "poppy"
+        ]
+    },
+    "murky mind": {
+        "severity": "minor",
+        "congenital": "always",
+        "moons_until": 1,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness":[
+        ],
+        "risks": [
+            {
+                "name": "fatigue",
+                "chance": 10
+            },
+            {
+                "name": "emotionally numb",
+                "chance": 10
+            },
+            {
+                "name": "brain fog",
+				"chance": 20
+            },
+            {
+                "name": "sleeplessness",
+                "chance": 100
+            }
         ]
     },
     "comet spirit": {
@@ -1320,6 +1382,10 @@
             "illness_infectiousness":[
             ],
             "risks": [
+                {
+                    "name": "double tongue",
+                    "chance": 50
+                }
             ],
             "herbs":[
                 "poppy",
@@ -1402,6 +1468,10 @@
             {
                 "name": "sore",
                 "chance": 25
+            },
+            {
+                "name": "double tongue",
+                "chance": 170
             },
             {
                 "name": "spirited heart",
@@ -1780,6 +1850,10 @@
             {
                 "name": "delusions",
                 "chance": 60
+            },
+            {
+                "name": "double tongue",
+                "chance": 50
             }
 
         ],

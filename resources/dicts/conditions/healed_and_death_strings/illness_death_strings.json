@@ -223,5 +223,11 @@
   "deer tick fever": [
     "m_c died of deer tick fever.",
     "Deer tick fever has taken m_c's life."
+  ],
+  "emotionally numb": [
+    "this should not appear! m_c died from being emotionally numb?"
+  ],
+  "double tongue": [
+    "this should not appear! m_c died from double tongue?"
   ]
 }

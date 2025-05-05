@@ -133,6 +133,7 @@ class Cat:
         "frequent fainting": "vasovagal syncope",
         "flooded paws": "POTS",
         "bad knee": "meniscus tear",
+        "murky mind": "dysthemia",
 
         "sunblindness": "light sensitivity",
         "faux pregnant": "phantom pregnancy",
@@ -147,7 +148,10 @@ class Cat:
         "parroting": "echolalia",
         "deer tick fever": "Lyme disease",
         "deer tick disease": "post-treatment Lyme disease",
-        "foggy mind": "DPDR"
+        "foggy mind": "DPDR",
+        "emotionally numb": "alexithymia",
+        "being emotionally numb": "having alexithymia",
+        "double tongue": "chronic lying"
     }
 
     default_pronouns = [

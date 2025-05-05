@@ -146,5 +146,15 @@
   "tremors":[
     "m_c's paws keep shaking uncontrollably.",
     "m_c is unable to keep {PRONOUN/m_c/poss} paws steady, no matter how hard {PRONOUN/m_c/subject} try."
+  ],
+  "emotionally numb": [
+    "m_c doesn't remember when {PRONOUN/m_c/subject} last felt much of anything.",
+    "m_c is having trouble deciding what {PRONOUN/m_c/subject} {VERB/mc_/are/is} feeling.",
+    "m_c is having trouble feeling things really deeply.",
+    "m_c is feeling quite numb."
+  ],
+  "double tongue": [
+    "m_c has been lying about little things. {PRONOUN/m_c/poss/CAP} double tongue has landed them unable to do patrols.",
+    "While {PRONOUN/m_c/poss} clanmates understand that m_c is lying as a trauma response, that doesn't mean that {PRONOUN/m_c/subject} {VERB/m_c/haven't/hasn't} caused damage."
   ]
 }

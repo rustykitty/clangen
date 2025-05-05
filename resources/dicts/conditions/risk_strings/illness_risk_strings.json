@@ -636,6 +636,12 @@
 			"m_c asks r_c for pain relieving herbs, unable to shake the throbbing pain in {PRONOUN/m_c/poss} skull.",
 			"m_c wakes up with a dull, throbbing pain in {PRONOUN/m_c/poss} head."
 		]
+	},
+	"emotionally numb": {
+		"sleeplessness": [
+			"m_c finds that when you don't feel much, sleep comes harder to you.",
+			"m_c doesn't feel tired enough to go to sleep quite yet.",
+			"m_c stares at the other side of {PRONOUN/m_c/poss} den, unable to sleep."
+		]
 	}
-	
 }
