@@ -1436,8 +1436,8 @@
 			"A Clanmate spots m_c talking to {PRONOUN/m_c/self}, only to realize that {PRONOUN/m_c/subject} {VERB/m_c/are/is} actually talking to things that aren't there at all."
 		],
 		"double tongue": [
-			"m_c hates lying, but {PRONOUN/m_c/subject} can't stop {PRONOUN/m_c/self}.",
-			"m_c has gotten in trouble for saying little lies."
+			"m_c KNOWS it's not that big of a deal, but when r_c asks about {PRONOUN/r_c/poss} favorite prey went, m_c would rather lie than say {PRONOUN/m_c/subject} ate it.",
+			"m_c hates lying, but {PRONOUN/m_c/subject} can't stop {PRONOUN/m_c/self}."
 		]
 	},
     "otherworldly mind": {
