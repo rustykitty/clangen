@@ -522,9 +522,9 @@ class Condition_Events:
                                 "permanent_condition_chance"
                             ]
                         ):
-                            for con in perm_condition:
+                            for con in possible_conditions:
                                 if con in ["shattered soul", "fractured spirit", "budding spirit"] and cat.is_plural():
-                                    perm_condition.remove(con)
+                                    possible_conditions.remove(con)
                             perm_condition = random.choice(possible_conditions)
                             if perm_condition == "lazy eye":
                                 cat.pelt.lazy_eye = cat.pelt.eye_colour
@@ -1186,7 +1186,7 @@ class Condition_Events:
                 # if it is, then break instead of giving the risk
                 if skip is True:
                     break
-
+                
                 new_condition_name = risk["name"]
 
                 # lower risk of getting it again if not a perm condition

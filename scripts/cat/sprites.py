@@ -125,7 +125,7 @@ class Sprites:
             'lineart', 'lineartdf', 'lineartdead',
             'eyes', 'eyes2', 'lazyeyes', 'skin', 'blep',
             'scars', 'missingscars', 'disabilityscars',
-            'medcatherbs', 'snake_accessories', 'smallAnimal_accessories', 'aliveInsect_accessories', 'disabilityaccs',
+            'medcatherbs', 'wild','snake_accessories', 'smallAnimal_accessories', 'aliveInsect_accessories', 'disabilityaccs',
             'booties', 'wheels',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
@@ -293,7 +293,11 @@ class Sprites:
         ]
 
         wild_data = [
-            ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "MOTH WINGS", "CICADA WINGS"]
+            ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "MOTH WINGS", "MONARCH BUTTERFLY", "CICADA WINGS", "BLACK CICADA"]
+        ]
+        
+        dryherbs_data = [
+            ["DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS"]
         ]
 
         collars_data = [
@@ -353,12 +357,16 @@ class Sprites:
         for row, herbs in enumerate(medcatherbs_data):
             for col, herb in enumerate(herbs):
                 self.make_group('medcatherbs', (col, row), f'acc_herbs{herb}')
-        self.make_group('medcatherbs', (5, 2), 'acc_herbsDRY HERBS')
+        
+        #dryherbs
+        for row, dryherbs in enumerate(medcatherbs_data):
+            for col, dryherb in enumerate(herbs):
+                self.make_group('medcatherbs', (col, 4), f'acc_herbs{herb}')
 
         # wild
         for row, wilds in enumerate(wild_data):
             for col, wild in enumerate(wilds):
-                self.make_group('medcatherbs', (col, 2), f'acc_wild{wild}')
+                self.make_group('medcatherbs', (col, 0), f'acc_wild{wild}')
 
         # collars
         for row, collars in enumerate(collars_data):
