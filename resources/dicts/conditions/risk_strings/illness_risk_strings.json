@@ -643,5 +643,21 @@
 			"m_c doesn't feel tired enough to go to sleep quite yet.",
 			"m_c stares at the other side of {PRONOUN/m_c/poss} den, unable to sleep."
 		]
+	},
+	"burn out": {
+		"headache": [
+			"r_c says that the cause of m_c's headache is likely from {PRONOUN/m_c/object} pushing {PRONOUN/m_c/self}.",
+			"m_c's head hurts. It seems like {PRONOUN/m_c/subject} {VERB/m_c/have/has} been pushing {PRONOUN/m_c/self} too hard.",
+			"m_c has gotten a headache and {PRONOUN/m_c/subject} {VERB/m_c/aren't/isn't} sure why."
+		],
+		"severe headache": [
+			"As soon as m_c tries to leave the nest, {PRONOUN/m_c/subject} {VERB/m_c/are/is} hit with painful rays of sunshine. r_c tells {PRONOUN/m_c/object} to rest up in the nest today, and to not push {PRONOUN/m_c/self} so hard.",
+			"m_c can't leave the nest due to {PRONOUN/m_c/poss} blinding headache.",
+			"m_c has gotten a headache and {PRONOUN/m_c/subject} {VERB/m_c/aren't/isn't} sure why, even though {PRONOUN/m_c/poss} clanmates could guess."
+		],
+		"anxiety attack": [
+			"m_c has been stressed about every little thing. Unfortunatly, this means that m_c is now having an anxiety attack.",
+			"m_c has gotten an anxiety attack after burning out."
+		]
 	}
 }

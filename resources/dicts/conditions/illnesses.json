@@ -1593,7 +1593,20 @@
         "duration": 2,
         "medicine_duration": 1,
         "infectiousness": 0,
-        "risks": [],
+        "risks": [
+            {
+                "name": "headache",
+                "chance": 25
+            },
+            {
+                "name": "severe headache",
+                "chance": 25
+            },
+            {
+                "name": "anxiety attack",
+                "chance": 50
+            }
+        ],
         "herbs": [
 			"chamomile",
 			"thyme"
