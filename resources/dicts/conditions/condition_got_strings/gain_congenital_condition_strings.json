@@ -335,5 +335,12 @@
   "foggy mind": [
     "After recalling a shared happy memory with a friend, m_c realizes that {PRONOUN/m_c/subject} feel completely disconnected from the memory. It doesn't even seem to be {PRONOUN/m_c/poss} own.",
     "m_c tries to explain the best {PRONOUN/m_c/subject} can- everything feels so distorted from reality. {PRONOUN/m_c/poss/CAP} paws are too big and too small from day-to-day, {PRONOUN/m_c/subject} can sometimes even feel {PRONOUN/m_c/poss} own self float away from {PRONOUN/m_c/poss} body."
+  ],
+  "murky mind": [
+    "After a conversation with r_c, m_c realizes that just feeling meh isn't the normal experience.",
+    "It seems like m_c just doesn't feel much.",
+    "m_c feels less excited about life achivements than {PRONOUN/m_c/poss} other peers.",
+    "m_c just doesn't seem to feel as much.",
+    "m_c goes through life in a murk."
   ]
 }
