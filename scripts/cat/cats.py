@@ -97,7 +97,7 @@ class Cat:
     }
 
     dad_names = {
-        "starwalker": "autism",
+        "prismatic mind": "autism",
         "obsessive mind": "OCD",
         "weighted heart": "MDD",
         "comet spirit": "ADHD",
@@ -3306,7 +3306,7 @@ class Cat:
                 "seizure prone": [
                     "confused body", "curved spine", "face blindness", "parrot chatter"
                 ],
-                "starwalker": [
+                "prismatic mind": [
                     "comet spirit", "burning light", "jumbled noise", "disrupted senses", "confused body",
                     "jumbled mind", "counting fog", "spirited heart", "puzzled heart", "face blindness",
                     "parrot chatter", "selective mutism", "thought blind"
@@ -3318,7 +3318,7 @@ class Cat:
                     "shattered soul", "budding spirit"
                 ],
                 "comet spirit": [
-                    "starwalker", "burning light", "jumbled noise", "disrupted senses", "confused body",
+                    "prismatic mind", "burning light", "jumbled noise", "disrupted senses", "confused body",
                     "jumbled mind", "counting fog", "spirited heart", "parrot chatter"
                 ],
                 "antisocial": [
@@ -3346,16 +3346,16 @@ class Cat:
                     "constant roaming pain", "irritable bowels", "jellyfish joints"
                 ],
                 "burning light": [
-                    "starwalker", "comet spirit", "jumbled noise", "disrupted senses"
+                    "prismatic mind", "comet spirit", "jumbled noise", "disrupted senses"
                 ],
                 "jumbled noise": [
-                    "starwalker", "comet spirit", "burning light", "disrupted senses"
+                    "prismatic mind", "comet spirit", "burning light", "disrupted senses"
                 ],
                 "disrupted senses": [
-                    "starwalker", "comet spirit", "burning light", "jumbled noise"
+                    "prismatic mind", "comet spirit", "burning light", "jumbled noise"
                 ],
                 "confused body": [
-                    "seizure prone", "starwalker", "comet spirit", "parrot chatter"
+                    "seizure prone", "prismatic mind", "comet spirit", "parrot chatter"
                 ],
                 "shattered soul": [
                     "weighted heart", "antisocial", "anxiety", "thunderous spirit", "otherworldly mind"
@@ -3385,28 +3385,28 @@ class Cat:
                     "paralyzed", "constant joint pain", "seizure prone", "constant roaming pain"
                 ],
                 "jumbled mind": [
-                    "starwalker", "comet spirit", "counting fog"
+                    "prismatic mind", "comet spirit", "counting fog"
                 ],
                 "counting fog": [
-                    "starwalker", "comet spirit", "jumbled mind"
+                    "prismatic mind", "comet spirit", "jumbled mind"
                 ],
                 "spirited heart": [
-                    "starwalker", "obsessive mind", "comet spirit", "thunderous spirit"
+                    "prismatic mind", "obsessive mind", "comet spirit", "thunderous spirit"
                 ],
                 "puzzled heart": [
-                    "starwalker", "antisocial", "thunderous spirit"
+                    "prismatic mind", "antisocial", "thunderous spirit"
                 ],
                 "face blindness": [
-                    "seizure prone", "starwalker", "thought blind"
+                    "seizure prone", "prismatic mind", "thought blind"
                 ],
                 "parrot chatter": [
-                    "seizure prone", "starwalker", "comet spirit", "confused body"
+                    "seizure prone", "prismatic mind", "comet spirit", "confused body"
                 ],
                 "selective mutism": [
-                    "starwalker", "anxiety"
+                    "prismatic mind", "anxiety"
                 ],
                 "thought blind": [
-                    "starwalker", "face blindness"
+                    "prismatic mind", "face blindness"
                 ],
                 "foggy mind": [
                     "weighted heart"
@@ -3680,7 +3680,7 @@ class Cat:
                 moons_until = randint(moons_until - 1, moons_until + 12)
             if name == "shattered soul":
                 moons_until = randint(moons_until - 1, moons_until + 12)
-            if name == "starwalker":
+            if name == "prismatic mind":
                 moons_until = randint(moons_until - 1, moons_until + 10)
             if name == "comet spirit":
                 moons_until = randint(moons_until - 1, moons_until + 10)

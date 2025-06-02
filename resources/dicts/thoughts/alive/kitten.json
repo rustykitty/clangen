@@ -619,7 +619,7 @@
         }
     },
     {
-        "id": "starwalker_kit",
+        "id": "prismatic mind_kit",
         "thoughts": [
             "Tells r_c the differences between a crow and a raven",
             "Plans out an elaborate story in {PRONOUN/m_c/poss} mind",
@@ -627,7 +627,7 @@
         ],
         "perm_conditions": {
             "m_c": [
-                "starwalker"
+                "prismatic mind"
             ]
         },
         "random_living_status": [

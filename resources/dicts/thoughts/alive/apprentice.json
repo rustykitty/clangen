@@ -476,7 +476,7 @@
         }
     },
 	{
-        "id": "starwalker_warrior_apprentice",
+        "id": "prismatic mind_warrior_apprentice",
         "thoughts": [
             "Weaves through {PRONOUN/m_c/poss} battle training like it's a dance",
             "Is very wriggly today",
@@ -493,18 +493,18 @@
         ],
         "perm_conditions": {
             "m_c": [
-                "starwalker"
+                "prismatic mind"
             ]
         }
     },
     {
-        "id": "starwalker_warrior_apprentice_to_alive_mentor",
+        "id": "prismatic mind_warrior_apprentice_to_alive_mentor",
         "thoughts": [
             "Asks {PRONOUN/m_c/poss} mentor if {PRONOUN/m_c/subject} could train alone today"
         ],
         "perm_conditions": {
             "m_c": [
-                "starwalker"
+                "prismatic mind"
             ]
         },
         "relationship_constraint": [

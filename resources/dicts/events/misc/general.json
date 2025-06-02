@@ -3803,7 +3803,7 @@
         "senior"
       ],
       "permanent_condition": [
-        "starwalker"
+        "prismatic mind"
       ]
     }
   },
@@ -3988,7 +3988,7 @@
     ]
   },
   {
-    "event_id": "gen_misc_any_starwalker_kit_accessory1",
+    "event_id": "gen_misc_any_prismatic mind_kit_accessory1",
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
@@ -4006,7 +4006,7 @@
         "child/parent"
       ],
       "permanent_condition": [
-        "starwalker"
+        "prismatic mind"
       ]
     },
     "r_c": {
@@ -4059,7 +4059,7 @@
         "senior"
       ],
       "permanent_condition": [
-        "starwalker",
+        "prismatic mind",
         "comet spirit",
         "thunderous spirit",
         "otherworldy mind",

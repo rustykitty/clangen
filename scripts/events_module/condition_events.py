@@ -453,7 +453,7 @@ class Condition_Events:
             "persistent headaches",
             "comet spirit",
             "weighted heart",
-            "starwalker",
+            "prismatic mind",
             "obsessive mind",
             "antisocial",
             "anxiety",
@@ -970,8 +970,8 @@ class Condition_Events:
     @staticmethod
     def change_condition_name(text):
         dad_names = {
-            "a starwalker": "autistic",
-            "starwalker": "autism",
+            "a prismatic mind": "autistic",
+            "prismatic mind": "autism",
             "an obsessive mind": "OCD",
             "obsessive mind": "OCD",
             "a weighted heart": "MDD",

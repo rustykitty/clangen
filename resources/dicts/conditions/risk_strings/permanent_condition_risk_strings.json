@@ -771,7 +771,7 @@
             "On rough days, m_c finds it easier to picture fantastical scenarios in {PRONOUN/m_c/poss} mind than face the stresses of the Clan."
         ]
     },
-    "starwalker": {
+    "prismatic mind": {
 		"special interest": [
 				"m_c has been seen focusing on pretty pebbles and feathers {PRONOUN/m_c/subject} has been finding around {PRONOUN/m_c/poss} territory. When r_c confronts them about it, m_c explains {PRONOUN/m_c/subject} just like the objects. They're pretty.",
 				"Today, m_c was caught holding some kind of kittypet toy in {PRONOUN/m_c/poss} jaws. {PRONOUN/m_c/subject/CAP} looked embarrassed, and only mumbled that it just looked fluffy - {PRONOUN/m_c/subject} {VERB/m_c/admit/admits} it was worth stealing.",
@@ -912,38 +912,38 @@
 			"Because of how rapidly m_c has been speaking some of {PRONOUN/m_c/poss} words have slid into each other."
 		],
 		"jumbled mind": [
-            "Being a starwalker affects how m_c process words. Whenever {PRONOUN/m_c/subject} speaks, it comes out as a jumbled mess.",
-            "Being a starwalker affects how m_c process words. Whenever {PRONOUN/m_c/subject} speaks, it comes out as a jumbled mess."
+            "Being a prismatic mind affects how m_c process words. Whenever {PRONOUN/m_c/subject} speaks, it comes out as a jumbled mess.",
+            "Being a prismatic mind affects how m_c process words. Whenever {PRONOUN/m_c/subject} speaks, it comes out as a jumbled mess."
         ],
         "counting fog": [
-            "Being a starwalker affects how m_c processes numbers. r_c assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog.",
-            "Being a starwalker affects how m_c processes numbers. The medicine cat assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog."
+            "Being a prismatic mind affects how m_c processes numbers. r_c assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog.",
+            "Being a prismatic mind affects how m_c processes numbers. The medicine cat assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog."
         ],
         "spirited heart": [
             "After watching a bee die, m_c was left destitute for weeks. {PRONOUN/m_c/poss/CAP} emotions run strong: {PRONOUN/m_c/subject} is a spirited heart.",
-            "Being a starwalker amplifies how m_c feels emotions, especially the emotions of {PRONOUN/m_c/poss} Clanmates. {PRONOUN/m_c/subject/CAP} may be a spirited heart."
+            "Being a prismatic mind amplifies how m_c feels emotions, especially the emotions of {PRONOUN/m_c/poss} Clanmates. {PRONOUN/m_c/subject/CAP} may be a spirited heart."
         ],
         "puzzled heart": [
             "When other cats vent to m_c, {PRONOUN/m_c/subject/CAP} tend to give solutions rather than comfort. The medicine cat proposes that m_c is a puzzled heart.",
             "m_c admits that {PRONOUN/m_c/subject} {VERB/m_c/have/has} never been able to read emotions, much less empathize with them.",
-            "As a starwalker, m_c has never been able to connect with other cats in the same way. {PRONOUN/m_c/subject/CAP} may be a puzzled heart."
+            "As a prismatic mind, m_c has never been able to connect with other cats in the same way. {PRONOUN/m_c/subject/CAP} may be a puzzled heart."
         ],
         "face blindness": [
             "m_c struggles to tell {PRONOUN/m_c/poss} Clanmates apart without hearing their voices. m_c is face blind.",
             "m_c doesn't greet r_c until {PRONOUN/r_c/subject} {VERB/r_c/mew/mews} at {PRONOUN/m_c/object}. {PRONOUN/m_c/subject/CAP} is face blind.",
             "m_c confesses that {PRONOUN/m_c/subject} {VERB/m_c/find/finds} it easier to identify cats from their voices and scents, rather than their faces.",
-            "The medicine cat assures m_c that being unable to remember and recognize faces is a common part of being a starwalker."
+            "The medicine cat assures m_c that being unable to remember and recognize faces is a common part of being a prismatic mind."
         ],
         "parrot chatter": [
             "When r_c mews hello to m_c, m_c mews it back a dozen times. It seems {PRONOUN/m_c/subject} {VERB/m_c/have/has} parrot chatter.",
             "m_c often catches {PRONOUN/m_c/self} repeating the same word over and over. The medicine cat suggests it might be parrot chatter.",
-            "The medicine cat assures that m_c's frequent repetition of words is common for a starwalker."
+            "The medicine cat assures that m_c's frequent repetition of words is common for a prismatic mind."
         ],
         "selective mutism": [
             "Sometimes m_c's voice feels stuck in {PRONOUN/m_c/poss} chest, where the words clog and stifle {PRONOUN/m_c/object}. Sometimes its easier just not to talk at all.",
             "When m_c gets stressed, {PRONOUN/m_c/poss} words just disappear, leaving behind a heavy feeling.",
             "r_c assures m_c that even if {PRONOUN/m_c/poss} voice gets stuck, r_c will still be there to support {PRONOUN/m_c/object}.",
-            "It's not unheard of for starwalkers to be silent, so whenever m_c's voice leaves {PRONOUN/m_c/object}, {PRONOUN/m_c/poss} Clanmates are ready to help."
+            "It's not unheard of for prismatic minds to be silent, so whenever m_c's voice leaves {PRONOUN/m_c/object}, {PRONOUN/m_c/poss} Clanmates are ready to help."
         ],
         "vivid daydreamer": [
             "Sometimes, m_c seems to lose hours staring at the sky, imagining stories the elders recited to {PRONOUN/m_c/object}.",
@@ -952,7 +952,7 @@
 		"meltdown": [
 			"r_c finds m_c yowling into the sky and crying. {PRONOUN/r_c/subject/CAP} {VERB/m_c/do/does}n't know <i>why</i> {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} having this reaction, but it's clear that m_c is having a meltdown.",
 			"m_c has been trying to trudge through, but just <i>can't</i>.",
-			"Sometimes, starwalkers can't control themselves when things get overwhelming for them. This time, it's clear that m_c can't."
+			"Sometimes, prismatic minds can't control themselves when things get overwhelming for them. This time, it's clear that m_c can't."
 		],
 		"shutdown": [
 			"r_c finds m_c quiet and numb. Looks like things have gotten too overwhelming for {PRONOUN/m_c/object}.",

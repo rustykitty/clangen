@@ -272,7 +272,7 @@
         ]
     },
 	{
-        "id": "starwalker_medicine_cat_apprentice",
+        "id": "prismatic mind_medicine_cat_apprentice",
         "thoughts": [
             "Intently focuses on the herbs {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} sorting",
 			"Forgot to eat today and is wondering if anyone will notice if {PRONOUN/m_c/subject} {VERB/m_c/take/takes} prey in the night",
@@ -293,7 +293,7 @@
         ],
         "perm_conditions": {
             "m_c": [
-                "starwalker"
+                "prismatic mind"
             ]
 		},
         "random_status_constraint": [

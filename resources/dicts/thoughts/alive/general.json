@@ -2441,7 +2441,7 @@
         ]
     },
     {
-        "id": "starwalker_to_alive_gen",
+        "id": "prismatic mind_to_alive_gen",
         "thoughts": [
             "Runs around in circles",
             "Is collecting shiny rocks",
@@ -2569,7 +2569,7 @@
         ],
         "perm_conditions": {
             "m_c": [
-                "starwalker"
+                "prismatic mind"
             ]
         },
         "random_status_constraint": [
@@ -2580,7 +2580,7 @@
         ]
     },
     {
-        "id": "not_warrior_starwalker",
+        "id": "not_warrior_prismatic mind",
         "thoughts": [
             "Wonders if {PRONOUN/m_c/subject} should be a warrior"
         ],
@@ -2593,12 +2593,12 @@
         ],
         "perm_conditions": {
             "m_c": [
-                "starwalker"
+                "prismatic mind"
             ]
         }
     },
     {
-        "id": "not_med_starwalker",
+        "id": "not_med_prismatic mind",
         "thoughts": [
             "Wonders if {PRONOUN/m_c/subject} should be a medicine cat"
         ],
@@ -2614,12 +2614,12 @@
         ],
         "perm_conditions": {
             "m_c": [
-                "starwalker"
+                "prismatic mind"
             ]
         }
     },
     {
-        "id": "not_mediator_starwalker",
+        "id": "not_mediator_prismatic mind",
         "thoughts": [
             "Wonders if {PRONOUN/m_c/subject} should be a mediator"
         ],
@@ -2635,12 +2635,12 @@
         ],
         "perm_conditions": {
             "m_c": [
-                "starwalker"
+                "prismatic mind"
             ]
         }
     },
     {
-        "id": "not_med_starwalker_to_med_gen",
+        "id": "not_med_prismatic mind_to_med_gen",
         "thoughts": [
             "Doesn't like being treated as if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a forever-kit",
             "Feels like r_c is mocking {PRONOUN/m_c/object}",
@@ -2666,7 +2666,7 @@
         ],
         "perm_conditions": {
             "m_c": [
-                "starwalker"
+                "prismatic mind"
             ]
         },
         "random_status_constraint": [

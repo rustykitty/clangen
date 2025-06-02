@@ -64,7 +64,7 @@
 		"weighted heart",
 		"antisocial"
 	],
-	"starwalker":[
+	"prismatic mind":[
 		"jumbled noise",
 		"obsessive mind",
 		"comet spirit",
@@ -76,7 +76,7 @@
 		"puzzled heart"
 	],
 	"obsessive mind":[
-		"starwalker",
+		"prismatic mind",
 		"echoing shock",
 		"recurring shock",
 		"anxiety"
@@ -102,7 +102,7 @@
 		"weighted heart"
 	],
 	"comet spirit":[
-		"starwalker",
+		"prismatic mind",
 		"jumbled noise",
 		"anxiety",
 		"ongoing sleepnessless",
@@ -120,12 +120,12 @@
 		"obsessive mind",
 		"recurring shock",
 		"weighted heart",
-		"starwalker",
+		"prismatic mind",
 		"puzzled heart"
 	],
 	"anxiety":
 	[
-		"starwalker",
+		"prismatic mind",
 		"comet spirit",
 		"obsessive mind",
 		"lasting grief",
@@ -150,7 +150,7 @@
 	],
 	"body biter":
 	[
-		"starwalker",
+		"prismatic mind",
 		"anxiety",
 		"comet spirit",
 		"anxiety",
@@ -166,13 +166,13 @@
 		"recurring shock",
 		"otherworldly mind",
 		"comet spirit",
-		"starwalker",
+		"prismatic mind",
 		"puzzled heart",
 		"bipolar i"
 	],
 	"otherworldly mind":
 	[
-		"starwalker",
+		"prismatic mind",
 		"thunderous spirit",
 		"obsessive mind",
 		"snow vision"
@@ -220,14 +220,14 @@
 		"comet spirit",
 		"ear infection",
 		"partial hearing loss",
-		"starwalker",
+		"prismatic mind",
 		"disrupted senses"
 	],
 	"disrupted senses":
 	[
 		"comet spirit",
 		"jumbled noise",
-		"starwalker",
+		"prismatic mind",
 		"otherworldy mind"
 	],
 	"constant nightmares":
@@ -282,14 +282,14 @@
 	"face blindness":
 	[
 		"failing eyesight",
-		"starwalker",
+		"prismatic mind",
 		"thought blind"
 	],
 	"parrot chatter":
 	[
 		"comet spirit",
 		"jumbled mind",
-		"starwalker",
+		"prismatic mind",
 		"confused body"
 	],
 	"selective mutism":
@@ -303,7 +303,7 @@
 	],
 	"vivid daydreamer":
 	[
-		"starwalker",
+		"prismatic mind",
 		"otherwordly mind",
 		"comet spirit",
 		"disrupted senses"
