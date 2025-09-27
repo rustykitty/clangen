@@ -3533,8 +3533,7 @@ def create_option_preview_cat(scar: str = None, acc: str = None):
 
 
 # CAT CLASS ITEMS
-cat_class = Cat(example=True)
-game.cat_class = cat_class
+game.cat_class = Cat
 
 # ---------------------------------------------------------------------------- #
 #                                load json files                               #
