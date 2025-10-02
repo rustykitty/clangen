@@ -20,7 +20,7 @@ from scripts.events_module.generate_events import GenerateEvents
 from scripts.events_module.relationship.relation_events import Relation_Events
 from scripts.game_structure import localization, constants
 from scripts.game_structure.game.switches import switch_get_value, Switch
-from scripts.game_structure.game_essentials import game
+from scripts.game_structure import game
 from scripts.utility import (
     event_text_adjust,
     change_clan_relations,
@@ -127,7 +127,7 @@ class HandleShortEvents:
             self.sub_types.append("war")
         else:
             self.other_clan = choice(
-                game.clan.all_clans if game.clan.all_clans else None
+                game.clan.all_other_clans if game.clan.all_other_clans else None
             )
             self.other_clan_name = f"{self.other_clan.name}Clan"
 
@@ -237,6 +237,19 @@ class HandleShortEvents:
                 clan=game.clan,
                 other_clan=self.other_clan,
             )
+            if "log" in self.chosen_event.relationships:
+                for group in self.chosen_event.relationships["log"]:
+                    self.chosen_event.relationships["log"][group] = event_text_adjust(
+                        Cat,
+                        group,
+                        main_cat=self.main_cat,
+                        random_cat=self.random_cat,
+                        victim_cat=self.victim_cat,
+                        new_cats=self.new_cat_objects,
+                        clan=game.clan,
+                        other_clan=self.other_clan,
+                    )
+
             unpack_rel_block(Cat, self.chosen_event.relationships, self)
 
         # used in some murder events,
@@ -249,11 +262,9 @@ class HandleShortEvents:
             change_relationship_values(
                 [self.random_cat],
                 [kit],
-                platonic_like=-20,
-                dislike=40,
-                admiration=-30,
-                comfortable=-30,
-                jealousy=0,
+                like=-20,
+                respect=-30,
+                comfort=-30,
                 trust=-30,
             )
 
@@ -271,7 +282,10 @@ class HandleShortEvents:
         self.handle_injury()
 
         # handle murder reveals
-        if "murder_reveal" in self.chosen_event.sub_type:
+        if (
+            "murder_reveal" in self.chosen_event.sub_type
+            or "hidden_murder_reveal" in self.chosen_event.sub_type
+        ):
             self.main_cat.history.reveal_murder(
                 victim=self.victim_cat,
                 murderer_id=self.main_cat.ID,
@@ -321,7 +335,7 @@ class HandleShortEvents:
         )
 
         if self.chosen_herb:
-            game.herb_events_list.append(f"{self.chosen_event} {self.herb_notice}.")
+            game.herb_events_list.append(f"{self.text} {self.herb_notice}")
 
         self.gather_future_event()
 
@@ -366,8 +380,8 @@ class HandleShortEvents:
             random_cat=Cat.fetch_cat(event.involved_cats.get("r_c")),
             freshkill_pile=game.clan.freshkill_pile,
             victim_cat=Cat.fetch_cat(event.involved_cats.get("mur_c")),
-            sub_type=event.pool.get("subtype"),
-            ignore_subtyping="subtype" not in event.pool,
+            sub_type=event.pool.get("sub_type"),
+            ignore_subtyping="sub_type" not in event.pool,
         )
 
         self.allowed_events = []
@@ -398,7 +412,13 @@ class HandleShortEvents:
         for i, attribute_list in enumerate(self.chosen_event.new_cat):
             self.new_cats.append(
                 create_new_cat_block(
-                    Cat, Relationship, self, in_event_cats, i, attribute_list
+                    Cat,
+                    Relationship,
+                    self,
+                    in_event_cats,
+                    i,
+                    attribute_list,
+                    other_clan=self.other_clan,
                 )
             )
 
@@ -458,7 +478,7 @@ class HandleShortEvents:
         if "PLANT" in possible_accs:
             acc_list.extend(pelts.plant_accessories)
         if "COLLAR" in possible_accs:
-            acc_list.extend(pelts.collars)
+            acc_list.extend(pelts.collar_accessories)
 
         for acc in possible_accs:
             if acc not in ("WILD", "PLANT", "COLLAR"):
@@ -474,7 +494,7 @@ class HandleShortEvents:
                         acc_list.remove(acc)
 
         accessory_groups = [
-            pelts.collars,
+            pelts.collar_accessories,
             pelts.head_accessories,
             pelts.tail_accessories,
             pelts.body_accessories,
@@ -495,6 +515,8 @@ class HandleShortEvents:
             self.main_cat.pelt.accessory.append(choice(acc_list))
         else:
             self.main_cat.pelt.accessory = [choice(acc_list)]
+
+        self.main_cat.pelt.rebuild_sprite = True
 
     def handle_transition(self):
         """
@@ -542,7 +564,7 @@ class HandleShortEvents:
                 if "all_lives" in self.chosen_event.tags:
                     game.clan.leader_lives -= 10
                 elif "some_lives" in self.chosen_event.tags:
-                    game.clan.leader_lives -= randrange(2, self.current_lives - 1)
+                    game.clan.leader_lives -= randrange(2, self.current_lives)
                 else:
                     game.clan.leader_lives -= 1
 

@@ -1,5 +1,17 @@
 from pygame import Cursor, image, SYSTEM_CURSOR_ARROW
 import ujson
+import tomllib
+
+from scripts.screens.enums import GameScreen
+
+# this is just to make referencing main menu screens as a whole easier,
+# note that the clan creation screen is included and the clan settings screen is excluded. this is intended.
+MENU_SCREENS = [
+    GameScreen.SETTINGS,
+    GameScreen.START,
+    GameScreen.SWITCH_CLAN,
+    GameScreen.MAKE_CLAN,
+]
 
 BIOME_TYPES = ["Forest", "Plains", "Mountainous", "Beach", "Wetlands", "Desert"]
 
@@ -106,8 +118,8 @@ EVENT_ALLOWED_CONDITIONS = [
     "constant nightmares",
 ]
 
-with open(f"resources/game_config.json", "r", encoding="utf-8") as read_file:
-    CONFIG = ujson.loads(read_file.read())
+with open("resources/game_config.toml", "r", encoding="utf-8") as read_file:
+    CONFIG = tomllib.loads(read_file.read())
 
 with open("resources/placements.json", "r", encoding="utf-8") as read_file:
     LAYOUTS = ujson.loads(read_file.read())
