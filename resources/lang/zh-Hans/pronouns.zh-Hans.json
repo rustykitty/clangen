@@ -1,0 +1,40 @@
+{
+    "zh-Hans": {
+        "0": {
+            "subject": "他",
+            "object": "他",
+            "poss": "他的",
+            "inposs": "他的",
+            "self": "他自己",
+            "conju": 2,
+            "gender": 1
+        },
+        "1": {
+            "subject": "她",
+            "object": "她",
+            "poss": "她的",
+            "inposs": "她的",
+            "self": "她自己",
+            "conju": 2,
+            "gender": 2
+        },
+		"2": {
+            "subject": "他们",
+            "object": "他们",
+            "poss": "他们的",
+            "inposs": "他们的",
+            "self": "他们自己",
+            "conju": 1,
+            "gender": 1
+        },
+		"3": {
+            "subject": "她们",
+            "object": "她们",
+            "poss": "她们的",
+            "inposs": "她们的",
+            "self": "她们自己",
+            "conju": 1,
+            "gender": 2
+        }
+    }
+}
