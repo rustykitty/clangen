@@ -1,7 +1,7 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 from os import getenv
-
+import platform
 
 is_release = getenv('IS_RELEASE', '1') == '1'
 block_cipher = None
@@ -30,6 +30,10 @@ a.datas += [ ('changelog.txt', './changelog.txt', 'DATA') ]
 a.datas += [ ('OpenDataDirectory.bat', './bin/OpenDataDirectory.bat', 'DATA') ]
 a.datas += [ ('.itch.toml', './.itch.toml', 'DATA') ]
 
+target_arch = None
+if platform.system() == "Darwin":
+    target_arch = "universal2"
+
 exe = EXE(
     pyz,
     a.scripts,
@@ -43,7 +47,7 @@ exe = EXE(
     console=False if is_release else True,
     disable_windowed_traceback=False,
     argv_emulation=False,
-    target_arch=None,
+    target_arch=target_arch,
     codesign_identity=None,
     entitlements_file=None,
     icon='resources/images/icon.png',
