@@ -24,14 +24,14 @@ jobs:
             itch_channel: linux64_glibc_235
             api_artifact_name: linux2.35
             
-          - os: windows-latest
+          - os:  windows-2025-vs2026
             artifact_name: Clangen_Win64.zip
             python_version: "3.8"
             python_arch: "x64"
             itch_channel: win64
             api_artifact_name: win64
             
-          - os: windows-latest
+          - os:  windows-2025-vs2026
             artifact_name: Clangen_Win64_Windows10+.zip
             python_version: "3.11"
             python_arch: "x64"
