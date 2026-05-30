@@ -268,7 +268,7 @@ class Name:
         :return: Cat's name string
         """
         if rank in self.names_dict["titles"] and not self.specsuffix_hidden:
-            return self.names_dict["titles"][rank] + self.prefix
+            return self.names_dict["titles"][rank] + " " + self.prefix
 
         return self.prefix + self.suffix
 
