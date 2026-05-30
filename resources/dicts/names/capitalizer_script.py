@@ -1,3 +1,5 @@
+from typing import Union
+
 import json
 
 import os
@@ -5,7 +7,7 @@ import os.path
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-names: dict[str, dict[str, list[str]] | list[str]]
+names: dict[str, dict[str, Union[list[str], list[str]]]]
 
 with open("./names.json") as fp:
     names = json.load(fp)
