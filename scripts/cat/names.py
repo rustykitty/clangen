@@ -267,8 +267,8 @@ class Name:
         :param rank: CatRank matching
         :return: Cat's name string
         """
-        if rank in self.names_dict["special_suffixes"] and not self.specsuffix_hidden:
-            return self.prefix + self.names_dict["special_suffixes"][rank]
+        if rank in self.names_dict["special_prefixes"] and not self.specsuffix_hidden:
+            return self.names_dict["special_prefixes"][rank] + self.prefix
 
         return self.prefix + self.suffix
 
@@ -290,7 +290,7 @@ class Name:
             }
             if self.cat.age in age_to_rank:
                 rank = age_to_rank[self.cat.age]
-                return self.prefix + " " + self.names_dict["special_suffixes"][rank]
+                return self.names_dict["special_prefixes"][rank] + " " + self.prefix
             else:
                 return self.prefix + " " + self.suffix
 
@@ -298,17 +298,17 @@ class Name:
             old_rank = self.cat.status.find_prior_clan_rank()
 
             if (
-                old_rank in self.names_dict["special_suffixes"]
+                old_rank in self.names_dict["special_prefixes"]
                 and not self.specsuffix_hidden
             ):
-                return self.prefix + " " + self.names_dict["special_suffixes"][old_rank]
+                return self.names_dict["special_prefixes"][old_rank] + " " + self.prefix
 
         if (
-            self.cat.status.rank in self.names_dict["special_suffixes"]
+            self.cat.status.rank in self.names_dict["special_prefixes"]
             and not self.specsuffix_hidden
         ):
             return (
-                self.prefix + " " + self.names_dict["special_suffixes"][self.cat.status.rank]
+                self.names_dict["special_prefixes"][self.cat.status.rank] + " " + self.prefix
             )
         if constants.CONFIG["fun"]["april_fools"]:
             return f"{self.prefix} Egg"
