@@ -54,9 +54,9 @@ class Name:
                         else:
                             names_dict["normal_suffixes"].append(new_name)
 
-        if os.path.exists(get_save_dir() + "/specialsuffixes.txt"):
+        if os.path.exists(get_save_dir() + "/titles.txt"):
             with open(
-                str(get_save_dir() + "/specialsuffixes.txt", "r"), encoding="utf-8"
+                str(get_save_dir() + "/titles.txt", "r"), encoding="utf-8"
             ) as read_file:
                 name_list = read_file.read()
                 if_names = len(name_list)
@@ -65,10 +65,10 @@ class Name:
                 for new_name in new_names:
                     if new_name != "":
                         if new_name.startswith("-"):
-                            del names_dict["special_suffixes"][new_name[1:]]
+                            del names_dict["titles"][new_name[1:]]
                         elif ":" in new_name:
                             _tmp = new_name.split(":")
-                            names_dict["special_suffixes"][_tmp[0]] = _tmp[1]
+                            names_dict["titles"][_tmp[0]] = _tmp[1]
 
     def __init__(
         self,
@@ -267,8 +267,8 @@ class Name:
         :param rank: CatRank matching
         :return: Cat's name string
         """
-        if rank in self.names_dict["special_prefixes"] and not self.specsuffix_hidden:
-            return self.names_dict["special_prefixes"][rank] + self.prefix
+        if rank in self.names_dict["titles"] and not self.specsuffix_hidden:
+            return self.names_dict["titles"][rank] + self.prefix
 
         return self.prefix + self.suffix
 
@@ -290,7 +290,7 @@ class Name:
             }
             if self.cat.age in age_to_rank:
                 rank = age_to_rank[self.cat.age]
-                return self.names_dict["special_prefixes"][rank] + " " + self.prefix
+                return self.names_dict["titles"][rank] + " " + self.prefix
             else:
                 return self.prefix + " " + self.suffix
 
@@ -298,17 +298,17 @@ class Name:
             old_rank = self.cat.status.find_prior_clan_rank()
 
             if (
-                old_rank in self.names_dict["special_prefixes"]
+                old_rank in self.names_dict["titles"]
                 and not self.specsuffix_hidden
             ):
-                return self.names_dict["special_prefixes"][old_rank] + " " + self.prefix
+                return self.names_dict["titles"][old_rank] + " " + self.prefix
 
         if (
-            self.cat.status.rank in self.names_dict["special_prefixes"]
+            self.cat.status.rank in self.names_dict["titles"]
             and not self.specsuffix_hidden
         ):
             return (
-                self.names_dict["special_prefixes"][self.cat.status.rank] + " " + self.prefix
+                self.names_dict["titles"][self.cat.status.rank] + " " + self.prefix
             )
         if constants.CONFIG["fun"]["april_fools"]:
             return f"{self.prefix} Egg"
