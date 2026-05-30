@@ -297,19 +297,14 @@ class Name:
         if self.cat.status.is_former_clancat:
             old_rank = self.cat.status.find_prior_clan_rank()
 
-            if (
-                old_rank in self.names_dict["titles"]
-                and not self.specsuffix_hidden
-            ):
+            if old_rank in self.names_dict["titles"] and not self.specsuffix_hidden:
                 return self.names_dict["titles"][old_rank] + " " + self.prefix
 
         if (
             self.cat.status.rank in self.names_dict["titles"]
             and not self.specsuffix_hidden
         ):
-            return (
-                self.names_dict["titles"][self.cat.status.rank] + " " + self.prefix
-            )
+            return self.names_dict["titles"][self.cat.status.rank] + " " + self.prefix
         if constants.CONFIG["fun"]["april_fools"]:
             return f"{self.prefix} Egg"
         return self.prefix + " " + self.suffix
