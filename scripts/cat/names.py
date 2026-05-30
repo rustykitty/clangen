@@ -290,9 +290,9 @@ class Name:
             }
             if self.cat.age in age_to_rank:
                 rank = age_to_rank[self.cat.age]
-                return self.prefix + self.names_dict["special_suffixes"][rank]
+                return self.prefix + " " + self.names_dict["special_suffixes"][rank]
             else:
-                return self.prefix + self.suffix
+                return self.prefix + " " + self.suffix
 
         if self.cat.status.is_former_clancat:
             old_rank = self.cat.status.find_prior_clan_rank()
@@ -301,18 +301,18 @@ class Name:
                 old_rank in self.names_dict["special_suffixes"]
                 and not self.specsuffix_hidden
             ):
-                return self.prefix + self.names_dict["special_suffixes"][old_rank]
+                return self.prefix + " " + self.names_dict["special_suffixes"][old_rank]
 
         if (
             self.cat.status.rank in self.names_dict["special_suffixes"]
             and not self.specsuffix_hidden
         ):
             return (
-                self.prefix + self.names_dict["special_suffixes"][self.cat.status.rank]
+                self.prefix + " " + self.names_dict["special_suffixes"][self.cat.status.rank]
             )
         if constants.CONFIG["fun"]["april_fools"]:
-            return f"{self.prefix}egg"
-        return self.prefix + self.suffix
+            return f"{self.prefix} Egg"
+        return self.prefix + " " + self.suffix
 
 
 names = Name()
