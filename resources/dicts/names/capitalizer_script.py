@@ -18,6 +18,7 @@ for key in names:
             sub = [s.capitalize() for s in sub]
         elif isinstance(sub, dict):
             sub = {k: [s.capitalize() for s in v] for (k, v) in sub.items()}
+        names[key] = sub
 
 with open("./names.json", "w") as fp:
     json.dump(names, fp, indent=2)
