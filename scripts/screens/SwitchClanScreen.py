@@ -99,6 +99,11 @@ class SwitchClanScreen(Screens):
                 button.kill()
                 del button  # pylint: disable=modified-iterating-list
 
+        for page in self.backup_buttons:
+            for button in page:
+                button.kill()
+                del button  # pylint: disable=modified-iterating-list
+        
         self.next_page_button.kill()
         del self.next_page_button
         self.previous_page_button.kill()
@@ -108,6 +113,7 @@ class SwitchClanScreen(Screens):
 
         self.clan_buttons = [[]]
         self.delete_buttons = [[]]
+        self.backup_buttons = [[]]
         self.clan_name = [[]]
 
     def screen_switches(self):
@@ -148,6 +154,7 @@ class SwitchClanScreen(Screens):
         self.clan_name = [[]]
         self.clan_display_names = [[]]
         self.delete_buttons = [[]]
+        self.backup_buttons = [[]]
 
         # cursed math o clock!
         # i am exceedingly sorry for this abomination
@@ -226,11 +233,28 @@ class SwitchClanScreen(Screens):
                 )
             )
 
+            self.backup_buttons[-1].append(
+                UIImageButton(
+                    pygame.Rect(
+                        (
+                            ui_scale_value(438),
+                            -0.5 * (item_height + ui_scale_value(22)),
+                        ),
+                        ui_scale_dimensions((22, 22)),
+                    ),
+                    "",
+                    manager=MANAGER,
+                    starting_height=2,
+                    anchors={"top_target": self.clan_buttons[-1][-1]},
+                )
+            )
+
             i += 1
             if i % 8 == 0 and i != 0:
                 self.clan_buttons.append([])
                 self.clan_name.append([])
                 self.delete_buttons.append([])
+                self.backup_buttons.append([])
 
         self.next_page_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((456, 540), (34, 34))),
@@ -284,11 +308,15 @@ class SwitchClanScreen(Screens):
         for page in self.delete_buttons:
             for button in page:
                 button.hide()
-
+        for page in self.backup_buttons:
+            for button in page:
+                button.hide()
         for button in self.clan_buttons[self.page]:
             button.show()
 
         for button in self.delete_buttons[self.page]:
+            button.show()
+        for button in self.backup_buttons[self.page]:
             button.show()
 
     def on_use(self):
