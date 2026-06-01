@@ -59,6 +59,7 @@ def get_temp_dir():
 def get_saved_images_dir():
     return get_data_dir() + "/saved_images"
 
+
 def get_backups_dir():
     return get_data_dir() + "/backups"
 
