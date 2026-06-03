@@ -1447,6 +1447,22 @@
             }
         }
     },
+    "#backup_button": {
+        "images": {
+            "normal_image": {
+                "path": "resources\/images\/buttons\/backup_button.png"
+            },
+            "hovered_image": {
+                "path": "resources\/images\/buttons\/backup_button_hover.png"
+            },
+            "selected_image": {
+                "path": "resources\/images\/buttons\/backup_button_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources\/images\/buttons\/backup_button_unavailable.png"
+            }
+        }
+    },
     "#kill_cat_button": {
         "prototype": "@buttonstyles_ladder_middle",
         "images": {
