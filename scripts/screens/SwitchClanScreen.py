@@ -243,6 +243,7 @@ class SwitchClanScreen(Screens):
                         ui_scale_dimensions((22, 22)),
                     ),
                     "",
+                    object_id="#exit_window_button",
                     manager=MANAGER,
                     starting_height=2,
                     anchors={"top_target": self.clan_buttons[-1][-1]},
