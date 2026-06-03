@@ -237,7 +237,7 @@ class SwitchClanScreen(Screens):
                 UIImageButton(
                     pygame.Rect(
                         (
-                            ui_scale_value(438),
+                            ui_scale_value(443),
                             -0.5 * (item_height + ui_scale_value(22)),
                         ),
                         ui_scale_dimensions((22, 22)),
