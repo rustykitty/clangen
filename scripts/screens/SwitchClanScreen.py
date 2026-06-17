@@ -61,6 +61,10 @@ class SwitchClanScreen(Screens):
 
                         return
 
+                for page in self.backup_buttons:
+                    if event.ui_element in page:
+                        self.change_screen(GameScreen.BACKUP_CLAN)
+
                 for page in self.clan_buttons:
                     if event.ui_element in page:
                         self.change_screen(GameScreen.START)

@@ -6,6 +6,7 @@ class GameScreen(StrEnum):
     # screens access through start screen
     MAKE_CLAN = "make_clan_screen"
     SWITCH_CLAN = "switch_clan_screen"
+    BACKUP_CLAN = "backup_clan_screen"
     SETTINGS = "settings_screen"
     EVENT_EDIT = "event_edit_screen"
 

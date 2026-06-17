@@ -26,6 +26,7 @@ from .SpriteInspectScreen import SpriteInspectScreen
 from .StartScreen import StartScreen
 from .SwitchClanScreen import SwitchClanScreen
 from .WarriorDenScreen import WarriorDenScreen
+from .BackupClanScreen import BackupClanScreen
 from .enums import GameScreen
 
 # ---------------------------------------------------------------------------- #
@@ -81,6 +82,7 @@ def rebuild_all_screens():
         GameScreen.MEDIATION: MediationScreen,
         GameScreen.CHANGE_GENDER: ChangeGenderScreen,
         GameScreen.EVENT_EDIT: EventEditScreen,
+        GameScreen.BACKUP_CLAN: BackupClanScreen,
     }
 
     for enum, classobj in enum_to_class.items():
