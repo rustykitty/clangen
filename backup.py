@@ -11,7 +11,6 @@ from scripts.housekeeping.datadir import get_save_dir, get_backups_dir, get_temp
 
 logger = logging.getLogger(__name__)
 
-
 def make_backup(name):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
@@ -32,6 +31,9 @@ def restore_backup(name, timestamp):
     if os.path.exists(clan_path):
         shutil.rmtree(clan_path)
     shutil.copytree(temp, clan_path)
+
+    # cleanup temp dir
+    shutil.rmtree(temp)
 
 def list_backups(name):
     files = glob.glob(get_backups_dir() + f"/*_{name}.zip")
