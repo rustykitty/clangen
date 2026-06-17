@@ -12,17 +12,25 @@ from scripts.housekeeping.datadir import get_save_dir, get_backups_dir, get_temp
 logger = logging.getLogger(__name__)
 
 def make_backup(name):
+    """
+    Make up a backup for the given clan based on the current timestamp.
+    """
+
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
     shutil.make_archive(
-        base_name=get_backups_dir() + f"/{timestamp}_{name}",
+        base_name=get_backup_path(name, timestamp).rstrip(".zip"),
         format="zip",
         root_dir=get_save_dir() + f"/{name}",
         logger=logger,
     )
 
 def restore_backup(name, timestamp):
-    backup_path = get_backups_dir() + f"/{timestamp}_{name}.zip"
+    """
+    Restore the backup from the given timestamp.
+    NOTE: This will irreversibly overwrite ALL data in the clan directory
+    """
+    backup_path = get_backup_path(name, timestamp)
     clan_path = get_save_dir() + f"/{name}"
     temp = get_temp_dir() + "/backup_restore"
     shutil.unpack_archive(backup_path, temp, "zip")
@@ -36,8 +44,15 @@ def restore_backup(name, timestamp):
     shutil.rmtree(temp)
 
 def list_backups(name):
+    """
+    List backups for a clan, by the name that is going to be passed to restore_backup()
+    """
+
     files = glob.glob(get_backups_dir() + f"/*_{name}.zip")
     return [file.lstrip(get_backups_dir() + "/") for file in files]
+
+def get_backup_path(name, timestamp):
+    return get_backups_dir() + f"/{timestamp}_{name}.zip"
 
 USAGE = "Usage: backup.py <Clan name> <backup|restore> [options...]"
 
