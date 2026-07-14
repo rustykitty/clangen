@@ -209,9 +209,7 @@ class Screens:
         Screens.menu_buttons = scripts.screens.screens_core.screens_core.menu_buttons
         Screens.game_frame = scripts.screens.screens_core.screens_core.game_frame
         try:
-            Screens.update_heading_text(
-                "general.clan", text_kwargs={"name": game.clan.displayname}
-            )
+            Screens.update_heading_text(game.clan.name)
         except AttributeError:
             Screens.update_heading_text("DebugClan")
         if self.active_bg is None or "default" in self.active_bg:
@@ -231,7 +229,8 @@ class Screens:
         # and are turned off when the mouse is clicked
         if event.type in (pygame.MOUSEBUTTONDOWN, pygame_gui.UI_BUTTON_ON_HOVERED):
             switch_set_value(Switch.keybinds_live, False)
-            self.current_focus.unfocus()
+            if self.current_focus:
+                self.current_focus.unfocus()
 
         elif event.type == INPUT_ACTION_PRESSED:
             switch_set_value(Switch.keybinds_live, True)
@@ -239,7 +238,7 @@ class Screens:
         # keybind handling
         if switch_get_value(Switch.keybinds_live):
             # if we weren't focused at all, then we just start with whatever the old current was
-            if not self.current_focus.is_focused:
+            if self.current_focus and not self.current_focus.is_focused:
                 self.set_focus(self.current_focus)
 
             # handling changing the focus via keyboard and controller
@@ -334,13 +333,11 @@ class Screens:
             self.menu_buttons["unmute_button"].show()
             self.menu_buttons["mute_button"].hide()
             self.add_to_map([self.menu_buttons["unmute_button"]])
-            self.set_focus(self.menu_buttons["unmute_button"])
 
         else:
             self.menu_buttons["unmute_button"].hide()
             self.menu_buttons["mute_button"].show()
             self.add_to_map([self.menu_buttons["mute_button"]])
-            self.set_focus(self.menu_buttons["mute_button"])
 
     def mute_button_pressed(self, event):
         """This is a short-up to deal with mute button presses.
@@ -355,12 +352,14 @@ class Screens:
             game_setting_set("audio_mute", True)
             game_settings_save(self)
             self.show_mute_buttons()
+            self.set_focus(self.menu_buttons["unmute_button"])
             return True
         elif element == Screens.menu_buttons["unmute_button"]:
             game.audio.unmute()
             game_setting_set("audio_mute", False)
             game_settings_save(self)
             self.show_mute_buttons()
+            self.set_focus(self.menu_buttons["mute_button"])
             return True
         else:
             return False
@@ -720,5 +719,8 @@ class Screens:
     # pragma pylint: enable=no-member
 
     @staticmethod
-    def chunks(L, n):
-        return [L[x : x + n] for x in range(0, len(L), n)]
+    def get_list_chunks(list_to_chunk: list, items_allowed_in_chunk: int) -> list[list]:
+        return [
+            list_to_chunk[x : x + items_allowed_in_chunk]
+            for x in range(0, len(list_to_chunk), items_allowed_in_chunk)
+        ]

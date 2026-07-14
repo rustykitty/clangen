@@ -142,6 +142,7 @@ class UISurfaceImageButton(pygame_gui.elements.UIButton):
                 starting_height=self.starting_height,
                 anchors=self.anchors,
                 line_spacing=0.95,
+                visible=visible,
             )
             self.join_focus_sets(self.text_layer)
             self.text_layer.disable()
@@ -228,6 +229,8 @@ class UISurfaceImageButton(pygame_gui.elements.UIButton):
         self.drawable_shape.set_active_state("hovered")
 
     def focus(self):
+        if not self.is_enabled or not self.visible:
+            return  # early return to prevent focusing of disabled buttons
         super().focus()
         self.drawable_shape.set_active_state("hovered")
         if self.tool_tip is None and self.tool_tip_text is not None:
@@ -242,7 +245,9 @@ class UISurfaceImageButton(pygame_gui.elements.UIButton):
             )
 
     def unfocus(self):
-        if self.hovered:
+        if not self.is_enabled:
+            self.drawable_shape.set_active_state("disabled")
+        elif self.hovered:
             self.drawable_shape.set_active_state("hovered")
         else:
             self.drawable_shape.set_active_state("normal")

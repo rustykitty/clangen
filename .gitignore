@@ -178,6 +178,7 @@ saves/currentclan.txt
 tests/testSaves
 cache/
 backups/
+.temp/
 
 # Update system
 
