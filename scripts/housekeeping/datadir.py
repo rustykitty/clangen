@@ -60,6 +60,10 @@ def get_saved_images_dir():
     return get_data_dir() + "/saved_images"
 
 
+def get_backups_dir():
+    return get_data_dir() + "/backups"
+
+
 def open_data_dir():
     if platform.system() == "Darwin":
         subprocess.Popen(["open", "-R", get_data_dir()])
