@@ -818,10 +818,9 @@ class SettingsScreen(Screens):
                 print(i, code)
                 native_name = languages[code]
                 if i == 0:
-                    self.checkboxes[code] = UISurfaceImageButton(
+                    self.checkboxes[code] = UIImageButton(
                         ui_scale(pygame.Rect((310, 200), (180, 51))),
                         native_name,
-                        get_button_dict(ButtonStyles.LADDER_TOP, (172, 36)),
                         object_id="#first_lang_button",
                         manager=MANAGER,
                     )
