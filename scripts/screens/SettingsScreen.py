@@ -812,27 +812,33 @@ class SettingsScreen(Screens):
         if self.sub_menu == "language":
             # dict insertion order is guaranteed in python 3.7+
             languages = get_languages()
+            lang_codes = list(languages.keys())
 
-            for (i, language) in enumerate(languages):
-                code, native_name = language
+            for (i, code) in enumerate(lang_codes):
+                print(i, code)
+                native_name = languages[code]
                 if i == 0:
                     self.checkboxes[code] = UISurfaceImageButton(
                         ui_scale(pygame.Rect((310, 200), (180, 51))),
                         native_name,
-                        get_button_dict(ButtonStyles.LADDER_BOTTOM, (172, 36)),
-                        object_id="@buttonstyles_ladder_top",
+                        get_button_dict(ButtonStyles.LADDER_TOP, (172, 36)),
+                        object_id="#first_lang_button",
                         manager=MANAGER,
                     )
                 else:
-                    style = (
-                        "@buttonstyles_ladder_bottom" if i == len(languages) - 1 else "@buttonstyles_ladder_middle"
-                    )
-                    prev_lang = languages[i - 1]
+                    # last
+                    if i == len(lang_codes) - 1:
+                        style = ButtonStyles.LADDER_BOTTOM
+                        object_id = "@buttonstyles_ladder_bottom"
+                    else:
+                        style = ButtonStyles.LADDER_MIDDLE
+                        object_id = "@buttonstyles_ladder_middle"
+                    prev_lang = lang_codes[i - 1]
                     self.checkboxes[code] = UISurfaceImageButton(
                         ui_scale(pygame.Rect((310, 0), (180, 37))),
                         native_name,
-                        get_button_dict(ButtonStyles.LADDER_MIDDLE, (180, 37)),
-                        object_id="@buttonstyles_ladder_middle",
+                        get_button_dict(style, (180, 37)),
+                        object_id=object_id,
                         manager=MANAGER,
                         anchors={"top_target": self.checkboxes[prev_lang]},
                     )
