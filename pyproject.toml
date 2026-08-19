@@ -23,6 +23,7 @@ dependencies = [
     "pygame-ce~=2.2",
     "pygame-gui~=0.6",
     "requests~=2.28",
+    "standard-imghdr>=3.13.0",
     "strenum~=0.4",
     "tomli>=2.2.1",
     "ujson~=5.7",
