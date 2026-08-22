@@ -11,6 +11,7 @@ from scripts.housekeeping.datadir import get_save_dir, get_backups_dir, get_temp
 
 logger = logging.getLogger(__name__)
 
+
 def make_backup(name):
     """
     Make up a backup for the given clan based on the current timestamp.
@@ -24,6 +25,7 @@ def make_backup(name):
         root_dir=get_save_dir() + f"/{name}",
         logger=logger,
     )
+
 
 def restore_backup(name, timestamp):
     """
@@ -43,6 +45,7 @@ def restore_backup(name, timestamp):
     # cleanup temp dir
     shutil.rmtree(temp)
 
+
 def list_backups(name):
     """
     List backups for a clan, by the name that is going to be passed to restore_backup()
@@ -51,10 +54,13 @@ def list_backups(name):
     files = glob.glob(get_backups_dir() + f"/*_{name}.zip")
     return [file.lstrip(get_backups_dir() + "/") for file in files]
 
+
 def get_backup_path(name, timestamp):
     return get_backups_dir() + f"/{timestamp}_{name}.zip"
 
+
 USAGE = "Usage: backup.py <Clan name> <backup|restore> [options...]"
+
 
 def main():
     args = sys.argv[1:]
@@ -73,11 +79,12 @@ def main():
                 print(USAGE)
         else:
             print(USAGE)
-    else: # 1 arg
+    else:  # 1 arg
         backups = list_backups(clan)
         print("Backups for", clan, f"({len(backups)})")
         for backup in backups:
             print(f"-", backup)
+
 
 if __name__ == "__main__":
     main()
