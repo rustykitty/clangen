@@ -2,7 +2,6 @@ from typing import TYPE_CHECKING
 
 import pygame
 import pygame_gui
-import math
 
 from scripts.game_structure.screen_settings import MANAGER
 from scripts.ui.elements.surface_image_button import UISurfaceImageButton
@@ -76,15 +75,14 @@ class ConfirmDisplayChangesWindow(GameWindow):
                 "right": "right",
                 "bottom": "bottom",
             },
-            text_kwargs={"count": "10"},
+            text_kwargs={"count": 10},
         )
         self.text_block.disable()
         self.text_block.rebuild_from_changed_theme_data()
 
-        self.elapsed_duration = 0
-        self.revert_duration = (
-            15  # Duration (in seconds) before the game reverts the change
-        )
+        # make a timeout that will call in 10 seconds - if this window isn't closed,
+        # it'll be used to revert the change
+        pygame.time.set_timer(pygame.USEREVENT + 10, 10000, loops=1)
 
         self.source_screen_name = source_screen.name.replace(" ", "_")
 
@@ -93,7 +91,6 @@ class ConfirmDisplayChangesWindow(GameWindow):
         from scripts.game_structure.screen_settings import toggle_fullscreen
         from scripts.screens import all_screens
 
-        self.kill()
         toggle_fullscreen(
             None,
             source_screen=all_screens.get_screen(self.source_screen_name),
@@ -106,17 +103,7 @@ class ConfirmDisplayChangesWindow(GameWindow):
                 self.kill()
             elif event.ui_element == self.revert_button:
                 self.revert_changes()
-        return super().process_event(event)
-
-    def update(self, time_delta: float):
-        super().update(time_delta)
-
-        self.elapsed_duration += time_delta
-        self.text_block.set_text(
-            "windows.display_change_confirm",
-            text_kwargs={
-                "count": str(self.revert_duration - math.floor(self.elapsed_duration))
-            },
-        )
-        if self.elapsed_duration >= self.revert_duration:
+        elif event.type == pygame.USEREVENT + 10:
             self.revert_changes()
+            self.kill()
+        return super().process_event(event)

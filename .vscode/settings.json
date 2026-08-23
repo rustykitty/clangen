@@ -42,12 +42,6 @@
             "fileMatch": [
                 "points_of_interest.json"
             ]
-        },
-        {
-            "url": "./schemas/pelt_recipe.schema.json",
-            "fileMatch": [
-                "sprites/dicts/pelt_recipes/*.json"
-            ]
         }
     ],
     "python.formatting.provider": "yapf",
@@ -89,6 +83,5 @@
         "Twolegs",
         "ujson",
         "verdana"
-    ],
-    "editor.defaultColorDecorators": "always"
+    ]
 }

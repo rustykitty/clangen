@@ -29,16 +29,11 @@ from scripts.game_structure import constants
 from scripts.game_structure import game
 from ..cat.personality import Personality
 from ..cat.skills import CatSkills
-from ..cat_relations.cat_handle_funcs import (
-    init_all_relationships,
-    load_relationship_of_cat,
-)
 from ..clan_resources.point_of_interest import (
     clear_pois,
     generate_and_add_new_poi,
     PoiType,
 )
-from ..cat.microservices.conditions import get_permanent_condition
 from ..housekeeping.datadir import get_save_dir
 
 logger = logging.getLogger(__name__)
@@ -111,16 +106,16 @@ def json_load():
 
         # this is here to handle paralyzed cats in old saves
         if cat.pelt.paralyzed and "paralyzed" not in cat.permanent_condition:
-            get_permanent_condition(cat, "paralyzed")
+            cat.get_permanent_condition("paralyzed")
         elif "paralyzed" in cat.permanent_condition and not cat.pelt.paralyzed:
             cat.pelt.paralyzed = True
 
         # load the relationships
         try:
             if not cat.dead:
-                load_relationship_of_cat(cat)
+                cat.load_relationship_of_cat()
                 if cat.relationships is not None and len(cat.relationships) < 1:
-                    init_all_relationships(cat)
+                    cat.init_all_relationships()
             else:
                 cat.relationships = {}
         except Exception as e:

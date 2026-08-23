@@ -19,11 +19,6 @@ from scripts.conditions import (
     medicine_cats_can_cover_clan,
     get_amount_cat_for_one_medic,
 )
-from scripts.cat.microservices.conditions import (
-    get_ill,
-    get_injured,
-    get_permanent_condition,
-)
 from scripts.config import get_config
 from scripts.event_class import Single_Event
 from scripts.events_module.consequences import check_stolen_vitality
@@ -198,7 +193,7 @@ class Condition_Events:
                     nutrition_info[cat.ID].max_score / 100 * (MAL_PERCENTAGE + 1)
                 )
                 nutrition_info[cat.ID].current_score = round(mal_score, 2)
-                get_ill(cat, "malnourished")
+                cat.get_ill("malnourished")
 
             types = ["birth_death"]
             game.cur_events_list.append(
@@ -226,7 +221,7 @@ class Condition_Events:
         ):
             if cat_nutrition.percentage < MAL_PERCENTAGE:
                 if "malnourished" not in cat.illnesses:
-                    get_ill(cat, "malnourished")
+                    cat.get_ill("malnourished")
                 illness = "starving"
                 heal = True
             else:
@@ -249,7 +244,7 @@ class Condition_Events:
             cat.illnesses.pop(illness)
         elif not heal and illness:
             event = random.choice(Condition_Events.ILLNESS_GOT_STRINGS[illness])
-            get_ill(cat, illness)
+            cat.get_ill(illness)
 
         if event:
             event_text = event_text_adjust(Cat, event, main_cat=cat)
@@ -332,7 +327,7 @@ class Condition_Events:
                     event_string.replace("conditions.illnesses.", "")
 
                 # make em sick
-                get_ill(cat, chosen_illness)
+                cat.get_ill(chosen_illness)
 
                 event_string = event_text_adjust(Cat, text=event_string, main_cat=cat)
 
@@ -549,9 +544,9 @@ class Condition_Events:
             perm_condition = condition
 
         if perm_condition is not None:
-            got_condition = get_permanent_condition(cat, perm_condition, born_with)
+            got_condition = cat.get_permanent_condition(perm_condition, born_with)
 
-        if got_condition:
+        if got_condition is True:
             return perm_condition
 
     # ---------------------------------------------------------------------------- #
@@ -1248,12 +1243,10 @@ class Condition_Events:
                 switch_append_list_value(Switch.skip_conditions, new_condition_name)
                 # here we give the new condition
                 if new_condition_name in Condition_Events.INJURIES:
-                    get_injured(
-                        cat, new_condition_name, event_triggered=event_triggered
-                    )
+                    cat.get_injured(new_condition_name, event_triggered=event_triggered)
                     break
                 elif new_condition_name in Condition_Events.ILLNESSES:
-                    get_ill(cat, new_condition_name, event_triggered=event_triggered)
+                    cat.get_ill(new_condition_name, event_triggered=event_triggered)
                     if dictionary == cat.illnesses or removed_condition:
                         break
                     keys = dictionary[condition].keys()
@@ -1269,8 +1262,8 @@ class Condition_Events:
                             dictionary[condition].update({"complication": complication})
                     break
                 elif new_condition_name in Condition_Events.PERMANENT:
-                    get_permanent_condition(
-                        cat, new_condition_name, event_triggered=event_triggered
+                    cat.get_permanent_condition(
+                        new_condition_name, event_triggered=event_triggered
                     )
                     break
 

@@ -1,6 +1,6 @@
 [
     {
-        "event_id": "general_loner_dead_thoughts_df",
+        "event_id": "general_loner_dead_thoughts",
         "strings": [
             "Feels a sharp pang of hunger",
             "Wonders how {PRONOUN/m_c/subject} ended up here",

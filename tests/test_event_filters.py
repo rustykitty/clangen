@@ -3,7 +3,6 @@ import os
 from copy import deepcopy
 from itertools import permutations
 
-from scripts.cat.microservices.add_to_clan import add_to_clan, add_dependents_to_clan
 from scripts.cat.personality import Personality
 from scripts.cat.skills import Skill, SkillPath
 from scripts.clan_resources.point_of_interest import (
@@ -13,11 +12,6 @@ from scripts.clan_resources.point_of_interest import (
     clear_pois,
     generate_and_add_new_poi,
     get_pois_by_category,
-)
-from scripts.cat.microservices.conditions import (
-    get_ill,
-    get_injured,
-    get_permanent_condition,
 )
 
 try:
@@ -2372,8 +2366,7 @@ class TestCatConstraint(unittest.TestCase):
             elif old_rank.is_any_clancat_rank():
                 cat.leave_clan(new_social_status=CatSocial(new_rank.value))
             elif new_rank.is_any_clancat_rank():
-                add_to_clan(cat)
-                add_dependents_to_clan(cat)
+                cat.add_to_clan()
                 cat.rank_change(new_rank=new_rank)
             else:
                 raise Exception(
@@ -2795,13 +2788,13 @@ class TestCatConstraint(unittest.TestCase):
         working_cat = cat_factory.create_cat()
         broken_cat = cat_factory.create_cat()
 
-        get_injured(broken_cat, name="broken bone")
+        broken_cat.get_injured(name="broken bone")
         ill_cat = cat_factory.create_cat()
-        get_ill(cat=ill_cat, illness_name="greencough")
+        ill_cat.get_ill(name="greencough")
         born_para_cat = cat_factory.create_cat()
-        get_permanent_condition(born_para_cat, name="paralyzed", born_with=True)
+        born_para_cat.get_permanent_condition(name="paralyzed", born_with=True)
         acquired_para_cat = cat_factory.create_cat()
-        get_permanent_condition(acquired_para_cat, name="paralyzed", born_with=False)
+        acquired_para_cat.get_permanent_condition(name="paralyzed", born_with=False)
 
         # cat must be working and is
         with self.subTest("must work and is working"):

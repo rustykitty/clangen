@@ -8,7 +8,6 @@ from scripts.clan_package.settings import (
     load_clan_settings,
     set_clan_setting,
 )
-from scripts.cat.microservices.conditions import get_injured
 from scripts.game_structure import game
 
 os.environ["SDL_VIDEODRIVER"] = "dummy"
@@ -108,7 +107,7 @@ class CanHaveKits(unittest.TestCase):
         test_clan = Clan(save_id="clan")
         test_clan.pregnancy_data = {}
         cat = cat_factory.create_cat(gender="female", moons=50)
-        get_injured(cat, "broken bone")
+        cat.get_injured("broken bone")
 
         self.assertFalse(pregnancy_events.handle_having_kits(cat))
 
