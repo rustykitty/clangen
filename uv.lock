@@ -204,7 +204,7 @@ requires-dist = [
     { name = "pgpy", specifier = "~=0.6" },
     { name = "platformdirs", specifier = "~=3.3" },
     { name = "pydantic", specifier = ">=2.12.0" },
-    { name = "pygame-ce", specifier = "~=2.2" },
+    { name = "pygame-ce", specifier = "~=2.5.1" },
     { name = "pygame-gui", specifier = "~=0.6" },
     { name = "pypresence", marker = "extra == 'discord'", specifier = "~=4.2" },
     { name = "requests", specifier = "~=2.28" },
