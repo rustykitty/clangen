@@ -4,5 +4,5 @@ set -e # exit on failure
 
 # cd into script location
 cd "$(dirname "$0")"
-uv sync
+uv sync --extra discord
 uv run main.py
