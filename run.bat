@@ -1,4 +1,4 @@
 @echo off
 
-uv sync || ( pause & exit /b )
+uv sync --extra discord || ( pause & exit /b )
 uv run main.py || ( pause & exit /b )
