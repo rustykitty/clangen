@@ -645,12 +645,12 @@ dev_tools = false
 
 
   # age cats will start dying of old age based on old_age_death_curve
-  old_age_death_start = 150
+  old_age_death_start = 160
 
   # multiplier that affects the chances of cats dying once they are over old_age_death_start moons
   # Average life expectancy with default old_age_death_start of 150 moons:
   #   1 = 189 moons, 2 = 178, 3 = 172, 4.5 (default) = 168, 8 = 163, 20 = 158
-  old_age_death_curve = 4.5
+  old_age_death_curve = 3
 
   [death_related.murder]
     # base 1/2^(chance) a completely random murder occurs
