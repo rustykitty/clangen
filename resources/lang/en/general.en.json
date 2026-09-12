@@ -225,10 +225,6 @@
         "grieving": "grieving",
         "fleas": "flea-ridden",
         "is_infected": "is infected",
-        "is_festering": "is festering",
-        "article": {
-            "one": "a %{noun}",
-            "many": "%{noun}"
-        }
+        "is_festering": "is festering"
     }
 }
