@@ -251,6 +251,8 @@ class Clan:
         game.dark_forest = Afterlife()
         instructor_rank = choice(
             (
+                CatRank.NEWBORN,
+                CatRank.KITTEN,
                 CatRank.APPRENTICE,
                 CatRank.MEDIATOR_APPRENTICE,
                 CatRank.MEDICINE_APPRENTICE,
